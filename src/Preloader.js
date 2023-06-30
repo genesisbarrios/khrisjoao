@@ -154,16 +154,16 @@ export default class Preloader extends EventEmitter {
                 //     y: 1,
                 //     z: 1,
                 // })
-                // .to(
-                //     this.roomChildren.cube.scale,
-                //     {
-                //         x: 0,
-                //         y: 0,
-                //         z: 0,
-                //         duration: 1,
-                //     },
-                //     "introtext"
-                // )
+                .to(
+                    this.roomChildren.cube.scale,
+                    {
+                        x: 0,
+                        y: 0,
+                        z: 0,
+                        duration: 1,
+                    },
+                    "introtext"
+                )
                 // .to(
                 //     ".hero-main-title .animatedis",
                 //     {
@@ -215,16 +215,16 @@ export default class Preloader extends EventEmitter {
                 .to(
                     this.roomChildren.akai_lp.scale,
                     {
-                        x: 1,
-                        y: 1,
-                        z: 1,
+                        x: 0.02,
+                        y: 0.02,
+                        z: 0.02,
                     },
                     "same"
                 )
                 .to(
                     this.roomChildren.akai_lp.position,
                     {
-                        x: 0.638711,
+                        x: -2.638711,
                         y: 8.5618,
                         z: 1.3243,
                     },
@@ -233,9 +233,9 @@ export default class Preloader extends EventEmitter {
                 .to(
                     this.roomChildren.table001.scale,
                     {
-                        x: 1,
-                        y: 1,
-                        z: 1,
+                        x: 5,
+                        y: 5,
+                        z: 5,
                     },
                     "same"
                 )
@@ -243,7 +243,7 @@ export default class Preloader extends EventEmitter {
                     this.roomChildren.table001.position,
                     {
                         x: 0.638711,
-                        y: 8.5618,
+                        y: 0.5618,
                         z: 1.3243,
                     },
                     "same"
@@ -251,16 +251,25 @@ export default class Preloader extends EventEmitter {
                 .to(
                     this.roomChildren.plane001.scale,
                     {
-                        x: 1,
-                        y: 1,
-                        z: 1,
+                        x: 5,
+                        y: 5,
+                        z: 5,
                     },
                     "same"
                     )
+                    .to(
+                        this.roomChildren.plane001.position,
+                        {
+                            x: 0.638711,
+                            y: 0.5618,
+                            z: 1.3243,
+                        },
+                        "same"
+                    )
                 .to(this.roomChildren.plane.scale, {
-                    x: 1,
-                    y: 1,
-                    z: 1,
+                    x: 5,
+                    y: 5,
+                    z: 5,
                 },
                 "same"
                 )
@@ -274,9 +283,9 @@ export default class Preloader extends EventEmitter {
                     "same"
                 )
                 .to(this.roomChildren.macmini_1_0.scale, {
-                    x: 1,
-                    y: 1,
-                    z: 1,
+                    x: 3,
+                    y: 3,
+                    z: 3,
                 },
                 "same"
                 )
@@ -284,7 +293,7 @@ export default class Preloader extends EventEmitter {
                     this.roomChildren.macmini_1_0.position,
                     {
                         x: 0.638711,
-                        y: 8.5618,
+                        y: 16.5618,
                         z: 1.3243,
                     },
                     "same"
@@ -299,7 +308,7 @@ export default class Preloader extends EventEmitter {
                 .to(
                     this.roomChildren.krkspeakerl_rubber_0001.position,
                     {
-                        x: 0.638711,
+                        x: -10.638711,
                         y: 8.5618,
                         z: 1.3243,
                     },
@@ -315,7 +324,7 @@ export default class Preloader extends EventEmitter {
                 .to(
                     this.roomChildren.krkspeakerl_rubber_0002.position,
                     {
-                        x: 0.638711,
+                        x: 10.638711,
                         y: 8.5618,
                         z: 1.3243,
                     },
