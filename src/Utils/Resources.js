@@ -56,6 +56,16 @@ export default class Resources extends EventEmitter {
                 this.videoTexture[asset.name].encoding = THREE.sRGBEncoding;
 
                 this.singleAssetLoaded(asset, this.videoTexture[asset.name]);
+            } else if (asset.type === "image"){
+                this.image = {};
+                this.imageTexture = {};
+
+                this.image[asset.name] = document.createElement("image");
+                this.video[asset.name].src = asset.path;
+                this.imageTexture[asset.name] = new THREE.ImageLoader(
+                    this.image[asset.name]
+                );
+                this.singleAssetLoaded(asset, this.imageTexture[asset.name]);
             }
         }
     }
@@ -64,6 +74,7 @@ export default class Resources extends EventEmitter {
         this.items[asset.name] = file;
         this.loaded++;
 
+        console.log('asset is loading');
         if (this.loaded === this.queue) {
             this.emit("ready");
         }

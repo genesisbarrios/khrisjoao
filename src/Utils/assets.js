@@ -2,11 +2,11 @@ export default [
     {
         name: "room",
         type: "glbModel",
-        path: "/models/desk.gTIF",
+        path: "/models/workspace2.glb",
     },
-    {
-        name: "screen",
-        type: "videoTexture",
-        path: "/textures/kda.mp4",
-    },
+    // {
+    //     name: "screen",
+    //     type: "videoTexture",
+    //     path: "/textures/kda.mp4",
+    // },
 ];

@@ -39,7 +39,30 @@ export default class Room {
 
             // console.log(child);
 
-            if (child.name === "Aquarium") {
+            // if (child.name === "Aquarium") {
+            //     // console.log(child);
+            //     child.children[0].material = new THREE.MeshPhysicalMaterial();
+            //     child.children[0].material.roughness = 0;
+            //     child.children[0].material.color.set(0x549dd2);
+            //     child.children[0].material.ior = 3;
+            //     child.children[0].material.transmission = 1;
+            //     child.children[0].material.opacity = 1;
+            //     child.children[0].material.depthWrite = false;
+            //     child.children[0].material.depthTest = false;
+            // }
+
+            if (child.name === "macmini_1_0") {
+                child.children[1].material = new THREE.MeshBasicMaterial({
+                    map: this.resources.items.screen,
+                });
+            }
+
+            // if (child.name === "Mini_Floor") {
+            //     child.position.x = -0.289521;
+            //     child.position.z = 8.83572;
+            // }
+
+            if (child.name === "table") {
                 // console.log(child);
                 child.children[0].material = new THREE.MeshPhysicalMaterial();
                 child.children[0].material.roughness = 0;
@@ -51,36 +74,27 @@ export default class Room {
                 child.children[0].material.depthTest = false;
             }
 
-            if (child.name === "Computer") {
-                child.children[1].material = new THREE.MeshBasicMaterial({
-                    map: this.resources.items.screen,
-                });
+            if (
+                child.name === "akai_lp" ||
+                child.name === "cylinder" ||
+                child.name === "krkspeakerl_rubber_0001" ||
+                child.name === "krkspeakerl_rubber_0002" ||
+                child.name === "object_5" ||
+                child.name === "object_6" ||
+                child.name === "object_4001" ||
+                child.name === "plane" ||
+                child.name === "plane001" ||
+                child.name === "table001" 
+            ) {
+                child.scale.set(1, 1, 1);
             }
-
-            if (child.name === "Mini_Floor") {
-                child.position.x = -0.289521;
-                child.position.z = 8.83572;
-            }
-
-            // if (
-            //     child.name === "Mailbox" ||
-            //     child.name === "Lamp" ||
-            //     child.name === "FloorFirst" ||
-            //     child.name === "FloorSecond" ||
-            //     child.name === "FloorThird" ||
-            //     child.name === "Dirt" ||
-            //     child.name === "Flower1" ||
-            //     child.name === "Flower2"
-            // ) {
-            //     child.scale.set(0, 0, 0);
-            // }
 
             child.scale.set(0, 0, 0);
-            if (child.name === "Cube") {
-                // child.scale.set(1, 1, 1);
-                child.position.set(0, -1, 0);
-                child.rotation.y = Math.PI / 4;
-            }
+            // if (child.name === "cube") {
+            //     // child.scale.set(1, 1, 1);
+            //     child.position.set(0, -1, 0);
+            //     child.rotation.y = Math.PI / 4;
+            // }
 
             this.roomChildren[child.name.toLowerCase()] = child;
         });
@@ -101,9 +115,9 @@ export default class Room {
 
         this.roomChildren["rectLight"] = rectLight;
 
-        // const rectLightHelper = new RectAreaLightHelper(rectLight);
-        // rectLight.add(rectLightHelper);
-        // console.log(this.room);
+        const rectLightHelper = new RectAreaLightHelper(rectLight);
+        rectLight.add(rectLightHelper);
+        console.log(this.room);
 
         this.scene.add(this.actualRoom);
         this.actualRoom.scale.set(0.11, 0.11, 0.11);

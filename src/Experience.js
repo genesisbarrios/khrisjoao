@@ -27,6 +27,7 @@ export default class Experience {
         this.camera = new Camera();
         this.renderer = new Renderer();
         this.resources = new Resources(assets);
+        console.log(this.resources)
         this.theme = new Theme();
         this.world = new World();
         this.preloader = new Preloader();
