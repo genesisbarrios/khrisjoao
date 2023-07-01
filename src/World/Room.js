@@ -82,7 +82,7 @@ export default class Room {
                 child.name === "object_5" ||
                 child.name === "object_6" ||
                 child.name === "object_4001" ||
-                child.name === "plane" ||
+               // child.name === "plane" ||
                 child.name === "plane001" ||
                 child.name === "table001" 
             ) {

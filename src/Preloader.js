@@ -224,8 +224,8 @@ export default class Preloader extends EventEmitter {
                 .to(
                     this.roomChildren.akai_lp.position,
                     {
-                        x: -2.638711,
-                        y: 8.5618,
+                        x: -5.638711,
+                        y: 6.5618,
                         z: 1.3243,
                     },
                     "same"
@@ -233,9 +233,9 @@ export default class Preloader extends EventEmitter {
                 .to(
                     this.roomChildren.table001.scale,
                     {
-                        x: 5,
-                        y: 5,
-                        z: 5,
+                        x: 15,
+                        y: 15,
+                        z: 35,
                     },
                     "same"
                 )
@@ -243,16 +243,16 @@ export default class Preloader extends EventEmitter {
                     this.roomChildren.table001.position,
                     {
                         x: 0.638711,
-                        y: 0.5618,
+                        y: -5.5618,
                         z: 1.3243,
                     },
                     "same"
                 )
-                .to(
+                .to(//monitor
                     this.roomChildren.plane001.scale,
                     {
-                        x: 5,
-                        y: 5,
+                        x: 8,
+                        y: 8,
                         z: 5,
                     },
                     "same"
@@ -261,27 +261,11 @@ export default class Preloader extends EventEmitter {
                         this.roomChildren.plane001.position,
                         {
                             x: 0.638711,
-                            y: 0.5618,
+                            y: 14,
                             z: 1.3243,
                         },
                         "same"
                     )
-                .to(this.roomChildren.plane.scale, {
-                    x: 5,
-                    y: 5,
-                    z: 5,
-                },
-                "same"
-                )
-                .to(
-                    this.roomChildren.plane.position,
-                    {
-                        x: 0.638711,
-                        y: 0.5618,
-                        z: 1.3243,
-                    },
-                    "same"
-                )
                 .to(this.roomChildren.macmini_1_0.scale, {
                     x: 3,
                     y: 3,
@@ -292,9 +276,9 @@ export default class Preloader extends EventEmitter {
                 .to(
                     this.roomChildren.macmini_1_0.position,
                     {
-                        x: 0.638711,
-                        y: 16.5618,
-                        z: 1.3243,
+                        x: 7.638711,
+                        y: 6.5618,
+                        z: 0.3243,
                     },
                     "same"
                 )
@@ -309,10 +293,15 @@ export default class Preloader extends EventEmitter {
                     this.roomChildren.krkspeakerl_rubber_0001.position,
                     {
                         x: -10.638711,
-                        y: 8.5618,
-                        z: 1.3243,
+                        y: 6.5618,
+                        z: 0.3243,
                     },
                     "same"
+                )
+                .to(this.roomChildren.krkspeakerl_rubber_0001.rotation, {
+                    z: 45,
+                },
+                "same"
                 )
                 .to(this.roomChildren.krkspeakerl_rubber_0002.scale, {
                     x: 1,
@@ -325,10 +314,15 @@ export default class Preloader extends EventEmitter {
                     this.roomChildren.krkspeakerl_rubber_0002.position,
                     {
                         x: 10.638711,
-                        y: 8.5618,
-                        z: 1.3243,
+                        y: 6.5618,
+                        z: 0.3243,
                     },
                     "same"
+                )
+                .to(this.roomChildren.krkspeakerl_rubber_0002.rotation, {
+                    z: -90,
+                },
+                "same"
                 )
                 .to(".arrow-svg-wrapper", {
                     opacity: 1,
