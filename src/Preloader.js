@@ -21,15 +21,16 @@ export default class Preloader extends EventEmitter {
         this.world.on("worldready", () => {
             this.setAssets();
             this.playIntro();
+            this.playSecondIntro();
         });
     }
 
     setAssets() {
-        convert(document.querySelector(".intro-text"));
-        convert(document.querySelector(".hero-main-title"));
-        convert(document.querySelector(".hero-main-description"));
-        convert(document.querySelector(".hero-second-subheading"));
-        convert(document.querySelector(".second-sub"));
+        // convert(document.querySelector(".intro-text"));
+        // convert(document.querySelector(".hero-main-title"));
+        // convert(document.querySelector(".hero-main-description"));
+        // convert(document.querySelector(".hero-second-subheading"));
+        //convert(document.querySelector(".second-sub"));
 
         this.room = this.experience.world.room.actualRoom;
         this.roomChildren = this.experience.world.room.roomChildren;
@@ -49,56 +50,6 @@ export default class Preloader extends EventEmitter {
                         .classList.add("hidden");
                 },
             });
-            if (this.device === "desktop") {
-                this.timeline
-                    .to(this.roomChildren.cube.scale, {
-                        x: 1.4,
-                        y: 1.4,
-                        z: 1.4,
-                        ease: "back.out(2.5)",
-                        duration: 0.7,
-                    })
-                    .to(this.room.position, {
-                        x: -1,
-                        ease: "power1.out",
-                        duration: 0.7,
-                    });
-            } else {
-                this.timeline
-                    .to(this.roomChildren.cube.scale, {
-                        x: 1.4,
-                        y: 1.4,
-                        z: 1.4,
-                        ease: "back.out(2.5)",
-                        duration: 0.7,
-                    })
-                    .to(this.room.position, {
-                        z: -1,
-                        ease: "power1.out",
-                        duration: 0.7,
-                    });
-            }
-            this.timeline
-                .to(".intro-text .animatedis", {
-                    yPercent: 0,
-                    stagger: 0.05,
-                    ease: "back.out(1.7)",
-                })
-                .to(
-                    ".arrow-svg-wrapper",
-                    {
-                        opacity: 1,
-                    },
-                    "same"
-                )
-                .to(
-                    ".toggle-bar",
-                    {
-                        opacity: 1,
-                        onComplete: resolve,
-                    },
-                    "same"
-                );
         });
     }
 
@@ -107,22 +58,6 @@ export default class Preloader extends EventEmitter {
             this.secondTimeline = new GSAP.timeline();
 
             this.secondTimeline
-                .to(
-                    ".intro-text .animatedis",
-                    {
-                        yPercent: 100,
-                        stagger: 0.05,
-                        ease: "back.in(1.7)",
-                    },
-                    "fadeout"
-                )
-                .to(
-                    ".arrow-svg-wrapper",
-                    {
-                        opacity: 0,
-                    },
-                    "fadeout"
-                )
                 .to(
                     this.room.position,
                     {
@@ -136,82 +71,10 @@ export default class Preloader extends EventEmitter {
                 .to(
                     this.camera.orthographicCamera.position,
                     {
-                        y: 6.5,
+                        y: 7,
                     },
                     "same"
                 )
-                // .to(
-                //     this.roomChildren.cube.position,
-                //     {
-                //         x: 0.638711,
-                //         y: 8.5618,
-                //         z: 1.3243,
-                //     },
-                //     "same"
-                // )
-                // .set(this.roomChildren.body.scale, {
-                //     x: 1,
-                //     y: 1,
-                //     z: 1,
-                // })
-                .to(
-                    this.roomChildren.cube.scale,
-                    {
-                        x: 0,
-                        y: 0,
-                        z: 0,
-                        duration: 1,
-                    },
-                    "introtext"
-                )
-                // .to(
-                //     ".hero-main-title .animatedis",
-                //     {
-                //         yPercent: 0,
-                //         stagger: 0.07,
-                //         ease: "back.out(1.7)",
-                //     },
-                //     "introtext"
-                // )
-                // .to(
-                //     ".hero-main-description .animatedis",
-                //     {
-                //         yPercent: 0,
-                //         stagger: 0.07,
-                //         ease: "back.out(1.7)",
-                //     },
-                //     "introtext"
-                // )
-                // .to(
-                //     ".first-sub .animatedis",
-                //     {
-                //         yPercent: 0,
-                //         stagger: 0.07,
-                //         ease: "back.out(1.7)",
-                //     },
-                //     "introtext"
-                // )
-                // .to(
-                //     ".second-sub .animatedis",
-                //     {
-                //         yPercent: 0,
-                //         stagger: 0.07,
-                //         ease: "back.out(1.7)",
-                //     },
-                //     "introtext"
-                // )
-               
-                // .to(
-                //     this.roomChildren.clock.scale,
-                //     {
-                //         x: 1,
-                //         y: 1,
-                //         z: 1,
-                //         ease: "back.out(2.2)",
-                //         duration: 0.5,
-                //     },
-                //     ">-0.4"
-                // )
                 .to(
                     this.roomChildren.akai_lp.scale,
                     {
@@ -227,6 +90,24 @@ export default class Preloader extends EventEmitter {
                         x: -5.638711,
                         y: 6.5618,
                         z: 1.3243,
+                    },
+                    "same"
+                )
+                .to(
+                    this.roomChildren.cords.scale,
+                    {
+                        x: 2,
+                        y: 3,
+                        z: 2,
+                    },
+                    "same"
+                )
+                .to(
+                    this.roomChildren.cords.position,
+                    {
+                        x: -5.638,
+                        y: -12.5618,
+                        z: -1,
                     },
                     "same"
                 )
@@ -257,15 +138,15 @@ export default class Preloader extends EventEmitter {
                     },
                     "same"
                     )
-                    .to(
-                        this.roomChildren.plane001.position,
-                        {
-                            x: 0.638711,
-                            y: 14,
-                            z: 1.3243,
-                        },
-                        "same"
-                    )
+                .to(
+                    this.roomChildren.plane001.position,
+                    {
+                        x: 0.638711,
+                        y: 14,
+                        z: 1.3243,
+                    },
+                    "same"
+                )
                 .to(this.roomChildren.macmini_1_0.scale, {
                     x: 3,
                     y: 3,

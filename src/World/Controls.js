@@ -13,11 +13,11 @@ export default class Controls {
         this.time = this.experience.time;
         this.camera = this.experience.camera;
         this.room = this.experience.world.room.actualRoom;
-        this.room.children.forEach((child) => {
-            if (child.type === "RectAreaLight") {
-                this.rectLight = child;
-            }
-        });
+        // this.room.children.forEach((child) => {
+        //     if (child.type === "RectAreaLight") {
+        //         this.rectLight = child;
+        //     }
+        // });
         this.circleFirst = this.experience.world.floor.circleFirst;
         this.circleSecond = this.experience.world.floor.circleSecond;
         this.circleThird = this.experience.world.floor.circleThird;
@@ -31,9 +31,9 @@ export default class Controls {
                 navigator.userAgent
             )
         ) {
-            this.setSmoothScroll();
+            //this.setSmoothScroll();
         }
-        this.setScrollTrigger();
+        //this.setScrollTrigger();
     }
 
     setupASScroll() {

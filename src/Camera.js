@@ -14,11 +14,12 @@ export default class Camera {
         this.setOrbitControls();
     }
 
+    
     createPerspectiveCamera() {
         this.perspectiveCamera = new THREE.PerspectiveCamera(
             35,
             this.sizes.aspect,
-            0.1,
+            0.2,
             1000
         );
         this.scene.add(this.perspectiveCamera);
@@ -27,6 +28,7 @@ export default class Camera {
         this.perspectiveCamera.position.z = 12;
     }
 
+    //intro
     createOrthographicCamera() {
         this.orthographicCamera = new THREE.OrthographicCamera(
             (-this.sizes.aspect * this.sizes.frustrum) / 2,
