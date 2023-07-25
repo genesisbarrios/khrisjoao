@@ -10,6 +10,16 @@ html, body{
   font-family: "Montserrat", sans-serif;
 }
 
+#OS{
+  background-color: black;
+  min-height: 102vh;
+  color:white;
+}
+
+.headings{
+  text-align: center;
+}
+
 /* body{
   overflow: hidden;
 } */
