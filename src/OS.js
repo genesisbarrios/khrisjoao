@@ -119,21 +119,21 @@ const GenWavOS = (props) => {
                     For those that don't know about Music NFTs, they are digital collectibles. You can collect(or mint) to own a rare, and unique copy of one of my songs. These collectibles will give you access to different features on my website.. It may be free beats, sample packs, or sneak peeks!
                   </Frame>
                   <Frame style={{marginBottom:"10px", width:"100%"}}>
-                    <iframe id="embed" width="100%" height="750px" src="https://zora.co/editions/eth:0x5bc30e809aed2ff3c3bede9804419488e305b258/frame?padding=20px&mediaPadding=20px&showDetails=false&theme=light&showMedia=true&showCollectors=false&showMintingUI=true"></iframe>
+                  <div><iframe id="embed" width="100%" height="700px" src="https://zora.co/editions/eth:0x5bc30e809aed2ff3c3bede9804419488e305b258/frame?padding=20px&mediaPadding=20px&showDetails=false&theme=%7B%22foreground%22%3A%22%23000000%22%2C%22background%22%3A%22%23f3f3f3%22%2C%22accent%22%3A%22%2307ff3b%22%2C%22onAccent%22%3A%22%23000000%22%2C%22border%22%3A%22%23f3f3f3%22%2C%22background2%22%3A%22%23f3f3f3%22%2C%22positive%22%3A%22%231CB687%22%2C%22negative%22%3A%22%23F03232%22%2C%22warning%22%3A%22%23F5A623%22%7D&showMedia=true&showCollectors=false&showMintingUI=true"></iframe></div>
                   </Frame>
                   <Frame style={{marginBottom:"10px"}}>
-                    <Button><a href="https://beta.catalog.works/gendotwav/soltero" target="_blank">Soltero feat. El Igor on Catalog</a></Button>
+                    <Button><a href="https://beta.catalog.works/gendotwav/soltero" target="_blank" style={{textDecoration:"none"}}>Soltero feat. El Igor on Catalog</a></Button>
                   </Frame>
                   <Frame style={{marginBottom:"10px"}}>
-                    <Button><a href="https://www.riffapp.xyz/post/0x01a1b9-0x12" target="_blank">La Playa Snippet - Free on Riffapp</a></Button>
-                  </Frame>
-                  <br></br>
-                  <Frame style={{marginBottom:"10px"}}>
-                    <Button><a href="https://lenstube.xyz/channel/genwav.lens" target="_blank">Lenstube</a></Button>
+                    <Button><a href="https://www.riffapp.xyz/post/0x01a1b9-0x12" target="_blank" style={{textDecoration:"none"}}>La Playa Snippet - Free on Riffapp</a></Button>
                   </Frame>
                   <br></br>
                   <Frame style={{marginBottom:"10px"}}>
-                    <Button><a href="https://www.sound.xyz/user/genwav.eth" target="_blank">sound.xyz</a></Button>
+                    <Button><a href="https://lenstube.xyz/channel/genwav.lens" target="_blank" style={{textDecoration:"none"}}>Lenstube</a></Button>
+                  </Frame>
+                  <br></br>
+                  <Frame style={{marginBottom:"10px"}}>
+                    <Button><a href="https://www.sound.xyz/user/genwav.eth" target="_blank" style={{textDecoration:"none"}}>sound.xyz</a></Button>
                   </Frame>
                 </WindowContent>
               </Window>
