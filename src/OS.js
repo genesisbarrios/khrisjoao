@@ -32,6 +32,7 @@ const GenWavOS = (props) => {
 
           <Grid container spacing={2} style={{justifyContent:"center", margin:"10% 0"}}>
             <Grid item>
+              Welcome to GenWavOS
             </Grid>
             <Grid item>
             </Grid>
