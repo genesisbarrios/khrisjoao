@@ -80,14 +80,13 @@ const GenWavOS = (props) => {
                   </WindowContent>
                 </Window>
               </ThemeProvider>
-            </div>
           </Grid>
         <Grid item sm={4}>
         <ThemeProvider theme={blue}>
             <Window style={{width:'500px', minHeight: '200px'}}>
               <WindowHeader> About</WindowHeader>
               <WindowContent>
-              <p> Hi, my name is Genesis Barrios. I'm a Cuban-American Artist, Producer, and Software Engineer. 👨‍💻 I like to say I'm a creative because aside from programming, and making music, I do photography, I dabble in videography and graphic design, I do live coding, I DJ, and I make YouTube videos. So, take a look around, you can stream my music, watch my music videos, buy beats, or Music NFTS, or just vibe.</p>
+              <p> Hi, my name is gen.wav. I'm a Cuban-American Artist, Producer, and Software Engineer. 👨‍💻 I like to say I'm a creative because aside from programming, and making music, I do photography, I dabble in videography and graphic design, I do live coding, I DJ, and I make YouTube videos. So, take a look around, you can stream my music, watch my music videos, buy beats, or Music NFTS, or just vibe.</p>
               </WindowContent>
             </Window>
           </ThemeProvider>
