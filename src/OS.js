@@ -80,9 +80,10 @@ const GenWavOS = (props) => {
                   </WindowContent>
                 </Window>
               </ThemeProvider>
-          </Grid>
+          </div>
+        </Grid>
         <Grid item sm={4}>
-        <ThemeProvider theme={blue}>
+          <ThemeProvider theme={blue}>
             <Window style={{width:'500px', minHeight: '200px'}}>
               <WindowHeader> About</WindowHeader>
               <WindowContent>

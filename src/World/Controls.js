@@ -22,9 +22,13 @@ export default class Controls {
         this.circleSecond = this.experience.world.floor.circleSecond;
         this.circleThird = this.experience.world.floor.circleThird;
 
+        //this.setSmoothScroll();
+        //this.setScrollTrigger();
+        this.addButtonToScene();
+
         GSAP.registerPlugin(ScrollTrigger);
 
-        document.querySelector(".page").style.overflow = "visible";
+        //document.querySelector(".page").style.overflow = "visible";
 
         if (
             !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
@@ -34,6 +38,52 @@ export default class Controls {
             //this.setSmoothScroll();
         }
         //this.setScrollTrigger();
+    }
+
+    addButtonToScene() {
+        // Create a geometry and material for the button
+        const buttonGeometry = new THREE.BoxGeometry(1, 0.2, 0.1); // Adjust the size as needed
+        const buttonMaterial = new THREE.MeshBasicMaterial({ color: 0x24a0ed }); // Green color, adjust as needed
+
+        // Create the button mesh
+        const buttonMesh = new THREE.Mesh(buttonGeometry, buttonMaterial);
+
+        // Position the button in 3D space
+        buttonMesh.position.set(0, 4, 5); // Adjust the position as needed
+
+        // Create a canvas element for text
+        const canvas = document.createElement("canvas");
+        const context = canvas.getContext("2d");
+        context.font = "24px Arial"; // Adjust the font and size as needed
+        context.fillStyle = "white"; // Text color
+        context.fillText("Enter genwavOS", 10, 30); // Position and text content
+
+        // Create a texture from the canvas
+        const texture = new THREE.CanvasTexture(canvas);
+        const textMaterial = new THREE.MeshBasicMaterial({ map: texture });
+
+        // Create a plane for the text
+        const textGeometry = new THREE.PlaneGeometry(1, 0.1); // Adjust the size as needed
+        const textMesh = new THREE.Mesh(textGeometry, textMaterial);
+
+        // Position the text relative to the button
+        textMesh.position.set(0, 0.4, 5); // Adjust the position as needed
+
+        // Group the button and text meshes together
+        const buttonGroup = new THREE.Group();
+        buttonGroup.add(buttonMesh);
+        buttonGroup.add(textMesh);
+        buttonGroup.cursor = "pointer";
+
+        // Add the button group to the scene
+        this.scene.add(buttonGroup);
+
+        // Listen for interactions with the button, e.g., clicking
+        buttonGroup.addEventListener("click", (event) => {
+            // Handle the button click event here
+            event.stopPropagation();
+            console.log("Button clicked!");
+        });
     }
 
     setupASScroll() {

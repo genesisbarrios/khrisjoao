@@ -28,6 +28,7 @@
     "react95": "^4.0.0",
     "styled-components": "^6.0.5",
     "three": "^0.151.3",
+    "three-bmfont-text": "^3.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
