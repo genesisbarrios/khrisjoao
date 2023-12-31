@@ -16,13 +16,18 @@ import blue from 'react95/dist/themes/blue';
 import original from 'react95/dist/themes/original';
 import modernDark from 'react95/dist/themes/modernDark';
 
-import { InstagramLogo, TwitterLogo, TiktokLogo, SoundcloudLogo, YoutubeLogo  } from "@phosphor-icons/react";
+import { InstagramLogo, TwitterLogo, TiktokLogo, SoundcloudLogo, SpotifyLogo, AppleLogo, YoutubeLogo  } from "@phosphor-icons/react";
 
 const GenWavOS = (props) => {
 
 
   useEffect(() => {
     
+    //hide elements
+    if(document){
+    const welcomeBox = document.getElementById("welcomeBox");
+    welcomeBox.style.display = "none";
+    }
   }, []);
 
  
@@ -35,39 +40,7 @@ const GenWavOS = (props) => {
       </div>
       <Grid container spacing={2}> 
         <Grid item sm={4}> 
-            <div style={{marginLeft:"25%", marginTop:"5%"}}>  
-              <ThemeProvider theme={modernDark}>
-                <MenuList inline="true">
-                  <MenuListItem disabled="true">Socials</MenuListItem>
-                  <MenuListItem>
-                    <a target="_blank" href="http://instgram.com/gen.wav" style={{textDecoration:"none"}}>
-                      <InstagramLogo style={{color: 'limegreen'}}></InstagramLogo>
-                    </a>
-                  </MenuListItem>
-                  <MenuListItem>
-                    <a target="_blank" href="http://twitter.com/gendotwav" style={{textDecoration:"none"}}>
-                      <TwitterLogo style={{color: 'limegreen'}}></TwitterLogo>
-                    </a>
-                  </MenuListItem>
-                  <MenuListItem>
-                    <a target="_blank" href="http://tiktok.com/gen.wav" style={{textDecoration:"none"}}>
-                      <TiktokLogo style={{color: 'limegreen'}}></TiktokLogo>
-                    </a>
-                  </MenuListItem>
-                  <MenuListItem>
-                    <a target="_blank" href="http://soundcloud.com/genesisbarrios" style={{textDecoration:"none"}}>
-                      <SoundcloudLogo style={{color: 'limegreen'}}></SoundcloudLogo>
-                    </a>
-                  </MenuListItem>
-                  <MenuListItem>
-                    <a target="_blank" href="http://youtube.com/genesisbarrios" style={{textDecoration:"none"}}>
-                      <YoutubeLogo style={{color: 'limegreen'}}></YoutubeLogo>
-                    </a>
-                  </MenuListItem>
-                </MenuList>
-            </ThemeProvider>
-          </div>
-          <div style={{marginTop:"10%", marginLeft:"5%"}}>
+          <div style={{marginTop:"17%", marginLeft:"5%"}}>
             <ThemeProvider theme={brick}>
                 <Window style={{width:'80%', minHeight: '700px'}}>
                   <WindowHeader><img src="https://drive.google.com/uc?export=view&id=1Uvtq5e8SooDABw2cRESMMeLLcYc_tee3" width="20" height="20"/> Beats</WindowHeader>
@@ -91,8 +64,50 @@ const GenWavOS = (props) => {
           </div>
         </Grid>
         <Grid item sm={4}>
+        <div style={{marginLeft:"18%", marginTop:"5%"}}>  
+              <ThemeProvider theme={modernDark}>
+                <MenuList inline="true" style={{paddingTop:"10px"}}>
+                  <MenuListItem disabled="true" style={{fontSize:"1.3rem"}}>Socials</MenuListItem>
+                  <MenuListItem>
+                    <a target="_blank" href="http://instgram.com/gen.wav" style={{textDecoration:"none"}}>
+                      <InstagramLogo style={{color: 'limegreen'}} size={25}></InstagramLogo>
+                    </a>
+                  </MenuListItem>
+                  <MenuListItem>
+                    <a target="_blank" href="http://twitter.com/gendotwav" style={{textDecoration:"none"}}>
+                      <TwitterLogo style={{color: 'limegreen'}} size={25}></TwitterLogo>
+                    </a>
+                  </MenuListItem>
+                  <MenuListItem>
+                    <a target="_blank" href="http://tiktok.com/gen.wav" style={{textDecoration:"none"}}>
+                      <TiktokLogo style={{color: 'limegreen'}} size={25}></TiktokLogo>
+                    </a>
+                  </MenuListItem>
+                  <MenuListItem>
+                    <a target="_blank" href="https://soundcloud.com/genwav" style={{textDecoration:"none"}}>
+                      <SoundcloudLogo style={{color: 'limegreen'}} size={25}></SoundcloudLogo>
+                    </a>
+                  </MenuListItem>
+                  <MenuListItem>
+                    <a target="_blank" href="https://www.youtube.com/@genwav" style={{textDecoration:"none"}}>
+                      <YoutubeLogo style={{color: 'limegreen'}} size={25}></YoutubeLogo>
+                    </a>
+                  </MenuListItem>
+                  <MenuListItem>
+                    <a target="_blank" href="https://open.spotify.com/artist/5p2tmJU9R8sopvcXdXBbsV?si=vVx-nEfmS2WlKXoXk0XHeA" style={{textDecoration:"none"}}>
+                      <SpotifyLogo style={{color: 'limegreen'}} size={25}></SpotifyLogo>
+                    </a>
+                  </MenuListItem>
+                  <MenuListItem>
+                    <a target="_blank" href="https://music.apple.com/us/artist/genesis-barrios/1194186719" style={{textDecoration:"none"}}>
+                      <AppleLogo style={{color: 'limegreen'}} size={25}></AppleLogo>
+                    </a>
+                  </MenuListItem>
+                </MenuList>
+            </ThemeProvider>
+          </div>
           <ThemeProvider theme={blue}>
-            <Window style={{width:'80%', minHeight: '200px', marginTop:'20%'}}>
+            <Window style={{width:'80%', minHeight: '200px', marginTop:'5%'}}>
               <WindowHeader> About</WindowHeader>
               <WindowContent>
               <p> Hi, my name is gen.wav. I'm a Cuban-American Artist, Producer, and Software Engineer. 👨‍💻 I like to say I'm a creative because aside from programming, and making music, I do photography, I dabble in videography and graphic design, I do live coding, I DJ, and I make YouTube videos. So, take a look around, you can stream my music, watch my music videos, buy beats, or Music NFTS, or just vibe.</p>
@@ -102,7 +117,7 @@ const GenWavOS = (props) => {
         </Grid>
         <Grid item sm={4}>
          <ThemeProvider theme={blue}>
-            <Window style={{width:'80%', minHeight: '200px', marginTop:'20%'}}>
+            <Window style={{width:'80%', minHeight: '200px', marginTop:'17%'}}>
               <WindowHeader>🎤 Stream My Music 🎤</WindowHeader>
               <WindowContent>
               {/* <iframe width="100%" height="166" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/genesisbarrios/sets/my-music?si=62d1c9cdb8d54729a394f3c43d5d8d1b"></iframe>
