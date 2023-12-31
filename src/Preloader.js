@@ -55,6 +55,7 @@ export default class Preloader extends EventEmitter {
 
     secondIntro() {
         return new Promise((resolve) => {
+            
             this.secondTimeline = new GSAP.timeline();
 
             this.secondTimeline
@@ -65,13 +66,6 @@ export default class Preloader extends EventEmitter {
                         y: 0,
                         z: 0,
                         ease: "power1.out",
-                    },
-                    "same"
-                )
-                .to(
-                    this.camera.orthographicCamera.position,
-                    {
-                        y: 7,
                     },
                     "same"
                 )
@@ -88,7 +82,7 @@ export default class Preloader extends EventEmitter {
                     this.roomChildren.akai_lp.position,
                     {
                         x: -5.638711,
-                        y: 6.5618,
+                        y: 6.2,
                         z: 1.3243,
                     },
                     "same"
@@ -174,7 +168,7 @@ export default class Preloader extends EventEmitter {
                     this.roomChildren.krkspeakerl_rubber_0001.position,
                     {
                         x: -10.638711,
-                        y: 6.5618,
+                        y: 6.2,
                         z: 0.3243,
                     },
                     "same"
@@ -195,7 +189,7 @@ export default class Preloader extends EventEmitter {
                     this.roomChildren.krkspeakerl_rubber_0002.position,
                     {
                         x: 10.638711,
-                        y: 6.5618,
+                        y: 6.2,
                         z: 0.3243,
                     },
                     "same"
@@ -205,11 +199,34 @@ export default class Preloader extends EventEmitter {
                 },
                 "same"
                 )
+                .to(
+                    this.camera.orthographicCamera.position,
+                    {
+                        
+                        y:5,
+                        //y: zoomInValues.cameraPositionY,
+                        //duration: 3,
+                        onUpdate: () => {
+                            this.camera.orthographicCamera.lookAt(0,1,0);
+                        },
+                    }
+                )
+                .to(this.camera.orthographicCamera, {
+                    zoom: 2,
+                    duration: 1,
+                    onUpdate: () => {
+                        // Update the camera's projection matrix during the animation
+                        this.camera.orthographicCamera.updateProjectionMatrix();
+                    }
+                })
                 .to(".arrow-svg-wrapper", {
                     opacity: 1,
                     onComplete: resolve,
                 });
-        });
+
+                // Call resolve to indicate that the animation is complete
+                this.secondTimeline.call(resolve);
+                });
     }
 
     onScroll(e) {
@@ -278,9 +295,9 @@ export default class Preloader extends EventEmitter {
     }
 
     update() {
-        if (this.moveFlag) {
-            this.move();
-        }
+        // if (this.moveFlag) {
+        //     this.move();
+        // }
 
         if (this.scaleFlag) {
             this.scale();

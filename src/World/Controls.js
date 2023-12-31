@@ -3,6 +3,7 @@ import Experience from "../Experience.js";
 import GSAP from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 import ASScroll from "@ashthornton/asscroll";
+import * as Tone from 'tone'
 
 export default class Controls {
     constructor() {
@@ -13,6 +14,7 @@ export default class Controls {
         this.time = this.experience.time;
         this.camera = this.experience.camera;
         this.room = this.experience.world.room.actualRoom;
+        this.synth = new Tone.Synth().toDestination();
         // this.room.children.forEach((child) => {
         //     if (child.type === "RectAreaLight") {
         //         this.rectLight = child;
@@ -24,7 +26,8 @@ export default class Controls {
 
         //this.setSmoothScroll();
         //this.setScrollTrigger();
-        this.addButtonToScene();
+        //this.addButtonToScene();
+        this.unHideButton();
 
         GSAP.registerPlugin(ScrollTrigger);
 
@@ -38,54 +41,24 @@ export default class Controls {
             //this.setSmoothScroll();
         }
         //this.setScrollTrigger();
+       window.addEventListener("click", this.onMouseClick);
     }
+    unHideButton() {
+        //unhide elements
+        const welcomeBox = document.getElementById("welcomeBox");
+       
+        
+        //set position
+        const position = new THREE.Vector3(0.1, 3.25, 5);
+        const top = window.innerHeight /2 - 350 + "px";
+        const left = window.innerWidth/2 - 150 + "px";
 
-    addButtonToScene() {
-        // Create a geometry and material for the button
-        const buttonGeometry = new THREE.BoxGeometry(1, 0.2, 0.1); // Adjust the size as needed
-        const buttonMaterial = new THREE.MeshBasicMaterial({ color: 0x24a0ed }); // Green color, adjust as needed
-
-        // Create the button mesh
-        const buttonMesh = new THREE.Mesh(buttonGeometry, buttonMaterial);
-
-        // Position the button in 3D space
-        buttonMesh.position.set(0, 4, 5); // Adjust the position as needed
-
-        // Create a canvas element for text
-        const canvas = document.createElement("canvas");
-        const context = canvas.getContext("2d");
-        context.font = "24px Arial"; // Adjust the font and size as needed
-        context.fillStyle = "white"; // Text color
-        context.fillText("Enter genwavOS", 10, 30); // Position and text content
-
-        // Create a texture from the canvas
-        const texture = new THREE.CanvasTexture(canvas);
-        const textMaterial = new THREE.MeshBasicMaterial({ map: texture });
-
-        // Create a plane for the text
-        const textGeometry = new THREE.PlaneGeometry(1, 0.1); // Adjust the size as needed
-        const textMesh = new THREE.Mesh(textGeometry, textMaterial);
-
-        // Position the text relative to the button
-        textMesh.position.set(0, 0.4, 5); // Adjust the position as needed
-
-        // Group the button and text meshes together
-        const buttonGroup = new THREE.Group();
-        buttonGroup.add(buttonMesh);
-        buttonGroup.add(textMesh);
-        buttonGroup.cursor = "pointer";
-
-        // Add the button group to the scene
-        this.scene.add(buttonGroup);
-
-        // Listen for interactions with the button, e.g., clicking
-        buttonGroup.addEventListener("click", (event) => {
-            // Handle the button click event here
-            event.stopPropagation();
-            console.log("Button clicked!");
-        });
+        // Set the style properties for the button and welcome elements
+        welcomeBox.style.top = top;
+        welcomeBox.style.left = left;
+        welcomeBox.classList.remove("hide");
     }
-
+    
     setupASScroll() {
         // https://github.com/ashthornton/asscroll
         const asscroll = new ASScroll({
@@ -135,382 +108,55 @@ export default class Controls {
         this.asscroll = this.setupASScroll();
     }
 
-    setScrollTrigger() {
-        ScrollTrigger.matchMedia({
-            //Desktop
-            "(min-width: 969px)": () => {
-                // console.log("fired desktop");
-
-                this.room.scale.set(0.11, 0.11, 0.11);
-                this.rectLight.width = 0.5;
-                this.rectLight.height = 0.7;
-                this.camera.orthographicCamera.position.set(0, 6.5, 10);
-                this.room.position.set(0, 0, 0);
-                // First section -----------------------------------------
-                this.firstMoveTimeline = new GSAP.timeline({
-                    scrollTrigger: {
-                        trigger: ".first-move",
-                        start: "top top",
-                        end: "bottom bottom",
-                        scrub: 0.6,
-                        // markers: true,
-                        invalidateOnRefresh: true,
-                    },
-                });
-                this.firstMoveTimeline.fromTo(
-                    this.room.position,
-                    { x: 0, y: 0, z: 0 },
-                    {
-                        x: () => {
-                            return this.sizes.width * 0.0014;
-                        },
-                    }
-                );
-
-                // Second section -----------------------------------------
-                this.secondMoveTimeline = new GSAP.timeline({
-                    scrollTrigger: {
-                        trigger: ".second-move",
-                        start: "top top",
-                        end: "bottom bottom",
-                        scrub: 0.6,
-                        invalidateOnRefresh: true,
-                    },
-                })
-                    .to(
-                        this.room.position,
-                        {
-                            x: () => {
-                                return 1;
-                            },
-                            z: () => {
-                                return this.sizes.height * 0.0032;
-                            },
-                        },
-                        "same"
-                    )
-                    .to(
-                        this.room.scale,
-                        {
-                            x: 0.4,
-                            y: 0.4,
-                            z: 0.4,
-                        },
-                        "same"
-                    )
-                    .to(
-                        this.rectLight,
-                        {
-                            width: 0.5 * 4,
-                            height: 0.7 * 4,
-                        },
-                        "same"
-                    );
-
-                // Third section -----------------------------------------
-                this.thirdMoveTimeline = new GSAP.timeline({
-                    scrollTrigger: {
-                        trigger: ".third-move",
-                        start: "top top",
-                        end: "bottom bottom",
-                        scrub: 0.6,
-                        invalidateOnRefresh: true,
-                    },
-                }).to(this.camera.orthographicCamera.position, {
-                    y: 1.5,
-                    x: -4.1,
-                });
-            },
-
-            // Mobile
-            "(max-width: 968px)": () => {
-                // console.log("fired mobile");
-
-                // Resets
-                this.room.scale.set(0.07, 0.07, 0.07);
-                this.room.position.set(0, 0, 0);
-                this.rectLight.width = 0.3;
-                this.rectLight.height = 0.4;
-                this.camera.orthographicCamera.position.set(0, 6.5, 10);
-
-                // First section -----------------------------------------
-                this.firstMoveTimeline = new GSAP.timeline({
-                    scrollTrigger: {
-                        trigger: ".first-move",
-                        start: "top top",
-                        end: "bottom bottom",
-                        scrub: 0.6,
-                        // invalidateOnRefresh: true,
-                    },
-                }).to(this.room.scale, {
-                    x: 0.1,
-                    y: 0.1,
-                    z: 0.1,
-                });
-
-                // Second section -----------------------------------------
-                this.secondMoveTimeline = new GSAP.timeline({
-                    scrollTrigger: {
-                        trigger: ".second-move",
-                        start: "top top",
-                        end: "bottom bottom",
-                        scrub: 0.6,
-                        invalidateOnRefresh: true,
-                    },
-                })
-                    .to(
-                        this.room.scale,
-                        {
-                            x: 0.25,
-                            y: 0.25,
-                            z: 0.25,
-                        },
-                        "same"
-                    )
-                    .to(
-                        this.rectLight,
-                        {
-                            width: 0.3 * 3.4,
-                            height: 0.4 * 3.4,
-                        },
-                        "same"
-                    )
-                    .to(
-                        this.room.position,
-                        {
-                            x: 1.5,
-                        },
-                        "same"
-                    );
-
-                // Third section -----------------------------------------
-                this.thirdMoveTimeline = new GSAP.timeline({
-                    scrollTrigger: {
-                        trigger: ".third-move",
-                        start: "top top",
-                        end: "bottom bottom",
-                        scrub: 0.6,
-                        invalidateOnRefresh: true,
-                    },
-                }).to(this.room.position, {
-                    z: -4.5,
-                });
-            },
-
-            // all
-            all: () => {
-                this.sections = document.querySelectorAll(".section");
-                this.sections.forEach((section) => {
-                    this.progressWrapper =
-                        section.querySelector(".progress-wrapper");
-                    this.progressBar = section.querySelector(".progress-bar");
-
-                    if (section.classList.contains("right")) {
-                        GSAP.to(section, {
-                            borderTopLeftRadius: 10,
-                            scrollTrigger: {
-                                trigger: section,
-                                start: "top bottom",
-                                end: "top top",
-                                scrub: 0.6,
-                            },
-                        });
-                        GSAP.to(section, {
-                            borderBottomLeftRadius: 700,
-                            scrollTrigger: {
-                                trigger: section,
-                                start: "bottom bottom",
-                                end: "bottom top",
-                                scrub: 0.6,
-                            },
-                        });
-                    } else {
-                        GSAP.to(section, {
-                            borderTopRightRadius: 10,
-                            scrollTrigger: {
-                                trigger: section,
-                                start: "top bottom",
-                                end: "top top",
-                                scrub: 0.6,
-                            },
-                        });
-                        GSAP.to(section, {
-                            borderBottomRightRadius: 700,
-                            scrollTrigger: {
-                                trigger: section,
-                                start: "bottom bottom",
-                                end: "bottom top",
-                                scrub: 0.6,
-                            },
-                        });
-                    }
-                    GSAP.from(this.progressBar, {
-                        scaleY: 0,
-                        scrollTrigger: {
-                            trigger: section,
-                            start: "top top",
-                            end: "bottom bottom",
-                            scrub: 0.4,
-                            pin: this.progressWrapper,
-                            pinSpacing: false,
-                        },
-                    });
-                });
-
-                // All animations
-                // First section -----------------------------------------
-                this.firstCircle = new GSAP.timeline({
-                    scrollTrigger: {
-                        trigger: ".first-move",
-                        start: "top top",
-                        end: "bottom bottom",
-                        scrub: 0.6,
-                    },
-                }).to(this.circleFirst.scale, {
-                    x: 3,
-                    y: 3,
-                    z: 3,
-                });
-
-                // Second section -----------------------------------------
-                this.secondCircle = new GSAP.timeline({
-                    scrollTrigger: {
-                        trigger: ".second-move",
-                        start: "top top",
-                        end: "bottom bottom",
-                        scrub: 0.6,
-                    },
-                })
-                    .to(
-                        this.circleSecond.scale,
-                        {
-                            x: 3,
-                            y: 3,
-                            z: 3,
-                        },
-                        "same"
-                    )
-                    .to(
-                        this.room.position,
-                        {
-                            y: 0.7,
-                        },
-                        "same"
-                    );
-
-                // Third section -----------------------------------------
-                this.thirdCircle = new GSAP.timeline({
-                    scrollTrigger: {
-                        trigger: ".third-move",
-                        start: "top top",
-                        end: "bottom bottom",
-                        scrub: 0.6,
-                    },
-                }).to(this.circleThird.scale, {
-                    x: 3,
-                    y: 3,
-                    z: 3,
-                });
-
-                // Mini Platform Animations
-                this.secondPartTimeline = new GSAP.timeline({
-                    scrollTrigger: {
-                        trigger: ".third-move",
-                        start: "center center",
-                    },
-                });
-
-                this.room.children.forEach((child) => {
-                    if (child.name === "Mini_Floor") {
-                        this.first = GSAP.to(child.position, {
-                            x: -5.44055,
-                            z: 13.6135,
-                            duration: 0.3,
-                        });
-                    }
-                    if (child.name === "Mailbox") {
-                        this.second = GSAP.to(child.scale, {
-                            x: 1,
-                            y: 1,
-                            z: 1,
-                            duration: 0.3,
-                        });
-                    }
-                    if (child.name === "Lamp") {
-                        this.third = GSAP.to(child.scale, {
-                            x: 1,
-                            y: 1,
-                            z: 1,
-                            ease: "back.out(2)",
-                            duration: 0.3,
-                        });
-                    }
-                    if (child.name === "FloorFirst") {
-                        this.fourth = GSAP.to(child.scale, {
-                            x: 1,
-                            y: 1,
-                            z: 1,
-                            ease: "back.out(2)",
-                            duration: 0.3,
-                        });
-                    }
-                    if (child.name === "FloorSecond") {
-                        this.fifth = GSAP.to(child.scale, {
-                            x: 1,
-                            y: 1,
-                            z: 1,
-                            duration: 0.3,
-                        });
-                    }
-                    if (child.name === "FloorThird") {
-                        this.sixth = GSAP.to(child.scale, {
-                            x: 1,
-                            y: 1,
-                            z: 1,
-                            ease: "back.out(2)",
-                            duration: 0.3,
-                        });
-                    }
-                    if (child.name === "Dirt") {
-                        this.seventh = GSAP.to(child.scale, {
-                            x: 1,
-                            y: 1,
-                            z: 1,
-                            ease: "back.out(2)",
-                            duration: 0.3,
-                        });
-                    }
-                    if (child.name === "Flower1") {
-                        this.eighth = GSAP.to(child.scale, {
-                            x: 1,
-                            y: 1,
-                            z: 1,
-                            ease: "back.out(2)",
-                            duration: 0.3,
-                        });
-                    }
-                    if (child.name === "Flower2") {
-                        this.ninth = GSAP.to(child.scale, {
-                            x: 1,
-                            y: 1,
-                            z: 1,
-                            ease: "back.out(2)",
-                            duration: 0.3,
-                        });
-                    }
-                });
-                this.secondPartTimeline.add(this.first);
-                this.secondPartTimeline.add(this.second);
-                this.secondPartTimeline.add(this.third);
-                this.secondPartTimeline.add(this.fourth, "-=0.2");
-                this.secondPartTimeline.add(this.fifth, "-=0.2");
-                this.secondPartTimeline.add(this.sixth, "-=0.2");
-                this.secondPartTimeline.add(this.seventh, "-=0.2");
-                this.secondPartTimeline.add(this.eighth);
-                this.secondPartTimeline.add(this.ninth, "-=0.1");
-            },
-        });
+    playSynth() {
+        this.mixer = new THREE.AnimationMixer(this.actualRoom);
+        //this.swim = this.mixer.clipAction(this.room.animations[0]);
+        //this.swim.play();
+        if(this.roomChildren){
+            console.log(this.roomChildren)
+            this.roomChildren["akai_lp"].addEventListener("click", () => {
+                console.log("you're playing the piano");
+                //play a random note
+                const notes = ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C']
+                this.synth.triggerAttackRelease("C4", "8n");
+                console.log('play the piano')
+            });
+        }
     }
+
+    onMouseClick(event) {
+        // if(this.camera){
+        //     console.log('mouse click')
+        //     // Calculate the mouse position in normalized device coordinates
+        //     const mouse = new THREE.Vector2();
+        //     mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+        //     mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+        
+        //     console.log(this.camera);
+        //     // Update the raycaster with the mouse position and camera
+        //     this.raycaster.setFromCamera(mouse, this.camera.orthographicCamera);
+        
+        //     // Find objects intersecting with the ray
+        //     const intersects = this.raycaster.intersectObjects(this.room.roomChildren);
+        
+        //     if (intersects.length > 0) {
+        //     // Handle the intersection here
+        //     const clickedObject = intersects[0].object;
+        
+        //     if (clickedObject.name === "akai_lp") {
+        //         // Perform actions specific to the "akai_lp" object
+        //         console.log("Clicked akai_lp object!");
+        //         this.playSynth();
+        //     }
+        //     }
+        // }
+
+       // this.playSynth();
+      }
+
+     
+
+   
     resize() {}
 
     update() {}

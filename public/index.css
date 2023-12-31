@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding:0;
+  font-family: 'Heebo', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f0efeb;
+  color:black;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: 800;
+  text-shadow: -0.1rem 0.1rem 0 rgba(29, 30, 28, 0.26)
+}
+
+p{
+  font-weight: 300;
+}
+
+#nav{
+  background-color: #23272A;
+}
+
+#welcomeBox{
+  display:inline-block;
+  position: absolute; /* Use absolute positioning for precise placement */
+  top: 5px; /* Vertically center the element */
+  left: 5px; /* Horizontally center the element */
+  width:15%;
+  height:200px;
+  background-color:#C0C0C0 !important;
+}
+
+.titleDiv{
+  width:100%;
+}
+
+.titleDiv button{
+  background:#C0C0C0;
+  border-width:1px;
+  border-style:solid;
+  border-color:#FFFFFF #808080 #808080 #FFFFFF;
+}
+
+.image{
+  background:#000080;
+  display:inline;
+  font-size:12px;
+  color:white;
+  font-size: bold;
+}
+
+.title{
+  width:80%;
+  background:#000080;
+  display:inline;
+  font-size:12px;
+  font-family:Tahoma!important;
+  color:white;
+  font-size: bold;
+}
+
+#welcome{
+  color:white;
+  background-color:#C0C0C0!important;
+  color:black;
+  text-align:center;
+  margin-bottom:15%;
+  font-family:"MS Sans Serif";
+}
+
+.hide{
+  display:none;
+}
+
+#enter{
+  background:#C0C0C0;
+  border-width:1px;
+  border-style:solid;
+  border-color:#FFFFFF #808080 #808080 #FFFFFF;
+  padding:5px 10px;
+  font-size:12px;
+  font-family:"MS Sans Serif";
+  text-decoration:none;
+  cursor:pointer;
+  color:black;
+  margin-left:45%;
+}
+
+#enter:hover{
+  color:#585858;
+}
+
+
+a{
+  color: #65edff;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+footer{
+  background-color: #23272A;
+  color:white;
+  text-align: center;
+  padding:10px;
+}

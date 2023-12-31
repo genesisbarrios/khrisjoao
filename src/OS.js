@@ -70,7 +70,7 @@ const GenWavOS = (props) => {
           <div style={{marginTop:"10%", marginLeft:"5%"}}>
             <ThemeProvider theme={brick}>
                 <Window style={{width:'500px', minHeight: '700px'}}>
-                  <WindowHeader>Beats</WindowHeader>
+                  <WindowHeader><img src="https://drive.google.com/uc?export=view&id=1Uvtq5e8SooDABw2cRESMMeLLcYc_tee3" width="20" height="20"/> Beats</WindowHeader>
                   <WindowContent>
                     <iframe 
                         src="https://player.beatstars.com/?storeId=140652" 
@@ -113,7 +113,7 @@ const GenWavOS = (props) => {
 
           <ThemeProvider theme={blue}>
               <Window style={{width:'500px', minHeight: '800px', marginTop:'20px'}}>
-                <WindowHeader>Music NFTs 💿</WindowHeader>
+                <WindowHeader>💿 Music NFTs</WindowHeader>
                 <WindowContent>
                   <Frame style={{marginBottom:"10px"}}>
                     For those that don't know about Music NFTs, they are digital collectibles. You can collect(or mint) to own a rare, and unique copy of one of my songs. These collectibles will give you access to different features on my website.. It may be free beats, sample packs, or sneak peeks!

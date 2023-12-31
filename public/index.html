@@ -7,12 +7,26 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, target-densityDpi=device-dpi, minimal-ui' />
     <title>genwavOS</title>
   </head>
-  <body class="light-theme">
-    
-    <div id="root"></div>
+  <body >
    
+    <div id="root"></div>
+    <div id="welcomeBox" class="hide">
+      <div class="titleDiv">
+        <img src="https://drive.google.com/uc?export=view&id=1Uvtq5e8SooDABw2cRESMMeLLcYc_tee3" width="25" height="25" class="inage" />
+        <p class="title" >genwav95</p>
+        <button>X</button>
+        <button>?</button>
+      </div>
+      <div style="height:80%;background-color:#C0C0C0!important; padding:50px 50px;" >
+        <p id="welcome"> Welcome to genwavOS </p>
+        <a id="enter" href="/os" >enter</a>
+      </div>
+    </div>
+    
+
     <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
     
     <script type="module" src="/main.js"></script>
+   
   </body>
 </html>
