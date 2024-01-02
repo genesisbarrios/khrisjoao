@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Experience from "./Experience"; // Import the original Experience class
+import { Hourglass } from "react95";
 
 const ExperienceWrapper = () => {
   const canvasRef = useRef(null);
@@ -20,9 +21,7 @@ const ExperienceWrapper = () => {
         <div class="preloader">
       <div class="preloader-wrapper">
         <div class="loading">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
+        <Hourglass size={32} style={{ margin: 20 }} />;
         </div>
       </div>
     </div>

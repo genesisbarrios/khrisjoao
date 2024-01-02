@@ -2,6 +2,7 @@ import { EventEmitter } from "events";
 import Experience from "./Experience.js";
 import GSAP from "gsap";
 import convert from "./Utils/convertDivsToSpans.js";
+import * as THREE from "three";
 
 export default class Preloader extends EventEmitter {
     constructor() {
@@ -22,6 +23,7 @@ export default class Preloader extends EventEmitter {
             this.setAssets();
             this.playIntro();
             this.playSecondIntro();
+           
         });
     }
 
@@ -37,10 +39,25 @@ export default class Preloader extends EventEmitter {
         console.log(this.roomChildren);
     }
 
+    unHideButton() {
+        //unhide elements
+        const welcomeBox = document.getElementById("welcomeBox");
+        
+        //set position
+        const position = new THREE.Vector3(0.1, 3.25, 5);
+        const top = window.innerHeight /2 - 250 + "px";
+        const left = window.innerWidth/2 - 150 + "px";
+
+        // Set the style properties for the button and welcome elements
+        welcomeBox.style.top = top;
+        welcomeBox.style.left = left;
+        welcomeBox.classList.remove("hide");
+    }
+
     firstIntro() {
         return new Promise((resolve) => {
             this.timeline = new GSAP.timeline();
-            this.timeline.set(".animatedis", { y: 0, yPercent: 100 });
+            //this.timeline.set(".animatedis", { y: 0, yPercent: 100 });
             this.timeline.to(".preloader", {
                 opacity: 0,
                 delay: 1,
@@ -48,6 +65,8 @@ export default class Preloader extends EventEmitter {
                     document
                         .querySelector(".preloader")
                         .classList.add("hidden");
+
+                       
                 },
             });
         });
@@ -221,12 +240,13 @@ export default class Preloader extends EventEmitter {
                 })
                 .to(".arrow-svg-wrapper", {
                     opacity: 1,
-                    onComplete: resolve,
+                    onComplete: resolve
                 });
 
                 // Call resolve to indicate that the animation is complete
                 this.secondTimeline.call(resolve);
                 });
+
     }
 
     onScroll(e) {
@@ -247,6 +267,7 @@ export default class Preloader extends EventEmitter {
             console.log("swipped up");
             this.removeEventListeners();
             this.playSecondIntro();
+         
         }
         this.intialY = null;
     }
@@ -271,6 +292,8 @@ export default class Preloader extends EventEmitter {
     async playSecondIntro() {
         this.moveFlag = false;
         await this.secondIntro();
+        this.unHideButton();
+        
         this.scaleFlag = false;
         this.emit("enablecontrols");
     }

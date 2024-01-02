@@ -20,14 +20,14 @@ export default class Controls {
         //         this.rectLight = child;
         //     }
         // });
-        this.circleFirst = this.experience.world.floor.circleFirst;
-        this.circleSecond = this.experience.world.floor.circleSecond;
-        this.circleThird = this.experience.world.floor.circleThird;
+        // this.circleFirst = this.experience.world.floor.circleFirst;
+        // this.circleSecond = this.experience.world.floor.circleSecond;
+        // this.circleThird = this.experience.world.floor.circleThird;
 
         //this.setSmoothScroll();
         //this.setScrollTrigger();
         //this.addButtonToScene();
-        this.unHideButton();
+        
 
         GSAP.registerPlugin(ScrollTrigger);
 
@@ -43,21 +43,7 @@ export default class Controls {
         //this.setScrollTrigger();
        window.addEventListener("click", this.onMouseClick);
     }
-    unHideButton() {
-        //unhide elements
-        const welcomeBox = document.getElementById("welcomeBox");
-       
-        
-        //set position
-        const position = new THREE.Vector3(0.1, 3.25, 5);
-        const top = window.innerHeight /2 - 350 + "px";
-        const left = window.innerWidth/2 - 150 + "px";
-
-        // Set the style properties for the button and welcome elements
-        welcomeBox.style.top = top;
-        welcomeBox.style.left = left;
-        welcomeBox.classList.remove("hide");
-    }
+  
     
     setupASScroll() {
         // https://github.com/ashthornton/asscroll
