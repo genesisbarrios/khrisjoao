@@ -26,17 +26,13 @@ p{
   position: absolute; /* Use absolute positioning for precise placement */
   top: 5px; /* Vertically center the element */
   left: 5px; /* Horizontally center the element */
-  width:15%;
+  width:25%;
   height:200px;
-  background-color:#C0C0C0 !important;
-}
-
-.titleDiv{
-  width:100%;
+  background-color:#535353 !important;
 }
 
 .titleDiv button{
-  background:#C0C0C0;
+  background:#535353;
   border-width:1px;
   border-style:solid;
   border-color:#FFFFFF #808080 #808080 #FFFFFF;
@@ -52,7 +48,7 @@ p{
 
 .title{
   width:80%;
-  background:#000080;
+  background:#00000d;
   display:inline;
   font-size:12px;
   font-family:Tahoma!important;
@@ -62,8 +58,8 @@ p{
 
 #welcome{
   color:white;
-  background-color:#C0C0C0!important;
-  color:black;
+  background-color:#535353!important;
+  color:#39ea53;
   text-align:center;
   margin-bottom:15%;
   font-family:"MS Sans Serif";

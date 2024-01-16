@@ -21,7 +21,7 @@ const ExperienceWrapper = () => {
         <div class="preloader">
       <div class="preloader-wrapper">
         <div class="loading">
-        <Hourglass size={32} style={{ margin: 20 }} />;
+        <Hourglass size={32} style={{ margin: 20 }} />
         </div>
       </div>
     </div>

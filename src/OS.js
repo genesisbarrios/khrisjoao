@@ -31,7 +31,7 @@ import shelbiTeal from 'react95/dist/themes/shelbiTeal';
 import { Avatar } from "react95";
 import React from "react";
 import { Mail, Mail2, CdMusic, cdMusicData, MediaVideo, mediaVideoData, Mic } from '@react95/icons';
-import { GlobeSimple, InstagramLogo, TwitterLogo, TiktokLogo, SoundcloudLogo, SpotifyLogo, AppleLogo, YoutubeLogo, GithubLogo  } from "@phosphor-icons/react";
+import { GlobeSimple, InstagramLogo, TwitterLogo, TiktokLogo, SoundcloudLogo, DiscordLogo, SpotifyLogo, AppleLogo, YoutubeLogo, GithubLogo  } from "@phosphor-icons/react";
 import axios from "axios"; 
 
 const GenWavOS = (props) => {
@@ -115,9 +115,9 @@ const GenWavOS = (props) => {
 
       {showModal && 
         <dialog id="dialog" style={{overflow:"hidden", margin:"25% auto", width:"50%", height:"250px", zIndex:"1", border:"1px solid black", borderRadius:"5px", boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}>
-            <ThemeProvider theme={original}>
+            <ThemeProvider theme={millenium}>
             <Window style={{width:'100%', height:"100%", margin:"0 auto", minHeight: '200px', marginBottom:"5%"}}>
-              <WindowHeader>Please provide your e-mail for access to the sample pack.<button onClick={handleCloseSignUp} style={{float:"right", width:'25px', marginTop:'5px'}}>X</button></WindowHeader>
+              <WindowHeader>Please provide your e-mail for access to the sample pack. <img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/hand.ico" width="20px"></img><button onClick={handleCloseSignUp} style={{float:"right", width:'25px', marginTop:'5px'}}>X</button></WindowHeader>
                 <p style={{fontSize:'0.7em', color:"darkred", margin:"10px 0", textAlign:"center"}}>You will not be spammed, only for sending beats and loops</p>
                 <div style={{marginTop:"2%", textAlign:"center"}}>
                   <form>
@@ -159,7 +159,7 @@ const GenWavOS = (props) => {
                       />
                       <p style={{display:'inline', margin:"0 10px"}}>artist</p>
                       <br></br>
-                      <button onClick={handleSubmit} style={{marginTop:"20px", padding:"5px 10px"}}>Acquire the Wav Pack</button>
+                      <button onClick={handleSubmit} style={{marginTop:"20px", padding:"5px 10px"}}>Acquire the Wav Pack </button>
                       {message && <Alert severity="success">{message}</Alert>}
                       {alert && <Alert severity="error">{alert}</Alert>}
                     </div>
@@ -174,7 +174,7 @@ const GenWavOS = (props) => {
         <Grid item sm={12} md={4} order={{ sm: 3, md: 1 }} style={{marginTop:"6%"}}> 
           <ThemeProvider theme={shelbiTeal}>
             <Window style={{width:'90%', minHeight: '350px'}}>
-              <WindowHeader>  Music Videos </WindowHeader>
+              <WindowHeader><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_111.ico" width="25" height="25" class="inage" />  Music Videos </WindowHeader>
               <WindowContent>
                 <iframe style={{borderRadius:"12px"}} width="100%" height="315" src="https://www.youtube.com/embed/4eYVvsm9U3s?si=rS7RZBCNAyOmUj8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </WindowContent>
@@ -184,7 +184,7 @@ const GenWavOS = (props) => {
         <Grid item sm={12} md={4} order={{ sm: 6, md: 4 }}  className="beatsandservices"> 
           <ThemeProvider theme={azureOrange}>
               <Window style={{width:'90%', minHeight: '700px', marginBottom:"5%"}}>
-                <WindowHeader><img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTccYT9o2RnZLeyb6MZZ0ewEfgArKQUE9r50iHsi9p8mmU_i3nKQtYdzvRr6XhyOPq4ZoI14W-BQ2xJ-ovKnZDx2DBcmw=s2560" width="20" height="20"/> Beats</WindowHeader>
+                <WindowHeader><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_105.ico" width="20" height="20"/> Beats</WindowHeader>
                 <WindowContent>
                   <iframe 
                       src="https://player.beatstars.com/?storeId=140652" 
@@ -196,7 +196,7 @@ const GenWavOS = (props) => {
             </ThemeProvider>
             <ThemeProvider theme={coldGray}>
               <Window style={{width:'90%', minHeight: '200px'}}>
-                <WindowHeader style={{color:"white"}}> Services</WindowHeader>
+                <WindowHeader style={{color:"white"}}><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_120.ico" width="25" height="25" class="inage" /> Services</WindowHeader>
                     <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
                       <div className="slide">
                           <img src="carouselImages/mixing.png" />
@@ -225,7 +225,7 @@ const GenWavOS = (props) => {
           <Grid item sm={12} md={4} order={{ sm: 1, md: 2 }}>
               <ThemeProvider theme={modernDark}>
                 <MenuList inline="true" style={{paddingTop:"10px"}}>
-                  <MenuListItem disabled="true" style={{fontSize:"1.3rem"}}>Socials</MenuListItem>
+                  <MenuListItem disabled="true" style={{fontSize:"1.3rem", paddingBottom:"10px"}}>Socials</MenuListItem>
                   <MenuListItem>
                     <a target="_blank" href="http://instgram.com/gen.wav" style={{textDecoration:"none"}}>
                       <InstagramLogo style={{color: '#A6CAF0'}} size={25}></InstagramLogo>
@@ -261,12 +261,17 @@ const GenWavOS = (props) => {
                       <AppleLogo style={{color: '#A6CAF0'}} size={25}></AppleLogo>
                     </a>
                   </MenuListItem>
+                  <MenuListItem>
+                    <a target="_blank" href="https://discord.com/invite/ctEu8m9h" style={{textDecoration:"none"}}>
+                      <DiscordLogo style={{color: '#A6CAF0'}} size={25}></DiscordLogo>
+                    </a>
+                  </MenuListItem>
                 </MenuList>
             </ThemeProvider>
             
             <ThemeProvider theme={millenium}>
               <Window style={{width:'90%', minHeight: '200px', marginTop:'5%'}}>
-                <WindowHeader> About</WindowHeader>
+                <WindowHeader><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/vvexe32_1.ico" width="25" height="25" class="inage" /> About</WindowHeader>
                 <WindowContent>
                   <div style={{textAlign:"center"}}>
                     <Avatar size={100} src='avatar.png' />
@@ -280,7 +285,7 @@ const GenWavOS = (props) => {
           <Grid item sm={12} md={4} order={{ sm: 4, md: 5 }} className="theWavPack"> 
             <ThemeProvider theme={blue}>
               <Window style={{width:'90%', minHeight: '200px', marginBottom:"5%"}}>
-                <WindowHeader> The Wav Pack V.1 - Free Sample Pack</WindowHeader>
+                <WindowHeader><img class="image" src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/progman_30.ico" width="20px" ></img> The Wav Pack V.1 - Free Sample Pack</WindowHeader>
                   <div className="slide" onClick={handleOpenDialog}>
                     <img src="/WavPack.jpg" style={{width:"100%", cursor:"pointer"}} />
                   </div>
@@ -289,7 +294,7 @@ const GenWavOS = (props) => {
             
             <ThemeProvider theme={denim}>
               <Window style={{width:'90%', minHeight: '200px', marginTop:"5%"}}>
-                <WindowHeader> Gallery</WindowHeader>
+                <WindowHeader><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/wangimg_130.ico" width="20px"></img> Gallery</WindowHeader>
                     <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
                     
                       <div className="slide">
@@ -324,7 +329,7 @@ const GenWavOS = (props) => {
 
             <ThemeProvider theme={rainyDay}>
               <Window style={{width:'90%', minHeight: '200px', marginTop:"5%"}}>
-                <WindowHeader>Sign up to receive beats, loops and samples.</WindowHeader>
+                <WindowHeader><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mailnews_8.ico" width="20px"></img> Sign up to receive beats, loops and samples.</WindowHeader>
                   <div style={{marginTop:"5%", textAlign:"center"}}>
                     <form>
                       <p>Enter Your E-mail Address</p>  
@@ -378,7 +383,7 @@ const GenWavOS = (props) => {
           <Grid item sm={12} md={4} order={{ sm: 2, md: 3 }} style={{marginTop:"6%"}}>
           <ThemeProvider theme={slate}>
               <Window style={{width:'90%', minHeight: '200px'}}>
-                <WindowHeader>Stream My Music</WindowHeader>
+                <WindowHeader> <img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_116.ico" width="25" height="25" class="inage"/> Stream My Music</WindowHeader>
                 <WindowContent>
                 {/* <iframe width="100%" height="166" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/genesisbarrios/sets/my-music?si=62d1c9cdb8d54729a394f3c43d5d8d1b"></iframe>
                 */}
@@ -391,7 +396,7 @@ const GenWavOS = (props) => {
           <Grid item sm={12} md={4} order={{ sm: 7, md: 6 }} > 
             <ThemeProvider theme={aiee}>
                 <Window style={{width:'90%', minHeight: '800px'}}>
-                  <WindowHeader>💿 Digital Collectibles - Music NFTs</WindowHeader>
+                  <WindowHeader><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/cd_music.ico" width="25" height="25" class="inage" /> Digital Collectibles - Music NFTs</WindowHeader>
                   <WindowContent>
                     <Frame style={{marginBottom:"10px"}}>
                       For those that don't know about Music NFTs, they are digital collectibles. You can collect(or mint) to own a rare, and unique copy of one of my songs. These collectibles will give you access to different features on my website.. It may be free beats, sample packs, or sneak peeks!
