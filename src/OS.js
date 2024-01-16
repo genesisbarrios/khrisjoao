@@ -383,7 +383,7 @@ const GenWavOS = (props) => {
           <Grid item sm={12} md={4} order={{ sm: 2, md: 3 }} style={{marginTop:"6%"}}>
           <ThemeProvider theme={slate}>
               <Window style={{width:'90%', minHeight: '200px'}}>
-                <WindowHeader> <img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_116.ico" width="25" height="25" class="inage"/> Stream My Music</WindowHeader>
+                <WindowHeader> <img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_116.ico" width="20" height="20" class="inage"/> Stream My Music</WindowHeader>
                 <WindowContent>
                 {/* <iframe width="100%" height="166" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/genesisbarrios/sets/my-music?si=62d1c9cdb8d54729a394f3c43d5d8d1b"></iframe>
                 */}
