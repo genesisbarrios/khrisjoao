@@ -16,10 +16,21 @@ import { Carousel } from 'react-responsive-carousel';
 import brick from 'react95/dist/themes/brick';
 import blue from 'react95/dist/themes/blue';
 import original from 'react95/dist/themes/original';
+import millenium from 'react95/dist/themes/millenium';
+import vaporTeal from 'react95/dist/themes/vaporTeal';
 import modernDark from 'react95/dist/themes/modernDark';
-import { Avatar} from "react95";
+import azureOrange from 'react95/dist/themes/azureOrange';
+import denim from 'react95/dist/themes/denim';
+import coldGray from 'react95/dist/themes/coldGray';
+import matrix from 'react95/dist/themes/matrix';
+import rainyDay from 'react95/dist/themes/rainyDay';
+import aiee from 'react95/dist/themes/aiee';
+import slate from 'react95/dist/themes/slate';
+import shelbiTeal from 'react95/dist/themes/shelbiTeal';
+
+import { Avatar } from "react95";
 import React from "react";
-import { Modal } from 'react95';
+import { Mail, Mail2, CdMusic, cdMusicData, MediaVideo, mediaVideoData, Mic } from '@react95/icons';
 import { GlobeSimple, InstagramLogo, TwitterLogo, TiktokLogo, SoundcloudLogo, SpotifyLogo, AppleLogo, YoutubeLogo, GithubLogo  } from "@phosphor-icons/react";
 import axios from "axios"; 
 
@@ -104,7 +115,7 @@ const GenWavOS = (props) => {
 
       {showModal && 
         <dialog id="dialog" style={{overflow:"hidden", margin:"25% auto", width:"50%", height:"250px", zIndex:"1", border:"1px solid black", borderRadius:"5px", boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}>
-            <ThemeProvider theme={blue}>
+            <ThemeProvider theme={original}>
             <Window style={{width:'100%', height:"100%", margin:"0 auto", minHeight: '200px', marginBottom:"5%"}}>
               <WindowHeader>Please provide your e-mail for access to the sample pack.<button onClick={handleCloseSignUp} style={{float:"right", width:'25px', marginTop:'5px'}}>X</button></WindowHeader>
                 <p style={{fontSize:'0.7em', color:"darkred", margin:"10px 0", textAlign:"center"}}>You will not be spammed, only for sending beats and loops</p>
@@ -161,9 +172,9 @@ const GenWavOS = (props) => {
           
       <Grid container spacing={3} style={{padding: "20px"}}> 
         <Grid item sm={12} md={4} order={{ sm: 3, md: 1 }} style={{marginTop:"6%"}}> 
-          <ThemeProvider theme={brick}>
+          <ThemeProvider theme={shelbiTeal}>
             <Window style={{width:'90%', minHeight: '350px'}}>
-              <WindowHeader> Music Videos </WindowHeader>
+              <WindowHeader>  Music Videos </WindowHeader>
               <WindowContent>
                 <iframe style={{borderRadius:"12px"}} width="100%" height="315" src="https://www.youtube.com/embed/4eYVvsm9U3s?si=rS7RZBCNAyOmUj8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
               </WindowContent>
@@ -171,7 +182,7 @@ const GenWavOS = (props) => {
           </ThemeProvider>
         </Grid>
         <Grid item sm={12} md={4} order={{ sm: 6, md: 4 }}  className="beatsandservices"> 
-          <ThemeProvider theme={brick}>
+          <ThemeProvider theme={azureOrange}>
               <Window style={{width:'90%', minHeight: '700px', marginBottom:"5%"}}>
                 <WindowHeader><img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTccYT9o2RnZLeyb6MZZ0ewEfgArKQUE9r50iHsi9p8mmU_i3nKQtYdzvRr6XhyOPq4ZoI14W-BQ2xJ-ovKnZDx2DBcmw=s2560" width="20" height="20"/> Beats</WindowHeader>
                 <WindowContent>
@@ -183,9 +194,9 @@ const GenWavOS = (props) => {
                 </WindowContent>
               </Window>
             </ThemeProvider>
-            <ThemeProvider theme={brick}>
+            <ThemeProvider theme={coldGray}>
               <Window style={{width:'90%', minHeight: '200px'}}>
-                <WindowHeader> Services</WindowHeader>
+                <WindowHeader style={{color:"white"}}> Services</WindowHeader>
                     <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
                       <div className="slide">
                           <img src="carouselImages/mixing.png" />
@@ -253,14 +264,14 @@ const GenWavOS = (props) => {
                 </MenuList>
             </ThemeProvider>
             
-            <ThemeProvider theme={blue}>
+            <ThemeProvider theme={millenium}>
               <Window style={{width:'90%', minHeight: '200px', marginTop:'5%'}}>
                 <WindowHeader> About</WindowHeader>
                 <WindowContent>
                   <div style={{textAlign:"center"}}>
                     <Avatar size={100} src='avatar.png' />
                   </div>
-                  <Frame> Hi, my name is gen.wav. I'm a Cuban-American Artist, Producer, and Software Engineer. 👨‍💻 I like to say I'm a creative because aside from programming, and making music, I do photography, I dabble in videography and graphic design, I do live coding, I DJ, and I make YouTube videos. So, take a look around, you can stream my music, watch my music videos, buy beats, or Music NFTS, or just vibe. </Frame>
+                  <Frame> Hi, my name is gen.wav. I'm a Cuban-American Artist, Producer, and Software Engineer. 👨‍💻 I like to say I'm a creative because aside from programming, and making music, I do photography, I dabble in videography and graphic design, I do live coding, I DJ, and I make YouTube videos.<br></br><br></br> So, take a look around, you can stream my music, watch my music videos, buy beats, or Music NFTS, or just vibe. </Frame>
                 </WindowContent>
               </Window>
             </ThemeProvider>
@@ -276,7 +287,7 @@ const GenWavOS = (props) => {
               </Window>
             </ThemeProvider>
             
-            <ThemeProvider theme={blue}>
+            <ThemeProvider theme={denim}>
               <Window style={{width:'90%', minHeight: '200px', marginTop:"5%"}}>
                 <WindowHeader> Gallery</WindowHeader>
                     <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
@@ -311,7 +322,7 @@ const GenWavOS = (props) => {
               </Window>
             </ThemeProvider>
 
-            <ThemeProvider theme={blue}>
+            <ThemeProvider theme={rainyDay}>
               <Window style={{width:'90%', minHeight: '200px', marginTop:"5%"}}>
                 <WindowHeader>Sign up to receive beats, loops and samples.</WindowHeader>
                   <div style={{marginTop:"5%", textAlign:"center"}}>
@@ -365,9 +376,9 @@ const GenWavOS = (props) => {
           </Grid>
          
           <Grid item sm={12} md={4} order={{ sm: 2, md: 3 }} style={{marginTop:"6%"}}>
-          <ThemeProvider theme={blue}>
+          <ThemeProvider theme={slate}>
               <Window style={{width:'90%', minHeight: '200px'}}>
-                <WindowHeader>🎤 Stream My Music 🎤</WindowHeader>
+                <WindowHeader>Stream My Music</WindowHeader>
                 <WindowContent>
                 {/* <iframe width="100%" height="166" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/genesisbarrios/sets/my-music?si=62d1c9cdb8d54729a394f3c43d5d8d1b"></iframe>
                 */}
@@ -378,7 +389,7 @@ const GenWavOS = (props) => {
             </ThemeProvider>
           </Grid>
           <Grid item sm={12} md={4} order={{ sm: 7, md: 6 }} > 
-            <ThemeProvider theme={blue}>
+            <ThemeProvider theme={aiee}>
                 <Window style={{width:'90%', minHeight: '800px'}}>
                   <WindowHeader>💿 Digital Collectibles - Music NFTs</WindowHeader>
                   <WindowContent>
