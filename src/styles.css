@@ -192,6 +192,10 @@ button.legend{
   color:white;
 }
 
+ .theWavPack, .beatsandservices{
+  margin-top: -10% !important;
+}
+
 /* Media Queries */
 
 @media (max-width: 968px){

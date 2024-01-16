@@ -8,30 +8,21 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheckCircle, faWallet } from '@fortawesome/free-solid-svg-icons'
 import { MenuList, MenuListItem, Separator, styleReset, Window, WindowHeader, WindowContent, Frame, Button } from 'react95';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
-import { Alert } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import '@react95/icons/icons.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
+
 /* Pick a theme of your choice */
 import brick from 'react95/dist/themes/brick';
 import blue from 'react95/dist/themes/blue';
 import original from 'react95/dist/themes/original';
 import modernDark from 'react95/dist/themes/modernDark';
-import { Avatar} from "react95";
-import React from "react";
-import { Modal } from 'react95';
+import { Avatar } from "react95";
+
 import { GlobeSimple, InstagramLogo, TwitterLogo, TiktokLogo, SoundcloudLogo, SpotifyLogo, AppleLogo, YoutubeLogo, GithubLogo  } from "@phosphor-icons/react";
-import axios from "axios"; 
 
 const GenWavOS = (props) => {
-  const [showModal, toggleShowModal] = React.useState(true);
-  const handleOpenModal = () => toggleShowModal(true);
-  const handleCloseModal = () => toggleShowModal(false);
-  const [email, setEmail] = useState("");
-  const [producer, setProducer] = useState(false);
-  const [artist, setArtist] = useState(false);
-  const [message, setMessage] = useState("");
-  const [alert, setAlert] = useState("");
 
   useEffect(() => {
     
@@ -42,175 +33,65 @@ const GenWavOS = (props) => {
     }
   }, []);
 
-  useEffect(() => {
-    
-    //hide elements
-    if(email){
-    console.log(email);
-    }
-    if(producer){
-      console.log(producer)
-    }
-    if(artist){
-      console.log(artist)
-    }
-  }, );
-
-  function handleOpenDialog(){
-    //<a href="https://www.beatstars.com/genwav/sound-kits/179946" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}></a>
-    if(document){
-      const dialog = document.querySelector("dialog")
-      dialog.showModal();
-    }
-  }
-
-  function handleCloseSignUp() {
-    if(document){
-      const dialog = document.querySelector("dialog")
-      dialog.close();
-    }
-  }
-
-  function handleSubmit() {
-    const dataToSend = {
-      producer: producer,
-      artist: artist,
-      email: email,
-    };
-  
-    // Make a POST request using Axios
-    // axios.post('your_server_endpoint_url', dataToSend)
-    //   .then((response) => {
-    //     // Handle the response if needed
-    //     console.log('Request successful', response.data);
-    //     setMessage('Your e-mail has been saved!')
-    //     window.open("https://www.beatstars.com/genwav/sound-kits/179946", "_blank")
-    //   })
-    //   .catch((error) => {
-    //     // Handle errors
-    //     console.error('Error: ', error);
-    //     setAlert('Error: ', error)
-    //   });
-
-    setAlert('There was an error.');
-
-  }
  
   return(
     
     <div id="OS">
-
-
-
-      {showModal && 
-        <dialog id="dialog" style={{overflow:"hidden", margin:"25% auto", width:"50%", height:"250px", zIndex:"1", border:"1px solid black", borderRadius:"5px", boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}>
-            <ThemeProvider theme={blue}>
-            <Window style={{width:'100%', height:"100%", margin:"0 auto", minHeight: '200px', marginBottom:"5%"}}>
-              <WindowHeader>Please provide your e-mail for access to the sample pack.<button onClick={handleCloseSignUp} style={{float:"right", width:'25px', marginTop:'5px'}}>X</button></WindowHeader>
-                <p style={{fontSize:'0.7em', color:"darkred", margin:"10px 0", textAlign:"center"}}>You will not be spammed, only for sending beats and loops</p>
-                <div style={{marginTop:"2%", textAlign:"center"}}>
-                  <form>
-                    <p>Enter Your E-mail Address</p>  
-                    <input type="text" name="e-mail" style={{display:"inline-block", marginBottom:"20px", width:"50%"}}  
-                      onChange={(e) => {
-                        setEmail(e.target.value);
-                      }}
-                    ></input>
-                    <br></br>
-                    <div style={{display:'inline'}}>
-                      <input
-                        style={{borderRadius:"10px", backgroundColor:"#CBD5E1", display:'inline'}}
-                        type="checkbox"
-                        name="producer"
-                        value="0"
-                        onChange={(e) => {
-                          if (e.target.checked) {
-                            setProducer(true);
-                          } else {
-                            setProducer(false);
-                          }
-                        }}
-                      />
-                      <p style={{display:'inline', margin:"0 10px"}}>producer</p>
-                  
-                      <input
-                        style={{borderRadius:"10px", backgroundColor:"#CBD5E1", display:'inline'}}
-                        type="checkbox"
-                        name="artist"
-                        value="0"
-                        onChange={(e) => {
-                          if (e.target.checked) {
-                            setArtist(true);
-                          } else {
-                            setArtist(false);
-                          }
-                        }}
-                      />
-                      <p style={{display:'inline', margin:"0 10px"}}>artist</p>
-                      <br></br>
-                      <button onClick={handleSubmit} style={{marginTop:"20px", padding:"5px 10px"}}>Acquire the Wav Pack</button>
-                      {message && <Alert severity="success">{message}</Alert>}
-                      {alert && <Alert severity="error">{alert}</Alert>}
-                    </div>
-                  </form>
-                </div>
-            </Window>
-          </ThemeProvider>
-      </dialog>
-      }
-          
+      
       <Grid container spacing={3} style={{padding: "20px"}}> 
-        <Grid item sm={12} md={4} order={{ sm: 3, md: 1 }} style={{marginTop:"6%"}}> 
-          <ThemeProvider theme={brick}>
-            <Window style={{width:'90%', minHeight: '350px'}}>
-              <WindowHeader> Music Videos </WindowHeader>
-              <WindowContent>
-                <iframe style={{borderRadius:"12px"}} width="100%" height="315" src="https://www.youtube.com/embed/4eYVvsm9U3s?si=rS7RZBCNAyOmUj8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-              </WindowContent>
-            </Window>
-          </ThemeProvider>
-        </Grid>
-        <Grid item sm={12} md={4} order={{ sm: 6, md: 4 }}  className="beatsandservices"> 
-          <ThemeProvider theme={brick}>
-              <Window style={{width:'90%', minHeight: '700px', marginBottom:"5%"}}>
-                <WindowHeader><img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTccYT9o2RnZLeyb6MZZ0ewEfgArKQUE9r50iHsi9p8mmU_i3nKQtYdzvRr6XhyOPq4ZoI14W-BQ2xJ-ovKnZDx2DBcmw=s2560" width="20" height="20"/> Beats</WindowHeader>
+        <Grid item sm={12} md={4} order={{ sm: 4, md: 1 }}> 
+            <ThemeProvider theme={brick}>
+              <Window style={{width:'90%', minHeight: '350px'}}>
+                <WindowHeader> Music Videos </WindowHeader>
                 <WindowContent>
-                  <iframe 
-                      src="https://player.beatstars.com/?storeId=140652" 
-                      width="100%" 
-                      height="650">
-                  </iframe>
+                  <iframe style={{borderRadius:"12px"}} width="100%" height="315" src="https://www.youtube.com/embed/4eYVvsm9U3s?si=rS7RZBCNAyOmUj8n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </WindowContent>
               </Window>
             </ThemeProvider>
+          </Grid>
+          <Grid item sm={12} md={4} order={{ sm: 5, md: 4 }}> 
             <ThemeProvider theme={brick}>
-              <Window style={{width:'90%', minHeight: '200px'}}>
-                <WindowHeader> Services</WindowHeader>
-                    <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
-                      <div className="slide">
-                          <img src="carouselImages/mixing.png" />
-                          <button className="legend"><a href="https://genwav.beatstars.com/services" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
-                      </div>
-                      <div className="slide">
-                          <img src="carouselImages/fullmix.png" />
-                          <button className="legend"><a href="https://genwav.beatstars.com/services/119321" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
-                      </div>
-                      <div  className="slide">
-                          <img src="carouselImages/mastering.png" />
-                          <button className="legend"><a href="https://genwav.beatstars.com/services/119322" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
-                      </div>
-                      <div className="slide">
-                          <img src="carouselImages/mix+master.png" />
-                          <button className="legend"><a href="https://genwav.beatstars.com/services/119323" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
-                      </div>
-                      <div className="slide">
-                          <img src="carouselImages/custombeat.png" />
-                          <button className="legend"><a href="https://genwav.beatstars.com/services/119324" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
-                      </div>
-                  </Carousel>
-              </Window>
-          </ThemeProvider>
-        </Grid>
+                <Window style={{width:'90%', minHeight: '700px'}}>
+                  <WindowHeader><img src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYTccYT9o2RnZLeyb6MZZ0ewEfgArKQUE9r50iHsi9p8mmU_i3nKQtYdzvRr6XhyOPq4ZoI14W-BQ2xJ-ovKnZDx2DBcmw=s2560" width="20" height="20"/> Beats</WindowHeader>
+                  <WindowContent>
+                    <iframe 
+                        src="https://player.beatstars.com/?storeId=140652" 
+                        width="100%" 
+                        height="650">
+                    </iframe>
+                  </WindowContent>
+                </Window>
+              </ThemeProvider>
+            </Grid>
+            <Grid item sm={12} md={4} order={{ sm: 6, md: 7 }}> 
+              <ThemeProvider theme={brick}>
+                <Window style={{width:'90%', minHeight: '200px'}}>
+                  <WindowHeader> Services</WindowHeader>
+                      <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
+                        <div className="slide">
+                            <img src="carouselImages/mixing.png" />
+                            <button className="legend"><a href="https://genwav.beatstars.com/services" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
+                        </div>
+                        <div className="slide">
+                            <img src="carouselImages/fullmix.png" />
+                            <button className="legend"><a href="https://genwav.beatstars.com/services/119321" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
+                        </div>
+                        <div  className="slide">
+                            <img src="carouselImages/mastering.png" />
+                            <button className="legend"><a href="https://genwav.beatstars.com/services/119322" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
+                        </div>
+                        <div className="slide">
+                            <img src="carouselImages/mix+master.png" />
+                            <button className="legend"><a href="https://genwav.beatstars.com/services/119323" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
+                        </div>
+                        <div className="slide">
+                            <img src="carouselImages/custombeat.png" />
+                            <button className="legend"><a href="https://genwav.beatstars.com/services/119324" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
+                        </div>
+                    </Carousel>
+                </Window>
+            </ThemeProvider>
+          </Grid>
           <Grid item sm={12} md={4} order={{ sm: 1, md: 2 }}>
               <ThemeProvider theme={modernDark}>
                 <MenuList inline="true" style={{paddingTop:"10px"}}>
@@ -265,19 +146,22 @@ const GenWavOS = (props) => {
               </Window>
             </ThemeProvider>
           </Grid>   
-        
-          <Grid item sm={12} md={4} order={{ sm: 4, md: 5 }} className="theWavPack"> 
+          <Grid item sm={12} md={4} order={{ sm: 2, md: 5 }}  style={{}}> 
             <ThemeProvider theme={blue}>
-              <Window style={{width:'90%', minHeight: '200px', marginBottom:"5%"}}>
+              <Window style={{width:'90%', minHeight: '200px'}}>
                 <WindowHeader> The Wav Pack V.1 - Free Sample Pack</WindowHeader>
-                  <div className="slide" onClick={handleOpenDialog}>
-                    <img src="/WavPack.jpg" style={{width:"100%", cursor:"pointer"}} />
+                  <div className="slide">
+                    <a href="https://www.beatstars.com/genwav/sound-kits/179946" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}>
+                        <img src="/WavPack.jpg" style={{width:"100%"}} />
+                        {/* <button className="legend"><GlobeSimple width={25} className="igLogo"></GlobeSimple></button> */}
+                      </a>
                   </div>
               </Window>
             </ThemeProvider>
-            
+          </Grid>
+          <Grid item sm={12} md={4} order={{ sm: 3, md: 8 }}  style={{}}> 
             <ThemeProvider theme={blue}>
-              <Window style={{width:'90%', minHeight: '200px', marginTop:"5%"}}>
+              <Window style={{width:'90%', minHeight: '200px'}}>
                 <WindowHeader> Gallery</WindowHeader>
                     <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
                     
@@ -310,61 +194,9 @@ const GenWavOS = (props) => {
                   </Carousel>
               </Window>
             </ThemeProvider>
-
-            <ThemeProvider theme={blue}>
-              <Window style={{width:'90%', minHeight: '200px', marginTop:"5%"}}>
-                <WindowHeader>Sign up to receive beats, loops and samples.</WindowHeader>
-                  <div style={{marginTop:"5%", textAlign:"center"}}>
-                    <form>
-                      <p>Enter Your E-mail Address</p>  
-                      <input type="text" name="e-mail" style={{display:"inline-block", marginBottom:"20px", width:"50%"}}  
-                        onChange={(e) => {
-                          setEmail(e.target.value);
-                        }}
-                      ></input>
-                      <br></br>
-                      <div style={{display:'inline'}}>
-                        <input
-                          style={{borderRadius:"10px", backgroundColor:"#CBD5E1", display:'inline'}}
-                          type="checkbox"
-                          name="producer"
-                          value="0"
-                          onChange={(e) => {
-                            if (e.target.checked) {
-                              setProducer(true);
-                            } else {
-                              setProducer(false);
-                            }
-                          }}
-                        />
-                        <p style={{display:'inline',  margin:"0 5px"}}>producer</p>
-                    
-                        <input
-                          style={{borderRadius:"10px", backgroundColor:"#CBD5E1", display:'inline'}}
-                          type="checkbox"
-                          name="artist"
-                          value="0"
-                          onChange={(e) => {
-                            if (e.target.checked) {
-                              setArtist(true);
-                            } else {
-                              setArtist(false);
-                            }
-                          }}
-                        />
-                        <p style={{display:'inline', margin:"0 5px"}}>artist</p>
-                        <br></br>
-                        <button onClick={handleSubmit} style={{marginTop:"20px", padding:"2px 5px"}}>Submit</button>
-                        {message && <Alert style={{marginBottom:"5%"}} severity="success">{message}</Alert>}
-                        {alert && <Alert style={{marginBottom:"5%"}} severity="error">{alert}</Alert>}
-                      </div>
-                    </form>
-                  </div>
-              </Window>
-            </ThemeProvider>
+          
           </Grid>
-         
-          <Grid item sm={12} md={4} order={{ sm: 2, md: 3 }} style={{marginTop:"6%"}}>
+          <Grid item sm={12} md={4} order={{ sm: 4, md: 3 }}>
           <ThemeProvider theme={blue}>
               <Window style={{width:'90%', minHeight: '200px'}}>
                 <WindowHeader>🎤 Stream My Music 🎤</WindowHeader>
@@ -385,7 +217,7 @@ const GenWavOS = (props) => {
                     <Frame style={{marginBottom:"10px"}}>
                       For those that don't know about Music NFTs, they are digital collectibles. You can collect(or mint) to own a rare, and unique copy of one of my songs. These collectibles will give you access to different features on my website.. It may be free beats, sample packs, or sneak peeks!
                     </Frame>
-                    <Grid container spacing={2} style={{textAlign:"center"}}>
+                    <Grid container spacing={2}>
                       <Grid item sm={12} md={6}>
                         <Frame style={{marginBottom:"10px", borderRadius:"15px"}}>
                         <iframe style={{border:"none"}} id="embed" width="100%" height="250px" src="https://zora.co/editions/eth:0x5bc30e809aed2ff3c3bede9804419488e305b258/1/frame?padding=20px&mediaPadding=20px&showDetails=false&theme=%7B%22foreground%22%3A%22%23000000%22%2C%22background%22%3A%22%23f3f3f3%22%2C%22accent%22%3A%22%2307ff3b%22%2C%22onAccent%22%3A%22%23000000%22%2C%22border%22%3A%22%23f3f3f3%22%2C%22background2%22%3A%22%23f3f3f3%22%2C%22positive%22%3A%22%231CB687%22%2C%22negative%22%3A%22%23F03232%22%2C%22warning%22%3A%22%23F5A623%22%7D&showMedia=true&showCollectors=false&showMintingUI=true"></iframe>
@@ -396,12 +228,12 @@ const GenWavOS = (props) => {
                       </Grid>
                       <Grid item sm={12} md={6}>
                         <Frame style={{marginBottom:"10px", borderRadius:"15px"}}>
-                          <iframe style={{border:"none"}} width="100%" height="250px" src="https://zora.co/collect/oeth:0xb45cd602810c48df0e36c1c292c51b4dd21f8e9d/1/frame?padding=20px&mediaPadding=20px&showDetails=false&theme=%7B%22foreground%22%3A%22%23000000%22%2C%22background%22%3A%22%23f3f3f3%22%2C%22accent%22%3A%22%2307ff3b%22%2C%22onAccent%22%3A%22%23000000%22%2C%22border%22%3A%22%23f3f3f3%22%2C%22background2%22%3A%22%23f3f3f3%22%2C%22positive%22%3A%22%231CB687%22%2C%22negative%22%3A%22%23F03232%22%2C%22warning%22%3A%22%23F5A623%22%7D&showMedia=true&showCollectors=false&showMintingUI=true"></iframe>
+                        <iframe style={{border:"none"}} width="100%" height="250px" src="https://zora.co/collect/oeth:0xb45cd602810c48df0e36c1c292c51b4dd21f8e9d/1/frame?padding=20px&mediaPadding=20px&showDetails=false&theme=%7B%22foreground%22%3A%22%23000000%22%2C%22background%22%3A%22%23f3f3f3%22%2C%22accent%22%3A%22%2307ff3b%22%2C%22onAccent%22%3A%22%23000000%22%2C%22border%22%3A%22%23f3f3f3%22%2C%22background2%22%3A%22%23f3f3f3%22%2C%22positive%22%3A%22%231CB687%22%2C%22negative%22%3A%22%23F03232%22%2C%22warning%22%3A%22%23F5A623%22%7D&showMedia=true&showCollectors=false&showMintingUI=true"></iframe>
                         </Frame>
-                        <Frame style={{marginBottom:"10px", backgroundColor:"white", borderRadius:"15px"}}>
-                          <div style={{height:"250px", width:"100%", textAlign:"center"}}>
-                            <img width="auto" height="70%" style={{margin:"1% auto", marginBottom:"10%", display:"block"}} src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYS6K8WEkMB9B3IXMw3VkTHLdR2gLiZ-ZooKZB9y2zi-BL_Y6dxmaQVXDMwckZEM7XVPiw_WfNuzhlE0pKni2FXUf-KjeQ=s2560"></img>
-                            <p style={{display:"inline", margin:"0 5%", fontFamily:"Helvetica Neue", fontWeight:"400", fontSize:"0.9em"}}>Trust Me</p>
+                        <Frame style={{marginBottom:"10px", height:"255px", backgroundColor:"white", borderRadius:"15px"}}>
+                          <div>
+                            <img width="90%" height="auto" style={{marginLeft:"5%", marginBottom:"5%"}} src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYS6K8WEkMB9B3IXMw3VkTHLdR2gLiZ-ZooKZB9y2zi-BL_Y6dxmaQVXDMwckZEM7XVPiw_WfNuzhlE0pKni2FXUf-KjeQ=s2560"></img>
+                            <p style={{display:"inline", margin:"0 10%", fontFamily:"Helvetica Neue", fontWeight:"400", fontSize:"0.9em"}}>Trust Me</p>
                             <a href="https://opensea.io/assets/matic/0x6ac6ea8ea96b582d6473def2a1cd13aaf3f80cc3/" target="_blank" style={{display:"inline", marginLeft:"15%", cursor:"pointer"}}><button style={{backgroundColor:"black", color:"white", borderRadius:"5px", padding:"5px 15px"}}>Mint</button></a>
                         </div>
                         </Frame>
