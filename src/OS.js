@@ -39,6 +39,7 @@ const GenWavOS = (props) => {
   const handleOpenModal = () => toggleShowModal(true);
   const handleCloseModal = () => toggleShowModal(false);
   const [email, setEmail] = useState("");
+  const [fan, setFan] = useState(false);
   const [producer, setProducer] = useState(false);
   const [artist, setArtist] = useState(false);
   const [message, setMessage] = useState("");
