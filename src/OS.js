@@ -160,6 +160,20 @@ const GenWavOS = (props) => {
                         }}
                       />
                       <p style={{display:'inline', margin:"0 10px"}}>artist</p>
+                      <input
+                        style={{borderRadius:"10px", backgroundColor:"#CBD5E1", display:'inline'}}
+                        type="checkbox"
+                        name="fan"
+                        value="0"
+                        onChange={(e) => {
+                          if (e.target.checked) {
+                            setFan(true);
+                          } else {
+                            setFan(false);
+                          }
+                        }}
+                      />
+                      <p style={{display:'inline', margin:"0 10px"}}>fan</p>
                       <br></br>
                       <button onClick={handleSubmit} style={{marginTop:"20px", padding:"5px 10px"}}>Acquire the Wav Pack </button>
                       {message && <Alert severity="success">{message}</Alert>}
@@ -376,6 +390,20 @@ const GenWavOS = (props) => {
                           }}
                         />
                         <p style={{display:'inline', margin:"0 5px"}}>artist</p>
+                        <input
+                        style={{borderRadius:"10px", backgroundColor:"#CBD5E1", display:'inline'}}
+                        type="checkbox"
+                        name="fan"
+                        value="0"
+                        onChange={(e) => {
+                          if (e.target.checked) {
+                            setFan(true);
+                          } else {
+                            setFan(false);
+                          }
+                        }}
+                      />
+                      <p style={{display:'inline', margin:"0 10px"}}>fan</p>
                         <br></br>
                         <button onClick={handleSubmit} style={{marginTop:"20px", padding:"2px 5px"}}>Submit</button>
                         {message && <Alert style={{marginBottom:"5%"}} severity="success">{message}</Alert>}
