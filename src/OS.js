@@ -273,7 +273,7 @@ const GenWavOS = (props) => {
                     </a>
                   </MenuListItem>
                   <MenuListItem>
-                    <a target="_blank" href="https://open.spotify.com/artist/5p2tmJU9R8sopvcXdXBbsV?si=vVx-nEfmS2WlKXoXk0XHeA" style={{textDecoration:"none"}}>
+                    <a target="_blank" href="https://open.spotify.com/artist/3YihJDU9YETUNDWO6pDuQG?si=VmY6439rRLS5mw8uC0nHYg" style={{textDecoration:"none"}}>
                       <SpotifyLogo style={{color: '#A6CAF0'}} size={25}></SpotifyLogo>
                     </a>
                   </MenuListItem>
