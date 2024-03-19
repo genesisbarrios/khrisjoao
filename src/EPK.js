@@ -86,12 +86,12 @@ const GenWavOS = (props) => {
   function handleSubmit() {
     const dataToSend = {
       email: email,
-      producer: producer,
-      artist: artist
+      subject: producer,
+      body: artist
     };
   
     // Make a POST request using Axios
-    axios.post('https://localhost:3001/addUser', dataToSend)
+    axios.post('https://localhost:3001/sendEmail', dataToSend)
       .then((response) => {
         // Handle the response if needed
         console.log('Request successful', response.data);

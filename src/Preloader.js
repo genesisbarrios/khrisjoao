@@ -51,7 +51,7 @@ export default class Preloader extends EventEmitter {
         // Set the style properties for the button and welcome elements
         welcomeBox.style.top = top;
         welcomeBox.style.left = left;
-        welcomeBox.classList.remove("hide");
+        //welcomeBox.classList.remove("hide");
     }
 
     firstIntro() {

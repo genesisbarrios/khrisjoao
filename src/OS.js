@@ -118,7 +118,7 @@ const GenWavOS = (props) => {
       {showModal && 
         <dialog id="dialog" style={{overflow:"hidden", margin:"25% auto", width:"50%", height:"250px", zIndex:"1", border:"1px solid black", borderRadius:"5px", boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}>
             <ThemeProvider theme={millenium}>
-            <Window style={{width:'100%', height:"100%", margin:"0 auto", minHeight: '200px', marginBottom:"5%"}}>
+            <Window resizable style={{width:'100%', height:"100%", margin:"0 auto", minHeight: '200px', marginBottom:"5%"}}>
               <WindowHeader>Please provide your e-mail for access to the sample pack. <img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/hand.ico" width="20px"></img><button onClick={handleCloseSignUp} style={{float:"right", width:'25px', marginTop:'5px'}}>X</button></WindowHeader>
                 <p style={{fontSize:'0.7em', color:"darkred", margin:"10px 0", textAlign:"center"}}>You will not be spammed, only for sending beats and loops</p>
                 <div style={{marginTop:"2%", textAlign:"center"}}>

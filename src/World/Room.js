@@ -2,6 +2,7 @@ import * as THREE from "three";
 import Experience from "../Experience.js";
 import GSAP from "gsap";
 import { RectAreaLightHelper } from "three/examples/jsm/helpers/RectAreaLightHelper.js";
+import * as Tone from 'tone'
 
 export default class Room {
     constructor() {
@@ -12,6 +13,7 @@ export default class Room {
         this.room = this.resources.items.room;
         this.actualRoom = this.room.scene;
         this.roomChildren = {};
+        this.synth = new Tone.Synth().toDestination();
 
         this.lerp = {
             current: 0,
@@ -21,8 +23,13 @@ export default class Room {
 
         this.setModel();
         this.setAnimation();
-        this.onMouseMove();
+        //this.onMouseMove();
+        // Bind this to the class instance for event handlers
+        this.onMouseClick = this.onMouseClick.bind(this);
+        window.addEventListener("click", (event) => this.onMouseClick(event));
     }
+
+    
 
     setModel() {
         this.actualRoom.children.forEach((child) => {
@@ -135,6 +142,55 @@ export default class Room {
             this.lerp.target = this.rotation * 0.05;
         });
     }
+
+    playSynth() {
+        this.mixer = new THREE.AnimationMixer(this.actualRoom);
+        //this.swim = this.mixer.clipAction(this.room.animations[0]);
+        //this.swim.play();
+        if(this.roomChildren){
+            console.log(this.roomChildren)
+            //this.roomChildren["akai_lp"].addEventListener("click", () => {
+                console.log("you're playing the piano");
+                //play a random note
+                const notes = ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C']
+                const randomNote = notes[Math.floor(Math.random() * notes.length)];
+                // const randomOctave = Math.floor(Math.random() * 3) + 4; // Random octave between 4 and 5
+                const noteToPlay = randomNote + "4";
+                this.synth.triggerAttackRelease(noteToPlay, "8n");
+                console.log('play the piano')
+            //});
+        }
+    }
+
+    onMouseClick(event) {
+        if(this.camera){
+            console.log('mouse click')
+            // Calculate the mouse position in normalized device coordinates
+            const mouse = new THREE.Vector2();
+            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+        
+            console.log(this.camera);
+            // Update the raycaster with the mouse position and camera
+            this.raycaster.setFromCamera(mouse, this.camera.orthographicCamera);
+        
+            // Find objects intersecting with the ray
+            const intersects = this.raycaster.intersectObjects(this.room.roomChildren);
+        
+            if (intersects.length > 0) {
+            // Handle the intersection here
+            const clickedObject = intersects[0].object;
+        
+            if (clickedObject.name === "akai_lp") {
+                // Perform actions specific to the "akai_lp" object
+                console.log("Clicked akai_lp object!");
+                this.playSynth();
+            }
+            }
+        }
+
+       this.playSynth();
+      }
 
     resize() {}
 
