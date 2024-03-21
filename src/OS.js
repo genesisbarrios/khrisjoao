@@ -317,7 +317,15 @@ const GenWavOS = (props) => {
               <Window style={{width:'90%', minHeight: '200px', marginTop:"5%"}}>
                 <WindowHeader><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/wangimg_130.ico" width="20px"></img> Gallery</WindowHeader>
                     <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
-                    
+                     
+                      <div className="slide">
+                          <img src="https://dl.dropboxusercontent.com/s/dn8xm1k6kef804auw0pg7/D4A0CCB5-6F0C-4CB0-B93A-622E1697C908.JPG?rlkey=6cnvstghktqqrvxbqv2lg8o8y&dl=0" />
+                          <button className="legend"><a href="https://www.instagram.com/p/C380AoJMQBH/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                      </div>
+                      <div className="slide">
+                          <img src="carouselImages/8.JPG" />
+                          <button className="legend"><a href="https://www.instagram.com/p/C4Q_RuPPCcc/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                      </div>
                       <div className="slide">
                           <img src="carouselImages/1.png" />
                           <button className="legend"><a href="https://www.instagram.com/p/CyOdrU4xPSa/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
@@ -424,6 +432,14 @@ const GenWavOS = (props) => {
                 */}
                   <iframe src="https://open.spotify.com/embed/artist/3YihJDU9YETUNDWO6pDuQG?utm_source=generator" width="100%" height="180" frameBorder="0" allow="clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
                   <iframe width="100%" height="315" style={{borderRadius:"12px"}} src="https://www.youtube.com/embed/nJSuynNjiiU?si=1ZtVJAwwn-IJhLvd" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                  <iframe
+                    title="SoundCloud Player"
+                    width="100%"
+                    height="300"
+                    allow="autoplay"
+                    style={{marginTop:"5%", borderRadius:"10px"}}
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1657973560&color=%235ab7ce&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+                  ></iframe>
                 </WindowContent>
               </Window>
             </ThemeProvider>

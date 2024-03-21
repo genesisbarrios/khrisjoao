@@ -17,6 +17,13 @@ html, body{
   width:100%;
 }
 
+#EPK{
+  background-color: black;
+  min-height: 103vh;
+  color:white;
+  width:100%;
+}
+
 .headings{
   text-align: center;
 }
