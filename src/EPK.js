@@ -106,7 +106,7 @@ const EPK = (props) => {
 
   }
  
-  const pdfUrl = 'https://www.dropbox.com/scl/fi/lvpb6s8ding95v5khhnmu/ELECTRONIC-PRESS-KIT-part-1.pdf?rlkey=lvdht2monr2zyhxektu59nrhb&dl=0';
+  const pdfUrl = 'https://www.dropbox.com/scl/fi/fqwizf2o29pknnfhkxwgz/ELECTRONIC-PRESS-KIT-2.pdf?rlkey=ytaf41lgcv6fte2cgxypn78u6&dl=0';
   
   return(
     
@@ -115,7 +115,7 @@ const EPK = (props) => {
       <Grid container spacing={3} style={{padding: "0px"}}> 
         <Grid item sm={12} md={4} lg={3}> 
           <div style={{height: "100vh", position: "sticky", top: 0}}>
-          <img
+          <img 
             src="https://dl.dropboxusercontent.com/s/lgduzrail9tglaoo4orpg/IMG_5547.jpg?rlkey=mk5oacojh1yr23ij8s7vcyflt&dl=0"
             alt="image"
             style={{height: "100%", width: "100%", objectFit: "cover"}}
