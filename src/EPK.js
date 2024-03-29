@@ -174,8 +174,9 @@ const EPK = (props) => {
         <div style={{height:"100%", width: "100%", paddingTop:"5%", textAlign:"center"}}>
           <h1>PHOTOS</h1>
           <div style={{width:"100%", margin:"0 auto"}}> 
-          <img src="https://dl.dropboxusercontent.com/s/cq6fa0uol5j3dn9l4qgnu/08FC3DBC-7BA3-438C-B168-6E0907F878A1.JPG?rlkey=4gacge9tz394c0jqw67luovfd&dl=0"style={{width:"80%", height:"auto", marginTop:'20px', marginBottom:"20px"}}></img>
-            <img src="https://dl.dropboxusercontent.com/s/evw5m3rj1l6fu42tomspi/IMG_5552.JPG?rlkey=13m15kg9b969k8kqrr9f5ieqw&dl=0" style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
+            <img src="https://dl.dropboxusercontent.com/s/fv5ir2n5066lzfka6z67b/IMG_4619.jpg?rlkey=pov5e8febjdwyvl194v193r1s&dl=0" style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
+            <img src="https://dl.dropboxusercontent.com/s/cq6fa0uol5j3dn9l4qgnu/08FC3DBC-7BA3-438C-B168-6E0907F878A1.JPG?rlkey=4gacge9tz394c0jqw67luovfd&dl=0"style={{width:"80%", height:"auto", marginTop:'20px', marginBottom:"20px"}}></img>
+              
             <img src="https://dl.dropboxusercontent.com/s/xmwxcg78osj2g5dt9nh1y/IMG_5553.JPG?rlkey=cu8pt6p0ragl0jhfymyrqyzjz&dl=0" style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
           
             <img src="https://dl.dropboxusercontent.com/s/mzqs9rf3ckebhm0b526pu/IMG_1760.png?rlkey=tj5dtxs77rttf1mrg7xd4slhe&dl=0" style={{width:"80%", height:"auto"}}></img>
