@@ -69,7 +69,7 @@ const GenWavOS = (props) => {
   }, );
 
   function handleOpenDialog(){
-    //<a href="https://www.beatstars.com/genwav/sound-kits/179946" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}></a>
+    //<a href="https://www.beatstars.com/genwav/sound-kits/192047" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}></a>
     if(document){
       const dialog = document.querySelector("dialog")
       dialog.showModal();
@@ -96,7 +96,7 @@ const GenWavOS = (props) => {
         // Handle the response if needed
         console.log('Request successful', response.data);
         setMessage('Your e-mail has been saved!')
-        window.open("https://www.beatstars.com/genwav/sound-kits/179946", "_blank")
+        window.open("https://www.beatstars.com/genwav/sound-kits/192047", "_blank")
       })
       .catch((error) => {
         // Handle errors
