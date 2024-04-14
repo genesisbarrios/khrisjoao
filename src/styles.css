@@ -24,6 +24,16 @@ html, body{
   width:100%;
 }
 
+.card{
+  padding:'20px' !important;
+  background-color: #333332;
+  color:white;
+}
+
+.cardHeader{
+  padding:"20px" !important;
+}
+
 .headings{
   text-align: center;
 }

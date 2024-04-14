@@ -5,6 +5,7 @@ import ExperienceWrapper from "./ExperienceWrapper";
 import GenWavOS from "./OS";
 import EPK from "./EPK";
 
+
 const App = () => {
   const GenWavOSComponent = () => {
     return (
@@ -19,13 +20,13 @@ const App = () => {
   };
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<ExperienceWrapper />} />
-        <Route path="/OS" element={<GenWavOSComponent />} />
-        <Route path="/EPK" element={<EPKComponent />} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ExperienceWrapper />} />
+          <Route path="/OS" element={<GenWavOSComponent />} />
+          <Route path="/EPK" element={<EPKComponent />} />
+        </Routes>
+      </BrowserRouter>
   );
 };
 
