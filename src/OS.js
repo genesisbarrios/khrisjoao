@@ -95,77 +95,6 @@ const GenWavOS = (props) => {
   return(
     
     <div id="OS">
-      {showModal && 
-        <dialog id="dialog" style={{overflow:"hidden", margin:"25% auto", width:"50%", height:"250px", zIndex:"1", border:"1px solid black", borderRadius:"5px", boxShadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)"}}>
-            
-            <Card resizable style={{width:'100%', height:"100%", margin:"0 auto", minHeight: '200px', marginBottom:"5%"}}>
-              <div>Please provide your e-mail for access to the sample pack. <img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/hand.ico" width="20px"></img><button onClick={handleCloseSignUp} style={{float:"right", width:'25px', marginTop:'5px'}}>X</button></div>
-                <CardContent>
-                  <p style={{fontSize:'0.7em', color:"darkred", margin:"10px 0", textAlign:"center"}}>You will not be spammed, only for sending beats and loops</p>
-                  <div style={{marginTop:"2%", textAlign:"center"}}>
-                    <form>
-                      <p>Enter Your E-mail Address</p>  
-                      <input type="text" name="e-mail" style={{display:"inline-block", marginBottom:"20px", width:"50%"}}  
-                        onChange={(e) => {
-                          setEmail(e.target.value);
-                        }}
-                      ></input>
-                      <br></br>
-                      <div style={{display:'inline'}}>
-                        <input
-                          style={{borderRadius:"10px", backgroundColor:"#CBD5E1", display:'inline'}}
-                          type="checkbox"
-                          name="producer"
-                          value="0"
-                          onChange={(e) => {
-                            if (e.target.checked) {
-                              setProducer(true);
-                            } else {
-                              setProducer(false);
-                            }
-                          }}
-                        />
-                        <p style={{display:'inline', margin:"0 10px"}}>producer</p>
-                    
-                        <input
-                          style={{borderRadius:"10px", backgroundColor:"#CBD5E1", display:'inline'}}
-                          type="checkbox"
-                          name="artist"
-                          value="0"
-                          onChange={(e) => {
-                            if (e.target.checked) {
-                              setArtist(true);
-                            } else {
-                              setArtist(false);
-                            }
-                          }}
-                        />
-                        <p style={{display:'inline', margin:"0 10px"}}>artist</p>
-                        <input
-                          style={{borderRadius:"10px", backgroundColor:"#CBD5E1", display:'inline'}}
-                          type="checkbox"
-                          name="fan"
-                          value="0"
-                          onChange={(e) => {
-                            if (e.target.checked) {
-                              setFan(true);
-                            } else {
-                              setFan(false);
-                            }
-                          }}
-                        />
-                        <p style={{display:'inline', margin:"0 10px"}}>fan</p>
-                        <br></br>
-                        <button onClick={handleSubmit} style={{marginTop:"20px", padding:"5px 10px"}}>Acquire the Wav Pack </button>
-                        {message && <Alert severity="success">{message}</Alert>}
-                        {alert && <Alert severity="error">{alert}</Alert>}
-                      </div>
-                    </form>
-                  </div>
-                </CardContent>
-            </Card>
-      </dialog>
-      }
           
       <Grid container spacing={3} style={{marginLeft:"3px"}}> 
         <Grid item sm={12} md={4} order={{ sm: 3, md: 1 }} style={{marginTop:"6%"}}> 
@@ -272,9 +201,9 @@ const GenWavOS = (props) => {
               </Card>
               <Card className="card" style={{width:'90%', minHeight: '200px', marginBottom:"5%"}}>
                 <div className="cardHeader"><img className="image" src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/progman_30.ico" width="20px" ></img> The Wav Pack V.1 - Free Sample Pack</div>
-                  <div className="slide" onClick={handleOpenDialog}>
+                  <a className="slide" target="_blank" href="https://www.beatstars.com/genwav/sound-kits/192047">
                     <img src="/WavPack.jpg" style={{width:"100%", cursor:"pointer"}} />
-                  </div>
+                  </a>
               </Card>
 
               <Card className="card" style={{width:'90%', minHeight: '200px', marginTop:"5%"}}>
