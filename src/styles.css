@@ -24,14 +24,14 @@ html, body{
   width:100%;
 }
 
-.card{
-  padding:'20px' !important;
-  background-color: #333332;
+div.card{
+  padding:5px !important;
+  background-color: rgb(160, 160, 160);
   color:white;
 }
 
-.cardHeader{
-  padding:"20px" !important;
+div.cardHeader{
+  padding:5px !important;
 }
 
 .headings{

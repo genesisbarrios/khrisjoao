@@ -171,7 +171,7 @@ const GenWavOS = (props) => {
       </dialog>
       }
           
-      <Grid container spacing={3} style={{padding: "20px"}}> 
+      <Grid container spacing={3} style={{marginLeft:"3px"}}> 
         <Grid item sm={12} md={4} order={{ sm: 3, md: 1 }} style={{marginTop:"6%"}}> 
           <Card className="card" style={{width:'90%', marginBottom:"5%"}}>
             <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_111.ico" width="25" height="25" className="inage" />  Music Videos </div>
@@ -191,30 +191,30 @@ const GenWavOS = (props) => {
               </Card>
               
               <Card className="card" style={{width:'90%', minHeight: '200px'}}>
-              <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_120.ico" width="25" height="25" className="inage" /> Services</div>
-                    <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
+                  <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_120.ico" width="25" height="25" className="inage" /> Services</div>
+                  <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
                     <div className="slide">
-                          <img src="carouselImages/fullmix.png" />
+                          <img src="https://dl.dropboxusercontent.com/s/iav8s3cngc9dosooprmsx/fullmix.png?rlkey=rkg0k4lmq7wnw4thovkhza1g1&dl=0" />
                           <button className="legend"><a href="https://genwav.beatstars.com/services/119321" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
                       </div>
                       <div className="slide">
-                          <img src="carouselImages/mixing.png" />
+                          <img src="https://dl.dropboxusercontent.com/s/tfb6fip9rwypf0wb5m36j/mixing.png?rlkey=779ag1yk18i39dv0jnwfyvn41&dl=0" />
                           <button className="legend"><a href="https://genwav.beatstars.com/services" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
                       </div>
                       <div className="slide">
-                          <img src="carouselImages/mix+master.png" />
+                          <img src="https://dl.dropboxusercontent.com/s/echpavedhvl9o0icm9gcg/mix-master.png?rlkey=b1bv8ydwqaxwpornxurrfb2cp&dl=0" />
                           <button className="legend"><a href="https://genwav.beatstars.com/services/119323" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
                       </div>
                       <div className="slide">
-                          <img src="carouselImages/custombeat.png" />
+                          <img src="https://dl.dropboxusercontent.com/s/jqofzn3862jtixkiienc9/custombeat.png?rlkey=vh1woj30uv823iqvltf2qq3os&dl=0" />
                           <button className="legend"><a href="https://genwav.beatstars.com/services/119324" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
                       </div>
                       <div  className="slide">
-                          <img src="carouselImages/prod lesson.png" />
+                          <img src="https://dl.dropboxusercontent.com/s/kly82aimdiz7ul88qo75y/prod-lesson.png?rlkey=627j03ybxm5er8lqa35hqytxr&dl=0" />
                           <button className="legend"><a href="https://genwav.beatstars.com/services/119322" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
                       </div>
                       <div className="slide">
-                          <img src="carouselImages/recording session.png" />
+                          <img src="https://dl.dropboxusercontent.com/s/b1dbjimasknijpxwgz993/recording-session.png?rlkey=fex8apjdiiiwfovwuw4y7q4bk&dl=0" />
                           <button className="legend"><a href="https://genwav.beatstars.com/services/125886" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
                       </div>
                   </Carousel>
@@ -268,8 +268,8 @@ const GenWavOS = (props) => {
               <Card className="card" style={{width:'90%', minHeight: '200px', marginBottom:"20px", marginTop:'10%'}}>
                 <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/vvexe32_1.ico" width="25" height="25" className="inage" /> About</div>
                   <CardContent>
-                    <div style={{textAlign:"center"}}>
-                      <Avatar size={100} src='avatar.png' />
+                    <div style={{textAlign:"center"}}> 
+                      <Avatar size={125} src='https://dl.dropboxusercontent.com/s/aw5uvuev357azdlo72og2/Screenshot-2024-04-18-at-2.18.45-AM.png?rlkey=waj1wtalo8qvyjddhyf768jw0&dl=0' />
                     </div>
                     <Paper> Hi, my name is gen.wav. I'm a Cuban-American Artist, Producer, and Software Engineer. 👨‍💻 I've been a musician for 18 years, with a background in classical training, where I received years of training in Music Theory, Ear Training, and Composition, and learned many instruments, including Piano, Cello, Violin, and Voice. I'm a self taught guitarist, bassist, and producer, with over 10 years of experience writing, recording, producing and performing music. Take a look around, you can stream my music, watch my music videos, buy beats, or Music NFTS, or just vibe. </Paper>
                   </CardContent>
@@ -285,34 +285,28 @@ const GenWavOS = (props) => {
               <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/wangimg_130.ico" width="20px"></img> Gallery</div>
                     <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
                      
+                    <div className="slide">
+                          <img src="https://dl.dropboxusercontent.com/s/cnowbumt3ecj9e2pa29yu/elcambiopic.png?rlkey=7vo4hcix675fk5wytkqu9hfgu&dl=0" />
+                          <button className="legend"><a href="https://www.instagram.com/p/C5b22lTvChH/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                      </div>
                       <div className="slide">
                           <img src="https://dl.dropboxusercontent.com/s/dn8xm1k6kef804auw0pg7/D4A0CCB5-6F0C-4CB0-B93A-622E1697C908.JPG?rlkey=6cnvstghktqqrvxbqv2lg8o8y&dl=0" />
                           <button className="legend"><a href="https://www.instagram.com/p/C380AoJMQBH/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
                       </div>
                       <div className="slide">
-                          <img src="carouselImages/1.png" />
+                          <img src="https://dl.dropboxusercontent.com/s/5hhls38wigt1wwgrt3p0m/1.png?rlkey=tjj5wradaf2lrw0pu7id6jatt&dl=0" />
                           <button className="legend"><a href="https://www.instagram.com/p/CyOdrU4xPSa/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
                       </div>
                       <div className="slide">
-                          <img src="carouselImages/2.png" />
-                      </div>
-                      <div className="slide">
-                          <img src="carouselImages/3.png" />
-                      </div>
-                      <div className="slide">
-                          <img src="carouselImages/4.png" />
+                          <img src="https://dl.dropboxusercontent.com/s/6aroj9lrd83ka8082t8ik/4.png?rlkey=xd4waq4ideo8z8cwbzxi75o0j&dl=0" />
                           <button className="legend"><a href="https://www.instagram.com/p/C1m7-cQvV_J/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
                       </div>
                       <div  className="slide">
-                          <img src="carouselImages/5.png" />
-                          <button className="legend"><a href="https://www.instagram.com/p/Cy_izfGt77a/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
-                      </div>
-                      <div  className="slide">
-                          <img src="carouselImages/6.png" />
+                          <img src="https://dl.dropboxusercontent.com/s/aa6wibav18t36t47r2j6j/6.png?rlkey=ufxq4j0n8d5ua3fy00ljn7c57&dl=0" />
                           <button className="legend"><a href="https://www.instagram.com/p/CzJuQlgOB_6/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
                       </div>
                       <div  className="slide">
-                          <img src="carouselImages/7.png" />
+                          <img src="https://dl.dropboxusercontent.com/s/g45lofzneu2yk3m3ecvos/7.png?rlkey=qx5wzzp37ba3jbplefm9721js&dl=0" />
                           <button className="legend"><a href="https://instagram.com/p/Cz4CNH3teEa/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
                       </div>
                   </Carousel>
@@ -390,8 +384,8 @@ const GenWavOS = (props) => {
                 {/* <iframe width="100%" height="166" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/genesisbarrios/sets/my-music?si=62d1c9cdb8d54729a394f3c43d5d8d1b"></iframe>
                 */}
                   <iframe src="https://open.spotify.com/embed/artist/3YihJDU9YETUNDWO6pDuQG?utm_source=generator" width="100%" height="180" frameBorder="0" allow="clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
-                  <iframe width="100%" height="315" style={{borderRadius:"12px"}} src="https://www.youtube.com/embed/nJSuynNjiiU?si=1ZtVJAwwn-IJhLvd" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-                  <iframe
+                  <iframe width="100%" height="315" style={{borderRadius:"12px"}} src="https://www.youtube.com/embed/Dek1SdvAv2k?si=tNf8jxQ3qEEl4KO4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                  <iframe 
                     title="SoundCloud Player"
                     width="100%"
                     height="300"
@@ -404,48 +398,34 @@ const GenWavOS = (props) => {
             <Card className="card" style={{width:'90%', minHeight: '800px'}}>
             <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/cd_music.ico" width="25" height="25" className="inage" /> Digital Collectibles - Music NFTs</div>
               <CardContent>
-                <Frame style={{marginBottom:"10px"}}>
+                <Paper style={{marginBottom:"10px"}}>
                   For those that don't know about Music NFTs, they are digital collectibles. You can collect(or mint) to own a rare, and unique copy of one of my songs. These collectibles will give you access to different features on my website.. It may be free beats, sample packs, or sneak peeks!
-                </Frame>
+                </Paper>
+                
                 <Grid container spacing={2} style={{textAlign:"center"}}>
+                  <Grid item sm={12} md={12}>
+                  <iframe src="https://embed.sound.xyz/v1/release/6d9ec0ae-d689-4b11-9e4e-27216a6fcf10?referral=0x5dec3d6810fd96ac03593b862639ff32d7d1c78e&referral_source=embed-sound" style={{borderRadius: "8px"}} width="100%" height="188px"  allow="clipboard-write" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe>
+                    <iframe src="https://embed.sound.xyz/v1/release/4cb29261-df3e-4b43-8c37-8af5e9f0f3cf?referral=0x5dec3d6810fd96ac03593b862639ff32d7d1c78e&referral_source=embed-sound" style={{borderRadius: "8px"}} width="100%" height="188px"  allow="clipboard-write" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe>
+                  </Grid>
                   <Grid item sm={12} md={6}>
-                    <Frame style={{marginBottom:"10px", borderRadius:"15px"}}>
-                    <iframe style={{border:"none"}} id="embed" width="100%" height="250px" src="https://zora.co/editions/eth:0x5bc30e809aed2ff3c3bede9804419488e305b258/1/frame?padding=20px&mediaPadding=20px&showDetails=false&theme=%7B%22foreground%22%3A%22%23000000%22%2C%22background%22%3A%22%23f3f3f3%22%2C%22accent%22%3A%22%2307ff3b%22%2C%22onAccent%22%3A%22%23000000%22%2C%22border%22%3A%22%23f3f3f3%22%2C%22background2%22%3A%22%23f3f3f3%22%2C%22positive%22%3A%22%231CB687%22%2C%22negative%22%3A%22%23F03232%22%2C%22warning%22%3A%22%23F5A623%22%7D&showMedia=true&showCollectors=false&showMintingUI=true"></iframe>
-                    </Frame>
-                    <Frame style={{marginBottom:"10px", borderRadius:"15px"}}>
+                    <iframe style={{border:"none"}} width="100%" height="250px" src="https://zora.co/collect/zora:0x4dd517d52618a2c5d90699b5fd49e28e4041ddfd/6/frame?padding=20px&mediaPadding=20px&showDetails=false&theme=%7B%22foreground%22%3A%22%23000000%22%2C%22background%22%3A%22%23f3f3f3%22%2C%22accent%22%3A%22%2307ff3b%22%2C%22onAccent%22%3A%22%23000000%22%2C%22border%22%3A%22%23f3f3f3%22%2C%22background2%22%3A%22%23f3f3f3%22%2C%22positive%22%3A%22%231CB687%22%2C%22negative%22%3A%22%23F03232%22%2C%22warning%22%3A%22%23F5A623%22%7D&showMedia=true&showCollectors=false&showMintingUI=true"></iframe>
                     <iframe style={{border:"none"}} width="100%" height="250px" src="https://zora.co/collect/oeth:0xe5a213495a6186bc85b6411c35286a858cb3675f/1/frame?padding=20px&mediaPadding=20px&showDetails=false&theme=%7B%22foreground%22%3A%22%23000000%22%2C%22background%22%3A%22%23f3f3f3%22%2C%22accent%22%3A%22%2307ff3b%22%2C%22onAccent%22%3A%22%23000000%22%2C%22border%22%3A%22%23f3f3f3%22%2C%22background2%22%3A%22%23f3f3f3%22%2C%22positive%22%3A%22%231CB687%22%2C%22negative%22%3A%22%23F03232%22%2C%22warning%22%3A%22%23F5A623%22%7D&showMedia=true&showCollectors=false&showMintingUI=true"></iframe>
-                    </Frame>
+                   
                   </Grid>
                   <Grid item sm={12} md={6}>
-                    <Frame style={{marginBottom:"10px", borderRadius:"15px"}}>
-                      <iframe style={{border:"none"}} width="100%" height="250px" src="https://zora.co/collect/oeth:0xb45cd602810c48df0e36c1c292c51b4dd21f8e9d/1/frame?padding=20px&mediaPadding=20px&showDetails=false&theme=%7B%22foreground%22%3A%22%23000000%22%2C%22background%22%3A%22%23f3f3f3%22%2C%22accent%22%3A%22%2307ff3b%22%2C%22onAccent%22%3A%22%23000000%22%2C%22border%22%3A%22%23f3f3f3%22%2C%22background2%22%3A%22%23f3f3f3%22%2C%22positive%22%3A%22%231CB687%22%2C%22negative%22%3A%22%23F03232%22%2C%22warning%22%3A%22%23F5A623%22%7D&showMedia=true&showCollectors=false&showMintingUI=true"></iframe>
-                    </Frame>
-                    <Frame style={{marginBottom:"10px", backgroundColor:"white", borderRadius:"15px"}}>
-                      <div style={{height:"250px", width:"100%", textAlign:"center"}}>
-                        <img width="auto" height="70%" style={{margin:"1% auto", marginBottom:"10%", display:"block"}} src="https://lh3.googleusercontent.com/drive-viewer/AEYmBYS6K8WEkMB9B3IXMw3VkTHLdR2gLiZ-ZooKZB9y2zi-BL_Y6dxmaQVXDMwckZEM7XVPiw_WfNuzhlE0pKni2FXUf-KjeQ=s2560"></img>
-                        <p style={{display:"inline", margin:"0 5%", fontFamily:"Helvetica Neue", fontWeight:"400", fontSize:"0.9em"}}>Trust Me</p>
-                        <a href="https://opensea.io/assets/matic/0x6ac6ea8ea96b582d6473def2a1cd13aaf3f80cc3/" target="_blank" style={{display:"inline", marginLeft:"15%", cursor:"pointer"}}><button style={{backgroundColor:"black", color:"white", borderRadius:"5px", padding:"5px 15px"}}>Mint</button></a>
-                    </div>
-                    </Frame>
-                    {/* add cachumbambe, todavia, ya no estoy triste */}
+                      <iframe style={{border:"none"}} id="embed" width="100%" height="250px" src="https://zora.co/editions/eth:0x5bc30e809aed2ff3c3bede9804419488e305b258/1/frame?padding=20px&mediaPadding=20px&showDetails=false&theme=%7B%22foreground%22%3A%22%23000000%22%2C%22background%22%3A%22%23f3f3f3%22%2C%22accent%22%3A%22%2307ff3b%22%2C%22onAccent%22%3A%22%23000000%22%2C%22border%22%3A%22%23f3f3f3%22%2C%22background2%22%3A%22%23f3f3f3%22%2C%22positive%22%3A%22%231CB687%22%2C%22negative%22%3A%22%23F03232%22%2C%22warning%22%3A%22%23F5A623%22%7D&showMedia=true&showCollectors=false&showMintingUI=true"></iframe>
+                      <iframe style={{border:"none"}} width="100%" height="250px" src="https://zora.co/collect/oeth:0xb45cd602810c48df0e36c1c292c51b4dd21f8e9d/1/frame?padding=20px&mediaPadding=20px&showDetails=false&theme=%7B%22foreground%22%3A%22%23000000%22%2C%22background%22%3A%22%23f3f3f3%22%2C%22accent%22%3A%22%2307ff3b%22%2C%22onAccent%22%3A%22%23000000%22%2C%22border%22%3A%22%23f3f3f3%22%2C%22background2%22%3A%22%23f3f3f3%22%2C%22positive%22%3A%22%231CB687%22%2C%22negative%22%3A%22%23F03232%22%2C%22warning%22%3A%22%23F5A623%22%7D&showMedia=true&showCollectors=false&showMintingUI=true"></iframe> 
                   </Grid>
-                </Grid>
-                <Grid container spacing={1}>
-                  <Grid item sm={12} style={{width:"100%", textAlign:"center"}}>
-                    <Frame style={{marginBottom:"10px", borderRadius:"15px"}}>
-                      <iframe src="https://embed.sound.xyz/v1/release/5d3056a3-3f54-4aac-827d-15372f8f391e?referral=0x5dec3d6810fd96ac03593b862639ff32d7d1c78e&referral_source=embed-sound" style={{borderRadius: "8px"}} width="100%" height="auto" allow="clipboard-write" sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox"></iframe>
-                    </Frame>
-                    </Grid>
                 </Grid>
 
                 <div style={{width:"100%", textAlign:"center"}}>
-                  <Frame style={{marginBottom:"10px",}}>
-                    <a href="https://beta.catalog.works/gendotwav/soltero" target="_blank" style={{textDecoration:"none"}}><Button>Soltero feat. El Igor on Catalog</Button></a>
-                  </Frame>
+                  <Paper style={{marginTop:"10px"}}>
+                    <a href="https://beta.catalog.works/gendotwav/soltero" target="_blank" style={{textDecoration:"none", color:"black"}}>Soltero feat. El Igor on Catalog</a>
+                  </Paper>
                   <br></br>
-                  <Frame style={{marginBottom:"10px"}}>
-                  <a href="https://www.oohlala.xyz/artist/64c1b698-881c-4f40-959a-405dceb0d706/tracks" target="_blank" style={{textDecoration:"none"}}> <Button>OohLala - Web3 Music Aggregator</Button></a>
-                  </Frame>
+                  <Paper style={{marginBottom:"10px"}}>
+                  <a href="https://www.oohlala.xyz/artist/64c1b698-881c-4f40-959a-405dceb0d706/tracks" target="_blank" style={{textDecoration:"none", color:"black"}}>OohLala - Web3 Music Aggregator</a>
+                  </Paper>
                 </div>
                 {/* <Frame style={{marginBottom:"10px"}}>
                 <a href="https://www.sound.xyz/user/genwav.eth" target="_blank" style={{textDecoration:"none"}}><Button>sound.xyz</Button></a>
