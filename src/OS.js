@@ -4,15 +4,11 @@ import { Key, ReactChild, ReactFragment, ReactPortal, useCallback, useEffect, us
 import { useNavigate } from "react-router-dom";
 import './styles.css'
 import Grid from '@material-ui/core/Grid'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCheckCircle, faWallet } from '@fortawesome/free-solid-svg-icons'
-import { MenuList, MenuListItem, Separator, styleReset, Frame, Button } from 'react95';
-import { createGlobalStyle, ThemeProvider } from 'styled-components';
 import { Alert, SliderThumb } from "@material-ui/core";
 import '@react95/icons/icons.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
-import shelbiTeal from 'react95/dist/themes/shelbiTeal';
+import ReactModal from 'react-modal';
 
 import { Avatar } from "react95";
 import React from "react";
