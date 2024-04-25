@@ -28,19 +28,23 @@
   <body >
   
     <div id="root"></div>
-    <div id="welcomeBox" class="hide">
-      <div class="titleDiv" style="width:50%!important">
-        <img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_102.ico" width="25" height="25" class="inage" />
-        <p class="title" style="width:50%!important">genwav95</p>
-        <button style="color:#39ea53;float:right; margin-right:5px; margin-top:5px; padding: 1px 2px;">X</button>
-        <button style="color:#39ea53;float:right; margin-right:5px; margin-top:5px; padding: 1px 2px;">?</button>
+    <div id="welcomeBox" class="hide" style="background-color: #00000d !important; border:1px solid #73ecff; border-radius:15px;">
+      <div class="titleDiv" style="display: flex; justify-content: space-between; align-items: center; width: 100%; padding-top:10px;">
+        <div style="display: flex; align-items: center; margin-left:10px;">
+           <img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_102.ico" width="20" height="20" class="image" />
+           <p class="title" style="margin-right: 10px;margin-left:5px;">genwav95</p>
+        </div>
+        <div>
+          <button style="color:#73ecff; margin-left: 5px;">?</button>
+          <button style="color:#73ecff; margin-left: 5px;margin-right:10px;">X</button>
+        </div>
       </div>
-      <div style="height:80%;background-color:#535353!important; padding:50px 50px;" >
-        <p id="welcome" style="color:#39ea53;font-family:'Arial, sans-serif'"> Welcome to genwavOS </p>
-        <a id="enter"  style="background-color:black;color:#39ea53;font-family:'ms_sans_serif, sans-serif'; border:'1px solid black'" href="/os" >enter</a>
+      <div style="height:80%;padding:50px 50px;" >
+        <p id="welcome" style="color:#73ecff;font-family:'Arial, sans-serif'"> Welcome to genwavOS </p>
+        <p style="color:#73ecff;font-family:'Arial, sans-serif'; font-size:0.5em;margin-bottom:5px; text-align:center;"> (tap on the keyboard..) </p>
+        <a id="enter"  style="background-color:black;color:#73ecff;font-family:'ms_sans_serif, sans-serif'; border:'1px solid black'" href="/os" >enter</a>
       </div>
     </div>
-    
 
     <script src="https://open.spotify.com/embed-podcast/iframe-api/v1" async></script>
     

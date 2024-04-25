@@ -20,22 +20,28 @@ p{
 #nav{
   background-color: #23272A;
 }
-
-#welcomeBox{
-  display:inline-block;
-  position: absolute; /* Use absolute positioning for precise placement */
-  top: 5px; /* Vertically center the element */
-  left: 5px; /* Horizontally center the element */
-  width:25%;
-  height:200px;
-  background-color:#535353 !important;
-}
-
 .titleDiv button{
   background:#535353;
   border-width:1px;
   border-style:solid;
   border-color:#FFFFFF #808080 #808080 #FFFFFF;
+}
+
+#welcomeBox{
+  background-color: #00000d !important;
+  border:1px solid #73ecff;
+  border-radius:15px;  
+  flex-direction : "column";
+  justify-content : "center";
+  align-items : "center";
+  height : "25%";
+  width : "25%";
+  position: absolute;
+  top: 40%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+  align-self : "center";
+  width:25%;
 }
 
 .image{
@@ -46,22 +52,22 @@ p{
   font-size: bold;
 }
 
+.titleDiv{
+  display: flex!important; 
+}
 .title{
-  width:80%;
-  background:#00000d;
+  margin-right: auto;
   display:inline;
   font-size:12px;
   font-family:Tahoma!important;
   color:white;
   font-size: bold;
+  width:"80%;"
 }
 
 #welcome{
-  color:white;
-  background-color:#535353!important;
-  color:#39ea53;
   text-align:center;
-  margin-bottom:15%;
+  margin-bottom:5px;
   font-family:"MS Sans Serif";
 }
 
@@ -70,8 +76,6 @@ p{
 .hide{
   display:none;
 }
-
-
 
 #enter{
   background:#C0C0C0;
@@ -84,7 +88,7 @@ p{
   text-decoration:none;
   cursor:pointer;
   color:black;
-  margin-left:45%;
+  margin-left:42%;
 }
 
 #enter:hover{

@@ -147,19 +147,31 @@ export default class Room {
         this.mixer = new THREE.AnimationMixer(this.actualRoom);
         //this.swim = this.mixer.clipAction(this.room.animations[0]);
         //this.swim.play();
-        if(this.roomChildren){
-            console.log(this.roomChildren)
-            //this.roomChildren["akai_lp"].addEventListener("click", () => {
-                console.log("you're playing the piano");
-                //play a random note
-                const notes = ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C']
-                const randomNote = notes[Math.floor(Math.random() * notes.length)];
-                // const randomOctave = Math.floor(Math.random() * 3) + 4; // Random octave between 4 and 5
-                const noteToPlay = randomNote + "4";
-                this.synth.triggerAttackRelease(noteToPlay, "8n");
-                console.log('play the piano')
-            //});
+        
+        // Trigger the synth to play a note
+        if (this.roomChildren && this.roomChildren["akai_lp"]) {
+            console.log("You're playing the piano");
+    
+            // Play a random note
+            const notes = ['C', 'D', 'E', 'F', 'G', 'A', 'B', 'C'];
+            const randomNote = notes[Math.floor(Math.random() * notes.length)];
+            const noteToPlay = randomNote + "4";
+            this.synth.triggerAttackRelease(noteToPlay, "8n");
+    
+            // Trigger the animation on the piano object
+            const pianoObject = this.roomChildren["akai_lp"];
+            const initialScale = pianoObject.scale.clone();
+            const targetScale = initialScale.clone().multiplyScalar(1.1); // Scale up by 10%
+            const duration = 0.5; // Duration of the animation in seconds
+    
+            // Define the animation
+            const scaleAnimation = GSAP.timeline();
+            scaleAnimation.to(pianoObject.scale, { x: targetScale.x, y: targetScale.y, z: targetScale.z, duration: duration });
+            scaleAnimation.to(pianoObject.scale, { x: initialScale.x, y: initialScale.y, z: initialScale.z, duration: duration });
+    
+            console.log('Play the piano');
         }
+        
     }
 
     onMouseClick(event) {

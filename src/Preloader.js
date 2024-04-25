@@ -41,17 +41,21 @@ export default class Preloader extends EventEmitter {
 
     unHideButton() {
         //unhide elements
-        const welcomeBox = document.getElementById("welcomeBox");
         
-        //set position
-        const position = new THREE.Vector3(0.1, 3.25, 5);
-        const top = window.innerHeight /2 - 250 + "px";
-        const left = window.innerWidth/2 - 150 + "px";
+        const welcomeBox = document.getElementById("welcomeBox");
+        if (welcomeBox) {
 
-        // Set the style properties for the button and welcome elements
-        welcomeBox.style.top = top;
-        welcomeBox.style.left = left;
-        //welcomeBox.classList.remove("hide");
+            welcomeBox.classList.remove("hide");
+
+            // Set the style properties for the button and welcome elements
+            welcomeBox.style.flexDirection = "column";
+            welcomeBox.style.justifyContent = "center";
+            welcomeBox.style.alignItems = "center";
+            welcomeBox.style.height = "25%";
+            welcomeBox.style.width = "25%";
+            welcomeBox.style.alignSelf = "center";
+            
+       }
     }
 
     firstIntro() {
@@ -146,7 +150,7 @@ export default class Preloader extends EventEmitter {
                     this.roomChildren.plane001.scale,
                     {
                         x: 8,
-                        y: 8,
+                        y: 3,
                         z: 5,
                     },
                     "same"
@@ -290,9 +294,12 @@ export default class Preloader extends EventEmitter {
         window.addEventListener("touchmove", this.touchMove);
     }
     async playSecondIntro() {
+        console.log("second intro")
         this.moveFlag = false;
         await this.secondIntro();
         this.unHideButton();
+
+        this.secondTimeline.call(this.unHideButton.bind(this));
         
         this.scaleFlag = false;
         this.emit("enablecontrols");

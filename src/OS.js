@@ -184,7 +184,7 @@ const GenWavOS = (props) => {
                     </a>
                   </div>
                   <div style={{display:"inline"}}>
-                    <a target="_blank" href="https://discord.com/invite/ctEu8m9h" style={{textDecoration:"none"}}>
+                    <a target="_blank" href="https://discord.com/invite/2MdNjbHnBR" style={{textDecoration:"none"}}>
                       <DiscordLogo style={{color: 'purple'}} size={25}></DiscordLogo>
                     </a>
                   </div>
