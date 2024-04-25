@@ -106,7 +106,7 @@ export default class Preloader extends EventEmitter {
                     {
                         x: -5.638711,
                         y: 6.2,
-                        z: 1.3243,
+                        z: 2.3243,
                     },
                     "same"
                 )

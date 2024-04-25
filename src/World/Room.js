@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js"; // Import the GLTFLoader
 import Experience from "../Experience.js";
 import GSAP from "gsap";
 import { RectAreaLightHelper } from "three/examples/jsm/helpers/RectAreaLightHelper.js";
@@ -29,7 +30,55 @@ export default class Room {
         window.addEventListener("click", (event) => this.onMouseClick(event));
     }
 
+    async loadModel(modelPath, position) {
+        return new Promise((resolve, reject) => {
+            const loader = new GLTFLoader();
+            loader.load(
+                modelPath,
+                (gltf) => {
+                    const model = gltf.scene;
+                    model.position.copy(position); // Set the position
+                    model.scale.set(0.5, 0.5, 0.5); // Set the scale to half (adjust as needed)
+                    // Set the color to blue
+                    model.traverse((child) => {
+                        if (child.isMesh) {
+                            child.material.color.set(0x0000ff); // Blue color
+                        }
+                    });
+                    this.scene.add(model); // Add the model to the scene
+                    resolve(model);
+                },
+                (xhr) => {}, // Progress callback (not used)
+                (error) => {
+                    console.error('An error occurred while loading the model:', error);
+                    reject(error);
+                }
+            );
+        });
+    }
     
+    
+
+    async displayRandomModelAboveAkaiLP() {
+        const akaiLP = this.roomChildren["akai_lp"];
+        if (!akaiLP) return;
+
+        const akaiLPPosition = akaiLP.position.clone();
+        const randomOffset = new THREE.Vector3(
+            -5.638711, // No change in X offset
+            Math.random() * (10 - 6.3) + 6.3, // Random Y offset between 5 and 10 (adjust as needed)
+            2.3243 // No change in Z offset
+        );
+
+        const modelPath = "/models/note.glb"; // Adjust the path to your model file
+        const randomPosition = akaiLPPosition.add(randomOffset); // Calculate the random position
+
+        try {
+            await this.loadModel(modelPath, randomPosition);
+        } catch (error) {
+            console.error('Failed to display the random model:', error);
+        }
+    }
 
     setModel() {
         this.actualRoom.children.forEach((child) => {
@@ -170,6 +219,7 @@ export default class Room {
             scaleAnimation.to(pianoObject.scale, { x: initialScale.x, y: initialScale.y, z: initialScale.z, duration: duration });
     
             console.log('Play the piano');
+            this.displayRandomModelAboveAkaiLP();
         }
         
     }
