@@ -31,6 +31,12 @@ div.card{
   background-color: #060606;
   border: 1px solid #73ecff;
   border-radius:15px;
+  box-shadow: 0 3px 5px 2px rgba(115, 236, 255, 0.7);
+  transition: transform 0.3s ease-in-out;
+}
+
+div.card:hover {
+  transform: scale(1.02);
 }
 
 div.cardHeader{
