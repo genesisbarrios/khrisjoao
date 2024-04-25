@@ -28,6 +28,9 @@ div.card{
   padding:5px !important;
   background-color: rgb(160, 160, 160);
   color:white;
+  background-color: #060606;
+  border: 1px solid #73ecff;
+  border-radius:15px;
 }
 
 div.cardHeader{
