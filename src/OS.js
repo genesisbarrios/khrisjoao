@@ -97,7 +97,7 @@ const GenWavOS = (props) => {
     <div id="OS">
           
       <Grid container spacing={3} style={{marginLeft:"3px"}}> 
-        <Grid item sm={12} md={4} order={{ sm: 3, md: 1 }} style={{marginTop:"6%"}}> 
+        <Grid item sm={12} md={4} order={{ xs: 3, md: 1 }} style={{marginTop:"6%"}}> 
           <Card className="card" style={{width:'90%', marginBottom:"5%"}}>
             <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_111.ico" width="25" height="25" className="inage" />  Music Videos </div>
             <CardContent>
@@ -146,10 +146,10 @@ const GenWavOS = (props) => {
               </Card>
         </Grid>
        
-          <Grid item sm={12} md={4} order={{ xs: 1, md: 2 }}>
+          <Grid item sm={12} md={4} order={{ xs: 1, sm: 2 }}>
                 <div style={{paddingTop:"10px", display:"flex", justifyContent:"space-between"}}>
                   <div style={{display:"inline"}}>
-                    <a target="_blank" href="http://instgram.com/gen.wav" style={{textDecoration:"none"}}>
+                    <a target="_blank" href="http://instagram.com/gen.wav" style={{textDecoration:"none"}}>
                       <InstagramLogo style={{color: 'purple'}} size={25}></InstagramLogo>
                     </a>
                   </div>
@@ -302,7 +302,7 @@ const GenWavOS = (props) => {
               </Card>
           </Grid>   
          
-          <Grid item sm={12} md={4} order={{ sm: 2, md: 3 }} style={{marginTop:"6%"}}>
+          <Grid item sm={12} md={4} order={{ xs: 2, md: 3 }} style={{marginTop:"6%"}}>
               <Card className="card" style={{width:'90%', minHeight: '200px', marginBottom:"20px"}}>
               <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_116.ico" width="20" height="20" className="inage"/> Stream My Music</div>
                 <CardContent>
