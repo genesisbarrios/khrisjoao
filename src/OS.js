@@ -146,46 +146,46 @@ const GenWavOS = (props) => {
               </Card>
         </Grid>
        
-          <Grid item sm={12} md={4} order={{ xs: 1, sm: 2 }}>
+          <Grid item sm={12} md={4} order={{ xs: 1, sm: 1 }}>
                 <div style={{paddingTop:"10px", display:"flex", justifyContent:"space-between"}}>
                   <div style={{display:"inline"}}>
                     <a target="_blank" href="http://instagram.com/gen.wav" style={{textDecoration:"none"}}>
-                      <InstagramLogo style={{color: 'purple'}} size={25}></InstagramLogo>
+                      <InstagramLogo style={{color: 'purple'}} size={20}></InstagramLogo>
                     </a>
                   </div>
                   <div style={{display:"inline"}}>
                     <a target="_blank" href="http://twitter.com/gendotwav" style={{textDecoration:"none"}}>
-                      <TwitterLogo style={{color: '#A6CAF0'}} size={25}></TwitterLogo>
+                      <TwitterLogo style={{color: '#A6CAF0'}} size={20}></TwitterLogo>
                     </a>
                   </div>
                   <div style={{display:"inline"}}>
                     <a target="_blank" href="http://tiktok.com/gen.wav" style={{textDecoration:"none"}}>
-                      <TiktokLogo style={{color: 'pink'}} size={25}></TiktokLogo>
+                      <TiktokLogo style={{color: 'pink'}} size={20}></TiktokLogo>
                     </a>
                   </div>
                   <div style={{display:"inline"}}>
                     <a target="_blank" href="https://soundcloud.com/genwav" style={{textDecoration:"none"}}>
-                      <SoundcloudLogo style={{color: 'orange'}} size={25}></SoundcloudLogo>
+                      <SoundcloudLogo style={{color: 'orange'}} size={20}></SoundcloudLogo>
                     </a>
                   </div>
                   <div style={{display:"inline"}}>
                     <a target="_blank" href="https://www.youtube.com/@genwav" style={{textDecoration:"none"}}>
-                      <YoutubeLogo style={{color: 'red'}} size={25}></YoutubeLogo>
+                      <YoutubeLogo style={{color: 'red'}} size={20}></YoutubeLogo>
                     </a>
                   </div>
                   <div style={{display:"inline"}}>
                     <a target="_blank" href="https://open.spotify.com/artist/3YihJDU9YETUNDWO6pDuQG?si=VmY6439rRLS5mw8uC0nHYg" style={{textDecoration:"none"}}>
-                      <SpotifyLogo style={{color: 'green'}} size={25}></SpotifyLogo>
+                      <SpotifyLogo style={{color: 'green'}} size={20}></SpotifyLogo>
                     </a>
                   </div>
                   <div style={{display:"inline"}}>
                     <a target="_blank" href="https://music.apple.com/us/artist/genesis-barrios/1194186719" style={{textDecoration:"none"}}>
-                      <AppleLogo style={{color: 'pink'}} size={25}></AppleLogo>
+                      <AppleLogo style={{color: 'pink'}} size={20}></AppleLogo>
                     </a>
                   </div>
                   <div style={{display:"inline"}}>
                     <a target="_blank" href="https://discord.com/invite/2MdNjbHnBR" style={{textDecoration:"none"}}>
-                      <DiscordLogo style={{color: 'purple'}} size={25}></DiscordLogo>
+                      <DiscordLogo style={{color: 'purple'}} size={20}></DiscordLogo>
                     </a>
                   </div>
                 </div>
