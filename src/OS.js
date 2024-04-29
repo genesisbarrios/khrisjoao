@@ -146,7 +146,7 @@ const GenWavOS = (props) => {
               </Card>
         </Grid>
        
-          <Grid item sm={12} md={4} order={{ sm: 1, md: 2 }}>
+          <Grid item sm={12} md={4} order={{ xs: 1, md: 2 }}>
                 <div style={{paddingTop:"10px", display:"flex", justifyContent:"space-between"}}>
                   <div style={{display:"inline"}}>
                     <a target="_blank" href="http://instgram.com/gen.wav" style={{textDecoration:"none"}}>
