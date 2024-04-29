@@ -24,62 +24,69 @@ export default class Room {
 
         this.setModel();
         this.setAnimation();
+       
+        this.addLogoModels();
         //this.onMouseMove();
         // Bind this to the class instance for event handlers
         this.onMouseClick = this.onMouseClick.bind(this);
         window.addEventListener("click", (event) => this.onMouseClick(event));
-    }
 
-    async loadModel(modelPath, position) {
-        return new Promise((resolve, reject) => {
-            const loader = new GLTFLoader();
-            loader.load(
-                modelPath,
-                (gltf) => {
-                    const model = gltf.scene;
-                    model.position.copy(position); // Set the position
-                    model.scale.set(0.5, 0.5, 0.5); // Set the scale to half (adjust as needed)
-                    // Set the color to blue
-                    model.traverse((child) => {
-                        if (child.isMesh) {
-                            child.material.color.set(0x0000ff); // Blue color
-                        }
-                    });
-                    this.scene.add(model); // Add the model to the scene
-                    resolve(model);
-                },
-                (xhr) => {}, // Progress callback (not used)
-                (error) => {
-                    console.error('An error occurred while loading the model:', error);
-                    reject(error);
-                }
-            );
-        });
+         // Check if note and logo models are loaded
+         console.log(this.resources.items);
+         console.log('----resources----')
+        //  if (this.resources.items.musicNote && this.resources.items.discord) {
+        //     // Both models are loaded, add them to the scene
+        //     this.scene.add(this.resources.items.musicNote.clone());
+        //     this.scene.add(this.resources.items.discord.clone());
+        // } else {
+        //     // Models are still loading, listen for the 'ready' event
+        //     this.resources.once("ready", () => {
+        //         // Once models are loaded, add them to the scene
+        //         this.scene.add(this.resources.items.discord.clone());
+        //         this.scene.add(this.resources.items.musicNote.clone());
+        //     });
+        // }
     }
-    
-    
 
     async displayRandomModelAboveAkaiLP() {
         const akaiLP = this.roomChildren["akai_lp"];
         if (!akaiLP) return;
-
+    
         const akaiLPPosition = akaiLP.position.clone();
         const randomOffset = new THREE.Vector3(
             -5.638711, // No change in X offset
             Math.random() * (10 - 6.3) + 6.3, // Random Y offset between 5 and 10 (adjust as needed)
             2.3243 // No change in Z offset
         );
+    
+        const modelPath = "./models/note.glb"; // Adjust the path to your model file
 
-        const modelPath = "/models/note.glb"; // Adjust the path to your model file
-        const randomPosition = akaiLPPosition.add(randomOffset); // Calculate the random position
-
-        try {
-            await this.loadModel(modelPath, randomPosition);
-        } catch (error) {
-            console.error('Failed to display the random model:', error);
-        }
+        // Once loaded, create a mesh from the model geometry
+        const modelMesh = new THREE.Mesh(this.resources.items.musicNote.geometry, this.resources.items.musicNote.material); // Assuming the model has a single child
+        modelMesh.position.copy(akaiLPPosition.add(randomOffset)); // Set position
+        this.scene.add(modelMesh); // Add the mesh to the scene
     }
+    
 
+    async addLogoModels() {
+        // Define the positions for the logos across the top of the screen
+        const logoPositions = [
+            new THREE.Vector3(0, 6, 2),  // Adjust these positions as needed
+            new THREE.Vector3(-5, 8, 0),
+            new THREE.Vector3(-3, 8, 0),
+            new THREE.Vector3(-1, 8, 0),
+            new THREE.Vector3(1, 8, 0),
+            new THREE.Vector3(3, 8, 0),
+            new THREE.Vector3(5, 8, 0)
+        ];
+    
+        // Load and position each logo model
+        const modelPath = "./models/3d_discord_logo.glb"; // Adjust the path to your logo model file
+        const modelMesh = new THREE.Mesh(this.resources.items.discord.geometry, this.resources.items.discord.material); // Assuming the model has a single child
+        modelMesh.position.copy(logoPositions[0]); // Set position
+        this.scene.add(modelMesh); // Add the mesh to the scene
+    }
+    
     setModel() {
         this.actualRoom.children.forEach((child) => {
             child.castShadow = true;
@@ -94,18 +101,6 @@ export default class Room {
             }
 
             // console.log(child);
-
-            // if (child.name === "Aquarium") {
-            //     // console.log(child);
-            //     child.children[0].material = new THREE.MeshPhysicalMaterial();
-            //     child.children[0].material.roughness = 0;
-            //     child.children[0].material.color.set(0x549dd2);
-            //     child.children[0].material.ior = 3;
-            //     child.children[0].material.transmission = 1;
-            //     child.children[0].material.opacity = 1;
-            //     child.children[0].material.depthWrite = false;
-            //     child.children[0].material.depthTest = false;
-            // }
 
             if (child.name === "macmini_1_0") {
                 child.children[1].material = new THREE.MeshBasicMaterial({
