@@ -212,27 +212,27 @@ const GenWavOS = (props) => {
                      
                     <div className="slide">
                           <img src="https://dl.dropboxusercontent.com/s/cnowbumt3ecj9e2pa29yu/elcambiopic.png?rlkey=7vo4hcix675fk5wytkqu9hfgu&dl=0" />
-                          <button className="legend"><a href="https://www.instagram.com/p/C5b22lTvChH/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                          <button className="legend"><a href="https://www.instagram.com/p/C5b22lTvChH/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={20} className="igLogo"></InstagramLogo></a></button>
                       </div>
                       <div className="slide">
                           <img src="https://dl.dropboxusercontent.com/s/dn8xm1k6kef804auw0pg7/D4A0CCB5-6F0C-4CB0-B93A-622E1697C908.JPG?rlkey=6cnvstghktqqrvxbqv2lg8o8y&dl=0" />
-                          <button className="legend"><a href="https://www.instagram.com/p/C380AoJMQBH/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                          <button className="legend"><a href="https://www.instagram.com/p/C380AoJMQBH/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={20} className="igLogo"></InstagramLogo></a></button>
                       </div>
                       <div className="slide">
                           <img src="https://dl.dropboxusercontent.com/s/5hhls38wigt1wwgrt3p0m/1.png?rlkey=tjj5wradaf2lrw0pu7id6jatt&dl=0" />
-                          <button className="legend"><a href="https://www.instagram.com/p/CyOdrU4xPSa/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                          <button className="legend"><a href="https://www.instagram.com/p/CyOdrU4xPSa/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={20} className="igLogo"></InstagramLogo></a></button>
                       </div>
                       <div className="slide">
                           <img src="https://dl.dropboxusercontent.com/s/6aroj9lrd83ka8082t8ik/4.png?rlkey=xd4waq4ideo8z8cwbzxi75o0j&dl=0" />
-                          <button className="legend"><a href="https://www.instagram.com/p/C1m7-cQvV_J/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                          <button className="legend"><a href="https://www.instagram.com/p/C1m7-cQvV_J/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={20} className="igLogo"></InstagramLogo></a></button>
                       </div>
                       <div  className="slide">
                           <img src="https://dl.dropboxusercontent.com/s/aa6wibav18t36t47r2j6j/6.png?rlkey=ufxq4j0n8d5ua3fy00ljn7c57&dl=0" />
-                          <button className="legend"><a href="https://www.instagram.com/p/CzJuQlgOB_6/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                          <button className="legend"><a href="https://www.instagram.com/p/CzJuQlgOB_6/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={20} className="igLogo"></InstagramLogo></a></button>
                       </div>
                       <div  className="slide">
                           <img src="https://dl.dropboxusercontent.com/s/g45lofzneu2yk3m3ecvos/7.png?rlkey=qx5wzzp37ba3jbplefm9721js&dl=0" />
-                          <button className="legend"><a href="https://instagram.com/p/Cz4CNH3teEa/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                          <button className="legend"><a href="https://instagram.com/p/Cz4CNH3teEa/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={20} className="igLogo"></InstagramLogo></a></button>
                       </div>
                   </Carousel>
               </Card>
