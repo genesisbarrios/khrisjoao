@@ -114,8 +114,8 @@ const EPK = (props) => {
       <Grid item sm={12}>
         <div style={{ margin: "0 auto", width: "50%" }}>
           <video
-            autoPlay={true} loop={true} controls={false}
-            src="https://dl.dropboxusercontent.com/s/f9ffwd9klanjik79nfyjz/GENESIS-SQUARE.mp4?rlkey=0dhqizrq9n01ug35ont16on6y&st=ol1n7ef9&dl=0"
+            autoPlay={true} loop={true} controls={false} 
+            src="https://dl.dropboxusercontent.com/s/ubnox8ulofuaaclvxlds6/GENESIS-W-GLOW-FINAL-COVER.png?rlkey=5abzzj7bivh9eu4jkocfleyp4&st=owyjheqm&dl=0"
             alt="GENESIS Album"
             style={{ height: "auto", width: "100%", objectFit: "cover", margin:"5% 0" }}
           />
