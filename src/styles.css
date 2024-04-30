@@ -234,6 +234,14 @@ button.legend{
 
 @media (max-width: 968px){
 
+  #comingSoon{
+    font-size:0.95em;
+  }
+
+  #GenesisImageDiv{
+    width:80%!important;
+  }
+
   #OS{
     padding-left: 3%;
   }
