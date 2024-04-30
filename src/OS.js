@@ -94,9 +94,9 @@ const GenWavOS = (props) => {
  
   return(
     
-    <div id="OS">
+    <div id="OS" style={{}}>
           
-      <Grid container spacing={3} style={{marginLeft:"3px"}}> 
+      <Grid container spacing={3} style={{maxWidth:"100%", margin: "0 auto"}}> 
         <Grid item sm={12} md={4} order={{ xs: 3, md: 1 }} style={{marginTop:"6%"}}> 
           <Card className="card" style={{width:'90%', marginBottom:"5%"}}>
             <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_111.ico" width="25" height="25" className="inage" />  Music Videos </div>
@@ -146,7 +146,7 @@ const GenWavOS = (props) => {
               </Card>
         </Grid>
        
-          <Grid item xs={12} sm={12} md={4} order={{ xs: 1, sm: 1 }} style={{ maxWidth: "100%" }}>
+          <Grid item xs={12} sm={12} md={4} order={{ xs: 1, sm: 1 }} style={{ width: "90%" }}>
                 <div style={{paddingTop:"10px", display:"flex", justifyContent:"space-between"}}>
                   <div style={{display:"inline"}}>
                     <a target="_blank" href="http://instagram.com/gen.wav" style={{textDecoration:"none"}}>

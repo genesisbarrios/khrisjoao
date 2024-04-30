@@ -14,7 +14,7 @@ html, body{
   background-color: black;
   min-height: 102vh;
   color:white;
-  width:100%;
+  max-width:100%;
 }
 
 #EPK{
@@ -226,6 +226,11 @@ button.legend{
 /* Media Queries */
 
 @media (max-width: 968px){
+
+  #OS{
+    padding-left: 10%;
+  }
+
   .section{
     width: 100%;
   }
