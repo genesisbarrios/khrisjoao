@@ -23,20 +23,19 @@ export default class Preloader extends EventEmitter {
             this.setAssets();
             this.playIntro();
             this.playSecondIntro();
-           
         });
     }
 
     setAssets() {
-        // convert(document.querySelector(".intro-text"));
-        // convert(document.querySelector(".hero-main-title"));
-        // convert(document.querySelector(".hero-main-description"));
-        // convert(document.querySelector(".hero-second-subheading"));
-        //convert(document.querySelector(".second-sub"));
-
         this.room = this.experience.world.room.actualRoom;
         this.roomChildren = this.experience.world.room.roomChildren;
-        //console.log(this.roomChildren);
+
+        this.roomChildren.pot = this.resources.assets[11];
+        this.roomChildren.plant = this.resources.assets[12];
+        
+        console.log('-resources-');
+        console.log(this.resources);
+        console.log(this.resources.assets)
     }
 
     unHideButton() {
@@ -111,9 +110,81 @@ export default class Preloader extends EventEmitter {
                     "same"
                 )
                 .to(
-                    this.roomChildren.cords.scale,
+                    this.resources.assets[1].position,//pot
+                    {
+                        x: 0,
+                        y: 6.2,
+                        z: 3.3243,
+                    },
+                    "same"
+                )
+                .to(
+                    this.resources.assets[1].scale,//pot
                     {
                         x: 2,
+                        y: 2,
+                        z: 2,
+                    },
+                    "same"
+                )
+                .to(
+                    this.resources.assets[12].position,//plant
+                    {
+                        x: 0,
+                        y: 10.2,
+                        z: 1.3243,
+                    },
+                    "same"
+                )
+                .to(
+                    this.resources.assets[12].scale,//plant
+                    {
+                        x: 10,
+                        y: 10,
+                        z: 10,
+                    },
+                    "same"
+                )
+                // .to(
+                //     this.resources.assets[9].position,//music note
+                //     {
+                //         x: 0,
+                //         y: 1.2,
+                //         z: 3.3243,
+                //     },
+                //     "same"
+                // )
+                // .to(
+                //     this.resources.assets[9].scale,//music note
+                //     {
+                //         x: 15,
+                //         y: 15,
+                //         z: 15,
+                //     },
+                //     "same"
+                // )
+                .to(
+                    this.resources.assets[10].position,//metalSun
+                    {
+                        x: 0,
+                        y: 1.2,
+                        z: 3.3243,
+                    },
+                    "same"
+                )
+                .to(
+                    this.resources.assets[10].scale,//metalSun
+                    {
+                        x: 15,
+                        y: 15,
+                        z: 15,
+                    },
+                    "same"
+                )
+                .to(
+                    this.roomChildren.cords.scale,
+                    {
+                        x: 0,
                         y: 3,
                         z: 2,
                     },
@@ -122,8 +193,8 @@ export default class Preloader extends EventEmitter {
                 .to(
                     this.roomChildren.cords.position,
                     {
-                        x: -5.638,
-                        y: -12.5618,
+                        x: -4.8,
+                        y: -11.5618,
                         z: -1,
                     },
                     "same"

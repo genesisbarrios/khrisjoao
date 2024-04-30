@@ -349,7 +349,7 @@ const GenWavOS = (props) => {
                   </Paper>
                   <br></br>
                   <Paper style={{marginBottom:"10px"}}>
-                  <a href="https://www.oohlala.xyz/artist/64c1b698-881c-4f40-959a-405dceb0d706/tracks" target="_blank" style={{textDecoration:"none", color:"black"}}>OohLala - Web3 Music Aggregator</a>
+                  <a href="https://www.oohlala.xyz/artist/64c1b698-881c-4f40-959a-405dceb0d706/tracks" target="_blank" style={{textDecoration:"none", color:"black"}}>OohLala - Web3 Music Aggregator - All My NFTs</a>
                   </Paper>
                 </div>
                 {/* <Frame style={{marginBottom:"10px"}}>

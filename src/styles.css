@@ -24,6 +24,13 @@ html, body{
   width:100%;
 }
 
+#GENESIS{
+  background-color: black;
+  min-height: 103vh;
+  color:white;
+  width:100%;
+}
+
 div.card{
   padding:5px !important;
   background-color: rgb(160, 160, 160);

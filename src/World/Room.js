@@ -25,7 +25,6 @@ export default class Room {
         this.setModel();
         this.setAnimation();
        
-        this.addLogoModels();
         //this.onMouseMove();
         // Bind this to the class instance for event handlers
         this.onMouseClick = this.onMouseClick.bind(this);
@@ -67,25 +66,6 @@ export default class Room {
         this.scene.add(modelMesh); // Add the mesh to the scene
     }
     
-
-    async addLogoModels() {
-        // Define the positions for the logos across the top of the screen
-        const logoPositions = [
-            new THREE.Vector3(0, 6, 2),  // Adjust these positions as needed
-            new THREE.Vector3(-5, 8, 0),
-            new THREE.Vector3(-3, 8, 0),
-            new THREE.Vector3(-1, 8, 0),
-            new THREE.Vector3(1, 8, 0),
-            new THREE.Vector3(3, 8, 0),
-            new THREE.Vector3(5, 8, 0)
-        ];
-    
-        // Load and position each logo model
-        const modelPath = "./models/3d_discord_logo.glb"; // Adjust the path to your logo model file
-        const modelMesh = new THREE.Mesh(this.resources.items.discord.geometry, this.resources.items.discord.material); // Assuming the model has a single child
-        modelMesh.position.copy(logoPositions[0]); // Set position
-        this.scene.add(modelMesh); // Add the mesh to the scene
-    }
     
     setModel() {
         this.actualRoom.children.forEach((child) => {
@@ -100,19 +80,12 @@ export default class Room {
                 });
             }
 
-            // console.log(child);
-
             if (child.name === "macmini_1_0") {
                 child.children[1].material = new THREE.MeshBasicMaterial({
                     map: this.resources.items.screen,
                 });
             }
-
-            // if (child.name === "Mini_Floor") {
-            //     child.position.x = -0.289521;
-            //     child.position.z = 8.83572;
-            // }
-
+            
             if (child.name === "table") {
                 // console.log(child);
                 child.children[0].material = new THREE.MeshPhysicalMaterial();
@@ -134,17 +107,21 @@ export default class Room {
                 child.name === "cords" ||
                 child.name === "object_4001" ||
                 child.name === "plane001" ||
-                child.name === "table001" 
+                child.name === "table001" ||
+                child.name === "pot" ||
+                child.name === "plant" || 
+                child.name === "metalSun" ||
+                child.name === "spotify" ||
+                child.name === "applemusiclogo" || 
+                child.name === "soundcloud" ||
+                child.name === "youtube" ||
+                child.name === "instagram" ||
+                child.name === "tiktok" 
             ) {
                 child.scale.set(1, 1, 1);
+            }else {
+                child.scale.set(0, 0, 0);
             }
-
-            child.scale.set(0, 0, 0);
-            // if (child.name === "cube") {
-            //     // child.scale.set(1, 1, 1);
-            //     child.position.set(0, -1, 0);
-            //     child.rotation.y = Math.PI / 4;
-            // }
 
             this.roomChildren[child.name.toLowerCase()] = child;
         });
