@@ -113,8 +113,8 @@ const EPK = (props) => {
     <Grid container spacing={3} style={{ padding: "0px" }}>
       <Grid item sm={12}>
         <div id="GenesisImageDiv" style={{ margin: "0 auto", width: "50%" }}>
-          <img
-            src="https://dl.dropboxusercontent.com/s/ubnox8ulofuaaclvxlds6/GENESIS-W-GLOW-FINAL-COVER.png?rlkey=5abzzj7bivh9eu4jkocfleyp4&st=owyjheqm&dl=0"
+          <img 
+            src="https://dl.dropboxusercontent.com/s/5xnhgm2ke222zk0d0wa9r/GENESIS-SQUARE.gif?rlkey=to0w09trb4yiykopazuwr1vxd&st=p7jqx8e8&dl=0"
             alt="GENESIS Album"
             style={{ height: "auto", width: "100%", objectFit: "cover", margin:"5% 0" }}
           />
