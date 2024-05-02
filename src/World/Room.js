@@ -15,6 +15,8 @@ export default class Room {
         this.actualRoom = this.room.scene;
         this.roomChildren = {};
         this.synth = new Tone.Synth().toDestination();
+        this.raycaster = new THREE.Raycaster();
+        this.camera = this.experience.camera.perspectiveCamera;
 
         this.lerp = {
             current: 0,
@@ -59,11 +61,12 @@ export default class Room {
         );
     
         const modelPath = "./models/note.glb"; // Adjust the path to your model file
-
+        //console.log(this.roomChildren);
         // Once loaded, create a mesh from the model geometry
-        const modelMesh = new THREE.Mesh(this.resources.items.musicNote.geometry, this.resources.items.musicNote.material); // Assuming the model has a single child
-        modelMesh.position.copy(akaiLPPosition.add(randomOffset)); // Set position
-        this.scene.add(modelMesh); // Add the mesh to the scene
+        const modelMesh = new THREE.Mesh(this.roomChildren.musicNote.geometry, this.roomChildren.musicNote.material); // Assuming the model has a single child
+        
+        this.roomChildren.musicNote.position = (akaiLPPosition.add(randomOffset)); // Set position
+        this.scene.add(this.roomChildren.musicNote); // Add the mesh to the scene
     }
     
     
@@ -72,15 +75,28 @@ export default class Room {
             child.castShadow = true;
             child.receiveShadow = true;
 
+            if(child.name === "musicNote"){
+                console.log('music note')
+                console.log(child);
+            }
+
             if (child instanceof THREE.Group) {
                 child.children.forEach((groupchild) => {
-                    console.log(groupchild.material);
+                    //console.log(groupchild.material);
                     groupchild.castShadow = true;
                     groupchild.receiveShadow = true;
                 });
             }
 
-            if (child.name === "macmini_1_0") {
+            if (child.name === "macmini_1_0" ||  child.name === "pot" ||
+            child.name === "plant" || 
+            child.name === "metalSun" ||
+            child.name === "spotify" ||
+            child.name === "applemusiclogo" || 
+            child.name === "soundcloud" ||
+            child.name === "youtube" ||
+            child.name === "instagram" ||
+            child.name === "tiktok" ) {
                 child.children[1].material = new THREE.MeshBasicMaterial({
                     map: this.resources.items.screen,
                 });
@@ -107,22 +123,14 @@ export default class Room {
                 child.name === "cords" ||
                 child.name === "object_4001" ||
                 child.name === "plane001" ||
-                child.name === "table001" ||
-                child.name === "pot" ||
-                child.name === "plant" || 
-                child.name === "metalSun" ||
-                child.name === "spotify" ||
-                child.name === "applemusiclogo" || 
-                child.name === "soundcloud" ||
-                child.name === "youtube" ||
-                child.name === "instagram" ||
-                child.name === "tiktok" 
+                child.name === "table001" 
             ) {
                 child.scale.set(1, 1, 1);
             }else {
                 child.scale.set(0, 0, 0);
             }
 
+          
             this.roomChildren[child.name.toLowerCase()] = child;
         });
 
@@ -144,7 +152,7 @@ export default class Room {
 
         const rectLightHelper = new RectAreaLightHelper(rectLight);
         rectLight.add(rectLightHelper);
-        console.log(this.room);
+        //console.log(this.room);
 
         this.scene.add(this.actualRoom);
         this.actualRoom.scale.set(0.11, 0.11, 0.11);
@@ -197,34 +205,44 @@ export default class Room {
     }
 
     onMouseClick(event) {
-        if(this.camera){
-            console.log('mouse click')
-            // Calculate the mouse position in normalized device coordinates
-            const mouse = new THREE.Vector2();
-            mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-            mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+        if (!this.raycaster) return;
+
+        // Calculate the mouse position in normalized device coordinates
+        const mouse = new THREE.Vector2();
+        mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+        mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
         
-            console.log(this.camera);
-            // Update the raycaster with the mouse position and camera
-            this.raycaster.setFromCamera(mouse, this.camera.orthographicCamera);
+        console.log("Mouse position:", mouse);
+    
+        // Update the raycaster with the mouse position and camera
+        this.raycaster.setFromCamera(mouse, this.camera);
+        this.raycaster.far = 1000; // or some larger value
+
+    
+        console.log("akai_lp object:", this.roomChildren["akai_lp"].position);
+
+        // Find objects intersecting with the ray
+        const intersects = this.raycaster.intersectObject(this.roomChildren["akai_lp"], true);
         
-            // Find objects intersecting with the ray
-            const intersects = this.raycaster.intersectObjects(this.room.roomChildren);
+        console.log('intersects click')
+        console.log(intersects);
         
-            if (intersects.length > 0) {
-            // Handle the intersection here
-            const clickedObject = intersects[0].object;
-        
-            if (clickedObject.name === "akai_lp") {
-                // Perform actions specific to the "akai_lp" object
+    
+        // Check if there's any intersection
+        if (intersects.length > 0) {
+            // Check if the clicked object is the "akai_lp"
+            console.log('intersecting');
+            console.log(intersects[0].object.name);
+            if (intersects[0].object.name === "AKAI_LP") {
                 console.log("Clicked akai_lp object!");
-                this.playSynth();
-            }
+               
             }
         }
 
-       this.playSynth();
-      }
+        //todo fix on click
+        this.playSynth();
+    }
+    
 
     resize() {}
 

@@ -123,7 +123,7 @@ const EPK = (props) => {
           </div>
         </Grid>
         <Grid item sm={12} md={6} lg={6}> 
-         <div style={{height:"100%", width: "100%", paddingTop:"2%"}}>
+         <div style={{height:"100%", width: "100%"}}>
           <h1>gen.wav</h1>
           <p style={{marginBottom:"2%"}}>Miami based Independent Artist, and Producer - Latin, Hip Hop, R&B, Alternative</p>
           
@@ -135,7 +135,7 @@ const EPK = (props) => {
           <p style={{marginBottom:"2%"}}>Featured on Spotify's Editorial Playlist New Music Friday Latin</p>
           <p style={{marginBottom:"2%"}}>Featured on Spotify's Editorial Playlist Spotify Novedades Viernes Latinoamerica</p>
           <p style={{marginBottom:"2%"}}>1 Million Streams on Soundcloud</p>
-          <p style={{marginBottom:"2%"}}>Debut Album Coming out this year</p>
+          <p style={{marginBottom:"2%"}}>Debut Album Drops on May 24th</p>
 
           <h1>BOOKINGS & PRESS INQUIRIES</h1>
           <p style={{marginBottom:"5%"}}><a style={{color:"white", textDecoration:"none"}} href="beatsbygenwav@gmail.com">beatsbygenwav@gmail.com</a></p>
@@ -171,9 +171,9 @@ const EPK = (props) => {
          </div>
         </Grid>
         <Grid item sm={12} md={3} lg={3}> 
-        <div style={{height:"100%", width: "100%", paddingTop:"5%", textAlign:"center"}}>
-          <h1>PHOTOS</h1>
-          <div style={{width:"100%", margin:"0 auto"}}> 
+        <div style={{height:"100%", width: "100%", paddingTop:"0", marginTop:"0", textAlign:"center"}}>
+          <div style={{width:"100%", margin:"0 auto"}}>
+          <img src="https://dl.dropboxusercontent.com/s/ngjq803w3rws905ka1pm4/IMG_7398.JPG?rlkey=j5vbxlrk63trn873ntpgnk639&st=hbrdngri&dl=0"style={{width:"80%", height:"auto", marginTop:'20px', marginBottom:"20px"}}></img>
             <img src="https://dl.dropboxusercontent.com/s/cq6fa0uol5j3dn9l4qgnu/08FC3DBC-7BA3-438C-B168-6E0907F878A1.JPG?rlkey=4gacge9tz394c0jqw67luovfd&dl=0"style={{width:"80%", height:"auto", marginTop:'20px', marginBottom:"20px"}}></img>
             <img src="https://dl.dropboxusercontent.com/s/https://dl.dropboxusercontent.com/s/6aroj9lrd83ka8082t8ik/4.png?rlkey=xd4waq4ideo8z8cwbzxi75o0j&dl=0" style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
             <img src="https://dl.dropboxusercontent.com/s/xmwxcg78osj2g5dt9nh1y/IMG_5553.JPG?rlkey=cu8pt6p0ragl0jhfymyrqyzjz&dl=0" style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>

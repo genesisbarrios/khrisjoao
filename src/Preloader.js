@@ -32,6 +32,8 @@ export default class Preloader extends EventEmitter {
 
         this.roomChildren.pot = this.resources.assets[11];
         this.roomChildren.plant = this.resources.assets[12];
+        this.roomChildren.metalSun = this.resources.assets[10];
+        this.roomChildren.musicNote = this.resources.assets[9];
         
         console.log('-resources-');
         console.log(this.resources);
@@ -112,9 +114,9 @@ export default class Preloader extends EventEmitter {
                 .to(
                     this.resources.assets[1].position,//pot
                     {
-                        x: 0,
+                        x: -5.638711,
                         y: 6.2,
-                        z: 3.3243,
+                        z: 2.3243,
                     },
                     "same"
                 )
@@ -130,9 +132,9 @@ export default class Preloader extends EventEmitter {
                 .to(
                     this.resources.assets[12].position,//plant
                     {
-                        x: 0,
-                        y: 10.2,
-                        z: 1.3243,
+                        x: -5.638711,
+                        y: 6.2,
+                        z: 2.3243,
                     },
                     "same"
                 )
@@ -145,30 +147,30 @@ export default class Preloader extends EventEmitter {
                     },
                     "same"
                 )
-                // .to(
-                //     this.resources.assets[9].position,//music note
-                //     {
-                //         x: 0,
-                //         y: 1.2,
-                //         z: 3.3243,
-                //     },
-                //     "same"
-                // )
-                // .to(
-                //     this.resources.assets[9].scale,//music note
-                //     {
-                //         x: 15,
-                //         y: 15,
-                //         z: 15,
-                //     },
-                //     "same"
-                // )
+                .to(
+                    this.resources.assets[9].position,//music note
+                    {
+                        x: -5.638711,
+                        y: 6.2,
+                        z: 2.3243,
+                    },
+                    "same"
+                )
+                .to(
+                    this.resources.assets[9].scale,//music note
+                    {
+                        x: 5,
+                        y: 5,
+                        z: 5,
+                    },
+                    "same"
+                )
                 .to(
                     this.resources.assets[10].position,//metalSun
                     {
-                        x: 0,
-                        y: 1.2,
-                        z: 3.3243,
+                        x: -5.638711,
+                        y: 6.2,
+                        z: 2.3243,
                     },
                     "same"
                 )
