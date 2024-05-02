@@ -115,7 +115,7 @@ const EPK = (props) => {
         <div id="GenesisImageDiv" style={{ margin: "0 auto", width: "50%" }}>
           <img 
             src="https://dl.dropboxusercontent.com/s/5xnhgm2ke222zk0d0wa9r/GENESIS-SQUARE.gif?rlkey=to0w09trb4yiykopazuwr1vxd&st=p7jqx8e8&dl=0"
-            alt="GENESIS Album"
+            alt="GENESIS Album" type="gif"
             style={{ height: "auto", width: "100%", objectFit: "cover", margin:"5% 0" }}
           />
           <h1 id="comingSoon">Coming Soon...</h1>
