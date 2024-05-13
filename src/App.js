@@ -26,10 +26,6 @@ const App = () => {
     );
   };
 
-  const redirectToExternalLink = () => {
-    window.location.href = 'https://genwav.bandcamp.com/'; // Replace 'https://example.com' with your desired link
-    return null;
-  };
 
   return (
     <BrowserRouter>
@@ -38,7 +34,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<ExperienceWrapper />} />
           <Route path="/GENESIS" element={<GENESISComponent />} />
-          <Route path="/SHOP" element={<redirectToExternalLink />} />
+          <Route path="/SHOP" element={<Navigate to="https://genwav.bandcamp.com/" />} />
           <Route path="/OS" element={<GenWavOSComponent />} />
           <Route path="/EPK" element={<EPKComponent />} />
         </Routes>
