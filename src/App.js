@@ -28,7 +28,7 @@ const App = () => {
   };
 
   const redirectToExternalLink = () => {
-    window.location.href = 'https://genwav.bigcartel.com'; // Replace 'https://example.com' with your desired link
+    window.location.href = 'https://genwav.bandcamp.com/'; // Replace 'https://example.com' with your desired link
     return null;
   };
 
