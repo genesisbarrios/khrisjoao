@@ -75,10 +75,9 @@ export default class Room {
             child.castShadow = true;
             child.receiveShadow = true;
 
-            if(child.name === "musicNote"){
-                console.log('music note')
-                console.log(child);
-            }
+            //todo: check this
+            console.log(child);
+           
 
             if (child instanceof THREE.Group) {
                 child.children.forEach((groupchild) => {
@@ -123,7 +122,17 @@ export default class Room {
                 child.name === "cords" ||
                 child.name === "object_4001" ||
                 child.name === "plane001" ||
-                child.name === "table001" 
+                child.name === "table001" ||  
+                child.name === "pot" ||
+                child.name === "plant" || 
+                child.name === "metalSun" ||
+                child.name === "spotify" ||
+                child.name === "applemusiclogo" || 
+                child.name === "soundcloud" ||
+                child.name === "youtube" ||
+                child.name === "instagram" ||
+                child.name === "tiktok" ||
+                child.name === "musicNote"
             ) {
                 child.scale.set(1, 1, 1);
             }else {

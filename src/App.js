@@ -5,6 +5,7 @@ import ExperienceWrapper from "./ExperienceWrapper";
 import GenWavOS from "./OS";
 import EPK from "./EPK";
 import GENESIS from "./GENESIS";
+import shop from "./shop";
 import Header from "./Header"; // Import Header component
 
 const App = () => {
@@ -26,15 +27,21 @@ const App = () => {
     );
   };
 
+  const redirectToExternalLink = () => {
+    window.location.href = 'https://genwav.bigcartel.com'; // Replace 'https://example.com' with your desired link
+    return null;
+  };
+
   return (
     <BrowserRouter>
       <div>
         <Header /> {/* Include Header component */}
         <Routes>
           <Route path="/" element={<ExperienceWrapper />} />
+          <Route path="/GENESIS" element={<GENESISComponent />} />
+          <Route path="/SHOP" element={<redirectToExternalLink />} />
           <Route path="/OS" element={<GenWavOSComponent />} />
           <Route path="/EPK" element={<EPKComponent />} />
-          <Route path="/GENESIS" element={<GENESISComponent />} />
         </Routes>
       </div>
     </BrowserRouter>

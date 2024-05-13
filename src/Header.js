@@ -17,8 +17,9 @@ const Header = () => {
         </Typography>
         <nav>
           <ul style={{ display: 'flex', listStyleType: 'none', margin: 0, padding: 0 }}>
-            <li style={{ marginRight: '10px'}}><Link style={{color:"white", textDecoration:"none" }} to="/OS">OS</Link></li>
             <li style={{ marginRight: '10px'}}><Link style={{color:"white", textDecoration:"none" }}  to="/GENESIS">GENESIS</Link></li>
+            <li style={{ marginRight: '10px'}}><Link style={{color:"white", textDecoration:"none" }}  to="/SHOP">SHOP</Link></li>
+            <li style={{ marginRight: '10px'}}><Link style={{color:"white", textDecoration:"none" }} to="/OS">OS</Link></li>
             <li><Link style={{color:"white", textDecoration:"none" }} to="/EPK">EPK</Link></li>
           </ul>
         </nav>
