@@ -355,6 +355,11 @@ export default class Preloader extends EventEmitter {
         window.removeEventListener("touchmove", this.touchMove);
     }
 
+    addEventListeners() {
+        window.addEventListener("wheel", this.scrollHandler);
+        window.addEventListener("touchmove", this.touchMoveHandler);
+    }
+
     async playIntro() {
         this.scaleFlag = true;
         await this.firstIntro();
@@ -362,9 +367,7 @@ export default class Preloader extends EventEmitter {
         this.scrollOnceEvent = this.onScroll.bind(this);
         this.touchStart = this.onTouch.bind(this);
         this.touchMove = this.onTouchMove.bind(this);
-        window.addEventListener("wheel", this.scrollOnceEvent);
-        window.addEventListener("touchstart", this.touchStart);
-        window.addEventListener("touchmove", this.touchMove);
+        addEventListeners()
     }
     async playSecondIntro() {
         console.log("second intro")
