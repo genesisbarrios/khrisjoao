@@ -65,7 +65,7 @@ export default class Preloader extends EventEmitter {
             //this.timeline.set(".animatedis", { y: 0, yPercent: 100 });
             this.timeline.to(".preloader", {
                 opacity: 0,
-                delay: 1,
+                delay: .1,
                 onComplete: () => {
                     document
                         .querySelector(".preloader")
@@ -367,7 +367,7 @@ export default class Preloader extends EventEmitter {
         this.scrollOnceEvent = this.onScroll.bind(this);
         this.touchStart = this.onTouch.bind(this);
         this.touchMove = this.onTouchMove.bind(this);
-        addEventListeners()
+        this.addEventListeners()
     }
     async playSecondIntro() {
         console.log("second intro")
