@@ -5,7 +5,6 @@ import ExperienceWrapper from "./ExperienceWrapper";
 import GenWavOS from "./OS";
 import EPK from "./EPK";
 import GENESIS from "./GENESIS";
-import shop from "./shop";
 import Header from "./Header"; // Import Header component
 
 const App = () => {
