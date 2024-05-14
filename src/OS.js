@@ -98,24 +98,25 @@ const GenWavOS = (props) => {
       <Grid container spacing={3} style={{maxWidth:"100%", margin: "0 auto"}}> 
         <Grid item sm={12} md={4} order={{ xs: 3, md: 1 }} style={{marginTop:"6%"}}> 
           <Card className="card" style={{width:'90%', marginBottom:"5%"}}>
-            <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_111.ico" width="25" height="25" className="inage" />  Music Videos </div>
+            <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_111.ico" width="25" height="25" className="image" />  Music Videos </div>
             <CardContent>
               <iframe style={{borderRadius:"12px"}} width="100%" height="315" src="https://www.youtube.com/embed/kTtfDnEF7W4?si=iDAKmjAEseqQjkbQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </CardContent>
           </Card>
           <Card className="card" style={{width:'90%', minHeight: '700px', marginBottom:"5%"}}>
-                <div><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_105.ico" width="20" height="20"/> Beats</div>
-                <CardContent>
-                  <iframe 
-                      src="https://player.beatstars.com/?storeId=140652" 
-                      width="100%" 
-                      height="650">
-                  </iframe>
-                </CardContent>
-              </Card>
-              
+            <div>
+              <img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_105.ico" width="20" height="20"/> Beats</div>
+              <CardContent>
+                <iframe 
+                    src="https://player.beatstars.com/?storeId=140652" 
+                    width="100%" 
+                    height="650">
+                </iframe>
+              </CardContent>
+            </Card>
+          
               <Card className="card" style={{width:'90%', minHeight: '200px'}}>
-                  <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_120.ico" width="25" height="25" className="inage" /> Services</div>
+                  <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_120.ico" width="25" height="25" className="image" /> Services</div>
                   <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
                     <div className="slide">
                           <img src="https://dl.dropboxusercontent.com/s/iav8s3cngc9dosooprmsx/fullmix.png?rlkey=rkg0k4lmq7wnw4thovkhza1g1&dl=0" />

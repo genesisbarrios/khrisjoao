@@ -116,7 +116,7 @@ const EPK = (props) => {
           <img 
             src="https://dl.dropboxusercontent.com/s/5xnhgm2ke222zk0d0wa9r/GENESIS-SQUARE.gif?rlkey=to0w09trb4yiykopazuwr1vxd&st=p7jqx8e8&dl=0"
             alt="GENESIS Album" type="gif"
-            style={{ height: "auto", width: "100%", objectFit: "cover", margin:"2% 0" }}
+            style={{ height: "90%", width: "auto", objectFit: "cover", margin:"2% 0" }}
           />
           <h1 id="comingSoon">My Debut Album. Coming Soon...</h1>
         </div>
