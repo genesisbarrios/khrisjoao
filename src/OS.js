@@ -74,17 +74,16 @@ const GenWavOS = (props) => {
     };
   
     // Make a POST request using Axios
-    axios.post('https://localhost:3001/addUser', dataToSend)
+    axios.post('localhost:3000/addUser', dataToSend)
       .then((response) => {
         // Handle the response if needed
         console.log('Request successful', response.data);
         setMessage('Your e-mail has been saved!')
-        Card.open("https://www.beatstars.com/genwav/sound-kits/192047", "_blank")
+        //window.location.href = "https://www.beatstars.com/genwav/sound-kits/192047";
       })
       .catch((error) => {
         // Handle errors
         console.error('Error: ', error);
-        Card.alert(error);
         setAlert('Error: ', error)
       });
 
@@ -101,7 +100,7 @@ const GenWavOS = (props) => {
           <Card className="card" style={{width:'90%', marginBottom:"5%"}}>
             <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_111.ico" width="25" height="25" className="inage" />  Music Videos </div>
             <CardContent>
-              <iframe style={{borderRadius:"12px"}} width="100%" height="315" src="https://www.youtube.com/embed/kTtfDnEF7W4?si=iDAKmjAEseqQjkbQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+              <iframe style={{borderRadius:"12px"}} width="100%" height="315" src="https://www.youtube.com/embed/kTtfDnEF7W4?si=iDAKmjAEseqQjkbQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </CardContent>
           </Card>
           <Card className="card" style={{width:'90%', minHeight: '700px', marginBottom:"5%"}}>

@@ -118,7 +118,7 @@ const EPK = (props) => {
             alt="GENESIS Album" type="gif"
             style={{ height: "auto", width: "100%", objectFit: "cover", margin:"2% 0" }}
           />
-          <h1 id="comingSoon">Coming Soon...</h1>
+          <h1 id="comingSoon">My Debut Album. Coming Soon...</h1>
         </div>
       </Grid>
     </Grid>
