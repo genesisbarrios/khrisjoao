@@ -135,7 +135,7 @@ const EPK = (props) => {
           <p style={{marginBottom:"2%"}}>Featured on Spotify's Editorial Playlist New Music Friday Latin</p>
           <p style={{marginBottom:"2%"}}>Featured on Spotify's Editorial Playlist Spotify Novedades Viernes Latinoamerica</p>
           <p style={{marginBottom:"2%"}}>1 Million Streams on Soundcloud</p>
-          <p style={{marginBottom:"2%"}}>Debut Album Drops on May 24th</p>
+          <p style={{marginBottom:"2%"}}>Debut Album Drops on May 30th</p>
 
           <h1>BOOKINGS & PRESS INQUIRIES</h1>
           <p style={{marginBottom:"5%"}}><a style={{color:"white", textDecoration:"none"}} href="beatsbygenwav@gmail.com">beatsbygenwav@gmail.com</a></p>
