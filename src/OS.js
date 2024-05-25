@@ -72,7 +72,7 @@ const GenWavOS = (props) => {
       producer: producer,
       artist: artist
     };
-  
+    console.log('handle submit request to subscribe')
     // Make a POST request using Axios
     axios.post('localhost:3000/addUser', dataToSend)
       .then((response) => {
@@ -237,7 +237,7 @@ const GenWavOS = (props) => {
                   </Carousel>
               </Card>
 
-              <Card className="card" style={{width:'90%', minHeight: '200px', marginTop:"5%"}}>
+              <div className="card" style={{width:'90%', minHeight: '200px', marginTop:"5%"}}>
                 <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mailnews_8.ico" width="20px"></img> Sign up to receive beats, loops and samples.</div>
                   <div style={{marginTop:"5%", textAlign:"center"}}>
                     <form>
@@ -293,13 +293,13 @@ const GenWavOS = (props) => {
                       />
                       <p style={{display:'inline', margin:"0 10px"}}>fan</p>
                         <br></br>
-                        <button onClick={handleSubmit} style={{marginTop:"20px", padding:"2px 5px"}}>Submit</button>
+                        <button onClick={handleSubmit} style={{marginTop:"20px", padding:"2px 5px"}} type="submit">Submit</button>
                         {message && <Alert style={{marginBottom:"5%"}} severity="success">{message}</Alert>}
                         {alert && <Alert style={{marginBottom:"5%"}} severity="error">{alert}</Alert>}
                       </div>
                     </form>
                   </div>
-              </Card>
+              </div>
           </Grid>   
          
           <Grid item sm={12} md={4} order={{ xs: 2, md: 3 }} style={{marginTop:"6%"}}>
@@ -348,9 +348,6 @@ const GenWavOS = (props) => {
                     <a href="https://beta.catalog.works/gendotwav/soltero" target="_blank" style={{textDecoration:"none", color:"black"}}>Soltero feat. El Igor on Catalog</a>
                   </Paper>
                   <br></br>
-                  <Paper style={{marginBottom:"10px"}}>
-                  <a href="https://www.oohlala.xyz/artist/64c1b698-881c-4f40-959a-405dceb0d706/tracks" target="_blank" style={{textDecoration:"none", color:"black"}}>OohLala - Web3 Music Aggregator - All My NFTs</a>
-                  </Paper>
                 </div>
                 {/* <Frame style={{marginBottom:"10px"}}>
                 <a href="https://www.sound.xyz/user/genwav.eth" target="_blank" style={{textDecoration:"none"}}><Button>sound.xyz</Button></a>

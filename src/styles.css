@@ -231,6 +231,34 @@ button.legend{
   margin-top: -10% !important;
 }
 
+/*GENESIS*/
+#GENESIS {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.logo-button-container {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+.pre-save-button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #E6EAF2;
+  color: #2B2B35;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 10px; /* Add margin between logo and button */
+}
+
 /* Media Queries */
 
 @media (max-width: 968px){
@@ -239,8 +267,25 @@ button.legend{
     font-size:0.95em;
   }
 
-  #GenesisImageDiv{
+  #GenesisImageDiv.img{
     width:80%!important;
+  }
+  
+  .linksContainer{
+    width: 80% !important;
+  }
+
+  p{
+    font-size:0.6em;
+  }
+
+  .logoSize{
+    width:25px;
+  }
+
+  .pre-save-button {
+    padding: 6px 12px;
+    font-size:0.6em;
   }
 
   #OS{
