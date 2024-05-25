@@ -267,12 +267,14 @@ button.legend{
     font-size:0.95em;
   }
 
-  #GenesisImageDiv.img{
-    width:80%!important;
+  #GenesisImageDiv img{
+    width:60%!important;
+    max-width:60%!important;
   }
   
   .linksContainer{
-    width: 80% !important;
+    width:60%!important;
+    max-width:60%!important;
   }
 
   p{
