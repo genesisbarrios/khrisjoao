@@ -137,7 +137,7 @@ const EPK = (props) => {
           </Grid> */}
           <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
-              <AmazonLogo className="logoSize" style={{ color: '#FF7000', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Amazon Music</p>
+              <AmazonLogo className="logoSize" style={{ color: '#FF7000', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Amazon</p>
             </Grid>
             <Grid item xs={6} sm={6}>
             <a target="_blank" href="https://www.amazon.com/ap/oa?response_type=code&client_id=amzn1.application-oa2-client.b1b26a26335a46e79c2ff62d19ed6ace&scope=profile&redirect_uri=https%3A%2F%2Flnk.to%2F%7E%2Fprerelease%2Famazon&state=bFVybD1WZW5pY2UubG5rLnRvJTJGZ2VuZXNpcyZzSWQ9NTMxNzQ3YzEtZDI3NS00Yzc3LThhMzItYmM5MjZhYTcxNTI0JnRJZD1iMmRmZTA1Ny0wYWI2LTQ4ZjMtYTdjZS1mMGMxMWJlOTdmYTgmdT1odHRwcyUzQSUyRiUyRnZlbmljZS5sbmsudG8lMkZnZW5lc2lzJnZ0PTY2YjRhNDQwZGE5ODQ3NjRiN2UxNDBiN2I0Yzk0ZTQ1JnZ1PTY2MjZiOWJjOGVmYzU4LjE2OTU4NTU1&tag=linkfiregen&ie=UTF8&linkCode=as2&ascsubtag=66b4a440da984764b7e140b7b4c94e45&ref=dmm_acq_soc_us_u_lfire_lp_x_66b4a440da984764b7e140b7b4c94e45"><button className="pre-save-button">Pre-Save</button></a>
