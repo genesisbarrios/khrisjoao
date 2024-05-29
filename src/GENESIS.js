@@ -178,8 +178,8 @@ const EPK = (props) => {
         </Grid>
       </Grid>
 
-      <h2 style={{marginTop:"5%"}}>Music Videos</h2>
-      <Grid container spacing={3} style={{padding:"2%"}}>
+      <h2 style={{paddingTop:"5%"}}>Music Videos</h2>
+      <Grid container spacing={3} style={{width:"80%", margin:"0 auto"}}>
           <Grid item xs={12} md={4}>
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/kTtfDnEF7W4?si=81ziews9ko5yMXXl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </Grid>
