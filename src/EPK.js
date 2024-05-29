@@ -110,7 +110,7 @@ const EPK = (props) => {
   
   return(
     
-    <div id="EPK">
+    <div id="EPK" style={{paddingBottom:"5%"}}>
           
       <Grid container spacing={3} style={{padding: "0px"}}> 
         <Grid item sm={12} md={4} lg={3}> 
@@ -168,6 +168,49 @@ const EPK = (props) => {
             style={{marginTop:"5%", borderRadius:"10px"}}
             src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1657973560&color=%235ab7ce&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
           ></iframe>
+            <h1 style={{marginTop:"5%"}}>LINKS</h1>
+           <div id="socials" style={{paddingTop:"10px", display:"flex", justifyContent:"space-between"}}>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="http://instagram.com/gen.wav" style={{textDecoration:"none"}}>
+                    <InstagramLogo style={{color: 'purple'}} size={25}></InstagramLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="http://twitter.com/gendotwav" style={{textDecoration:"none"}}>
+                    <TwitterLogo style={{color: '#A6CAF0'}} size={25}></TwitterLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="http://tiktok.com/gen.wav" style={{textDecoration:"none"}}>
+                    <TiktokLogo style={{color: 'pink'}} size={25}></TiktokLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="https://soundcloud.com/genwav" style={{textDecoration:"none"}}>
+                    <SoundcloudLogo style={{color: 'orange'}} size={25}></SoundcloudLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="https://www.youtube.com/@genwav" style={{textDecoration:"none"}}>
+                    <YoutubeLogo style={{color: 'red'}} size={25}></YoutubeLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="https://open.spotify.com/artist/3YihJDU9YETUNDWO6pDuQG?si=VmY6439rRLS5mw8uC0nHYg" style={{textDecoration:"none"}}>
+                    <SpotifyLogo style={{color: 'green'}} size={25}></SpotifyLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="https://music.apple.com/us/artist/genesis-barrios/1194186719" style={{textDecoration:"none"}}>
+                    <AppleLogo style={{color: 'pink'}} size={25}></AppleLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="https://discord.com/invite/2MdNjbHnBR" style={{textDecoration:"none"}}>
+                    <DiscordLogo style={{color: 'purple'}} size={25}></DiscordLogo>
+                  </a>
+                </div>
+              </div>
          </div>
         </Grid>
         <Grid item sm={12} md={3} lg={3}> 

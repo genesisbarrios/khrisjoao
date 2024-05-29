@@ -93,7 +93,7 @@ const GenWavOS = (props) => {
  
   return(
     
-    <div id="OS" style={{}}>
+    <div id="OS" style={{paddingBottom:"5%"}}>
           
       <Grid container spacing={3} style={{maxWidth:"100%", margin: "0 auto"}}> 
         <Grid item sm={12} md={4} order={{ xs: 3, md: 1 }} style={{marginTop:"6%"}}> 

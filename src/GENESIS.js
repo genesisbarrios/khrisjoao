@@ -113,7 +113,7 @@ const EPK = (props) => {
     <div style={{ textAlign: "center" }}>
       <div id="GenesisImageDiv">
         <img 
-          src="https://dl.dropboxusercontent.com/s/5xnhgm2ke222zk0d0wa9r/GENESIS-SQUARE.gif?rlkey=to0w09trb4yiykopazuwr1vxd&st=p7jqx8e8&dl=0"
+          src="https://dl.dropboxusercontent.com/s/h6t8dvgtzzj8f069s0ma4/GENESIS_ANI.gif?rlkey=i1x2657yni0v3dyhhe8fjixvs&st=8dpg1ttt&dl=0"
           alt="GENESIS Album" type="gif"
           style={{ height: "auto", width: "auto", maxWidth: "35%", objectFit: "cover", margin: "2% 0", borderRadius:"15px" }}></img>
       </div>
@@ -148,7 +148,7 @@ const EPK = (props) => {
               <YoutubeLogo className="logoSize" style={{ color: 'red', marginRight: "5px" }} size={50} /><p style={{ marginRight: "5px", fontWeight:"600"}}>YouTube</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=772283799845-9ni04mapb0pafg0mhtro97t6f2rk5jhu.apps.googleusercontent.com&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fmusic&redirect_uri=https%3A%2F%2Flnk.to%2F%7E%2Fprerelease%2Fyoutube&access_type=offline&prompt=consent&state=bFVybD1WZW5pY2UubG5rLnRvJTJGZ2VuZXNpcyZzSWQ9NWU0YzQyMzQtY2M3Mi00NDU0LWE2MGItMjg1YzM1ZGY0YjgwJnRJZD1iMmRmZTA1Ny0wYWI2LTQ4ZjMtYTdjZS1mMGMxMWJlOTdmYTgmdT1odHRwcyUzQSUyRiUyRnZlbmljZS5sbmsudG8lMkZnZW5lc2lzJnZ0PTY2YjRhNDQwZGE5ODQ3NjRiN2UxNDBiN2I0Yzk0ZTQ1JnZ1PTY2MjZiOWJjOGVmYzU4LjE2OTU4NTU1"><button className="pre-save-button">Pre-Save</button></a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=YMPVuPspRw0&list=PLcGBMxEyx5p8sfg853csGDXChKZo2ZNNi"><button className="pre-save-button">Pre-Save</button></a>
             </Grid>
           </Grid>
           <Grid container spacing={2} className="logo-button-container">
@@ -177,8 +177,130 @@ const EPK = (props) => {
           </Grid> */}
         </Grid>
       </Grid>
+
+      <h2 style={{marginTop:"5%"}}>Music Videos</h2>
+      <Grid container spacing={3} style={{padding:"2%"}}>
+          <Grid item xs={12} md={4}>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/kTtfDnEF7W4?si=81ziews9ko5yMXXl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/3v6ZX_XowU8?si=ACM_I7z7FcTxn20u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </Grid>
+      </Grid>
+      
+      <div className="aboutAlbum">
+        <h2>About the Album</h2>
+        <p>I had no idea what I was getting to when I started this project, but it was so worth the blood sweat and tears. What started as an EP with a couple features on it ended up being my debut album and it wouldn’t have been possible without all my friends and colleagues. I'm not an artist that's bound to one genre, that's why this project is packed with different genres, and fusions. Although I stick true to my Cuban roots, I'm sure there's a song for everyone in it. It was created over the past year, while still releasing singles monthly and I would appreciate from the bottom of my heart if you took a listen 🙏🏽🫶🏽🌊</p>
+        <br></br>
+        <p>GENESIS is about self reflection through relationship, self awareness, transformation, and coming back to yourself and your purpose. </p>    
+        <h2>Credits</h2>
+        <h4>El Ingeniero</h4>
+        <p>Produced, and Written by <a href="https://www.instagram.com/gen.wav/" target="_blank">gen.wav</a></p>
+        <p>Mixed and Mastered by <a href="https://www.instagram.com/mixedbyedwn/?hl=en" target="_blank">Edwin Estacio</a></p>
+        <br></br>
+        <h4>Ibiza</h4>
+        <p>Produced, and Written by gen.wav</p>
+        <p>Background Vocalist: <a href="https://www.instagram.com/s33kr0/" target="_blank">°S33KR0°</a></p>
+        <p>Mixed and Mastered by <a href="https://www.instagram.com/cundibeatz/?hl=en" target="_blank">CundiBeatz</a></p>
+        <br></br>
+        <h4>Bandolera Feat. <a href="https://www.instagram.com/riskrunnaricky" target="_blank">Riskrunnaricky</a></h4>
+        <p>Produced, and Written by gen.wav</p>
+        <p>Mixed and Mastered by gen.wav</p>
+        <br></br>
+        <h4>Cachumbambé Feat. <a href="https://www.instagram.com/igorcentrism" target="_blank">El Igor</a></h4>
+        <p>Produced, and Written by gen.wav</p>
+        <p>Mixed and Mastered by <a href="https://www.instagram.com/nielklopen/?hl=en" target="_blank">Niel Klopen</a></p>
+        <br></br>
+        <h4>Milán Feat. <a href="https://www.instagram.com/khrissosick/" target="_blank">KHR!S João,</a> <a href="https://www.instagram.com/igorcentrism" target="_blank">El Igor</a></h4>
+        <p>Produced, and Written by gen.wav</p>
+        <p>Mixed and Mastered by <a href="https://www.instagram.com/cundibeatz/?hl=en" target="_blank">CundiBeatz</a></p>
+        <br></br>
+        <h4>Corazón Frío</h4>
+        <p>Produced, and Written by gen.wav</p>
+        <p>Mixed and Mastered by <a href="https://www.instagram.com/adrian.ajv/?hl=en" target="_blank">ADRIAN</a></p>
+        <br></br>
+        <h4>La Peli</h4>
+        <p>Produced, and Written by gen.wav</p>
+        <p>Mixed and Mastered by <a href="https://www.instagram.com/adrian.ajv/?hl=en" target="_blank">ADRIAN</a></p>
+        <br></br>
+        <h4>No Me Llames Más Feat. <a href="https://www.instagram.com/igorcentrism" target="_blank">El Igor</a></h4>
+        <p>Produced, and Written by gen.wav</p>
+        <p>Mixed and Mastered by gen.wav</p>
+        <br></br>
+        <h4>El Cambio</h4>
+        <p>Produced, and Written by gen.wav</p>
+        <p>Mixed and Mastered by gen.wav</p>
+        <br></br>
+        <h4>Gucci</h4>
+        <p>Produced by <a href="https://www.instagram.com/b0neb0yyy/" target="_blank">SAM0</a></p>
+        <p>Written, Mixed and Mastered by gen.wav</p>
+        <br></br>
+        <h4>I Remember Feat. <a href="https://www.instagram.com/claudiasings/" target="_blank">Claudia</a></h4>
+        <p>Produced, and Written by gen.wav</p>
+        <p>Mixed and Mastered by gen.wav</p>
+        <br></br>
+        <h4>It's Me Not You Feat. <a href="https://www.instagram.com/grlkrash/" target="_blank">GRLKRASH</a></h4>
+        <p>Produced, and Written by gen.wav</p>
+        <p>Mixed and Mastered by gen.wav</p>
+        <br></br>
+        <h4>Tsunami (Olvídalo) Feat. <a href="https://www.instagram.com/khrissosick/" target="_blank">KHR!S João</a></h4>
+        <p>Produced, and Written by gen.wav</p>
+        <p>Mixed and Mastered by gen.wav</p>
+        <br></br>
+
+      </div>
+        
+          
+      
     </div>
-  </div>
+
+      <Grid className="linksContainer" container spacing={3} style={{maxWidth: "35%", margin:"0 auto", paddingTop:"2%", paddingBottom:"5%"}}>
+        <Grid item xs={12} sm={12}>
+          <div id="socials" style={{paddingTop:"10px", display:"flex", justifyContent:"space-between"}}>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="http://instagram.com/gen.wav" style={{textDecoration:"none"}}>
+                    <InstagramLogo style={{color: 'purple'}} size={20}></InstagramLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="http://twitter.com/gendotwav" style={{textDecoration:"none"}}>
+                    <TwitterLogo style={{color: '#A6CAF0'}} size={20}></TwitterLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="http://tiktok.com/gen.wav" style={{textDecoration:"none"}}>
+                    <TiktokLogo style={{color: 'pink'}} size={20}></TiktokLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="https://soundcloud.com/genwav" style={{textDecoration:"none"}}>
+                    <SoundcloudLogo style={{color: 'orange'}} size={20}></SoundcloudLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="https://www.youtube.com/@genwav" style={{textDecoration:"none"}}>
+                    <YoutubeLogo style={{color: 'red'}} size={20}></YoutubeLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="https://open.spotify.com/artist/3YihJDU9YETUNDWO6pDuQG?si=VmY6439rRLS5mw8uC0nHYg" style={{textDecoration:"none"}}>
+                    <SpotifyLogo style={{color: 'green'}} size={20}></SpotifyLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="https://music.apple.com/us/artist/genesis-barrios/1194186719" style={{textDecoration:"none"}}>
+                    <AppleLogo style={{color: 'pink'}} size={20}></AppleLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="https://discord.com/invite/2MdNjbHnBR" style={{textDecoration:"none"}}>
+                    <DiscordLogo style={{color: 'purple'}} size={20}></DiscordLogo>
+                  </a>
+                </div>
+              </div>
+            </Grid>
+          </Grid>
+      </div>
     );
         
 };

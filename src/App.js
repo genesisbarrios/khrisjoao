@@ -7,6 +7,8 @@ import EPK from "./EPK";
 import GENESIS from "./GENESIS";
 import Header from "./Header"; // Import Header component
 
+import Footer from "./Footer"; // Import Header component
+
 const App = () => {
   const GenWavOSComponent = () => {
     return (
@@ -35,14 +37,15 @@ const App = () => {
   return (
     <BrowserRouter>
       <div>
-        <Header /> {/* Include Header component */}
+        {/* Include Header + Footer component */}
         <Routes>
-          <Route path="/" element={<ExperienceWrapper />} />
-          <Route path="/GENESIS" element={<GENESISComponent />} />
+          <Route path="/" element={<><Header /><ExperienceWrapper /></>} />
+          <Route path="/GENESIS" element={<><Header /><GENESISComponent /><Footer /></>} />
           <Route path="/SHOP" element={<ShopRedirect />} />
-          <Route path="/OS" element={<GenWavOSComponent />} />
-          <Route path="/EPK" element={<EPKComponent />} />
+          <Route path="/OS" element={<><Header /><GenWavOSComponent /><Footer /></>} />
+          <Route path="/EPK" element={<><Header /><EPKComponent /><Footer /></>} />
         </Routes>
+        
       </div>
     </BrowserRouter>
   );
