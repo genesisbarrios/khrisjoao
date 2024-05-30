@@ -203,7 +203,7 @@ const EPK = (props) => {
         <h2>About the Album</h2>
         <p>I had no idea what I was getting to when I started this project, but it was so worth the blood, sweat, and tears. What started as an EP with a couple features on it ended up being my debut album and it wouldn’t have been possible without all my friends and colleagues. I'm not an artist that's bound to one genre, that's why this project is packed with different genres, and fusions. Although I stick true to my Cuban roots, I'm sure there's a song for everyone in it. It was created over the past year, while still releasing singles monthly and I would appreciate from the bottom of my heart if you took a listen 🙏🏽🫶🏽🌊</p>
         <br></br>
-        <p>GENESIS is about self reflection through relationship, self awareness, transformation, and coming back to yourself and your purpose. </p>    
+        <p>GENESIS is about self reflection through relationship, self awareness, transformation, and coming back to yourself and your purpose. ⭐</p>    
         <br></br>
         <h2>Credits</h2>
         <h4>El Ingeniero</h4>
