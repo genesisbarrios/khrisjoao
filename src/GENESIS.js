@@ -186,14 +186,16 @@ const EPK = (props) => {
           </Grid>
         </Grid>
       </Grid>
-
       <h2 style={{paddingTop:"5%"}}>Music Videos</h2>
-      <Grid container spacing={2} style={{width:"80%", margin:"0 auto"}}>
-          <Grid item xs={12} md={6}>
+      <Grid container spacing={3} style={{width:"80%", margin:"0 auto"}}>
+          <Grid item xs={12} md={4}>
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/kTtfDnEF7W4?si=81ziews9ko5yMXXl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid item xs={12} md={4}>
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/3v6ZX_XowU8?si=ACM_I7z7FcTxn20u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/bPX7_MUQr-0?si=zJLxLxCxsVCqgNr7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </Grid>
       </Grid>
       
