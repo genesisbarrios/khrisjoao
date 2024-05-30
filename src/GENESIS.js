@@ -204,57 +204,57 @@ const EPK = (props) => {
         <p>GENESIS is about self reflection through relationship, self awareness, transformation, and coming back to yourself and your purpose. </p>    
         <h2>Credits</h2>
         <h4>El Ingeniero</h4>
-        <p>Produced, and Written by <a href="https://www.instagram.com/gen.wav/" target="_blank">gen.wav</a></p>
+        <p>Produced and Written by <a href="https://www.instagram.com/gen.wav/" target="_blank">gen.wav</a></p>
         <p>Mixed and Mastered by <a href="https://www.instagram.com/mixedbyedwn/?hl=en" target="_blank">Edwin Estacio</a></p>
         <br></br>
         <h4>Ibiza</h4>
-        <p>Produced, and Written by gen.wav</p>
+        <p>Produced and Written by gen.wav</p>
         <p>Background Vocalist: <a href="https://www.instagram.com/s33kr0/" target="_blank">°S33KR0°</a></p>
-        <p>Mixed and Mastered by <a href="https://www.instagram.com/cundibeatz/?hl=en" target="_blank">CundiBeatz</a></p>
+        <p>Co-Produced, Mixed, and Mastered by <a href="https://www.instagram.com/cundibeatz/?hl=en" target="_blank">CundiBeatz</a></p>
         <br></br>
         <h4>Bandolera Feat. <a href="https://www.instagram.com/riskrunnaricky" target="_blank">Riskrunnaricky</a></h4>
-        <p>Produced, and Written by gen.wav</p>
-        <p>Mixed and Mastered by gen.wav</p>
+        <p>Written by gen.wav and Riskrunnaricky</p>
+        <p>Produced, Mixed, and Mastered by gen.wav</p>
         <br></br>
         <h4>Cachumbambé Feat. <a href="https://www.instagram.com/igorcentrism" target="_blank">El Igor</a></h4>
-        <p>Produced, and Written by gen.wav</p>
+        <p>Produced and Written by gen.wav</p>
         <p>Mixed and Mastered by <a href="https://www.instagram.com/nielklopen/?hl=en" target="_blank">Niel Klopen</a></p>
         <br></br>
         <h4>Milán Feat. <a href="https://www.instagram.com/khrissosick/" target="_blank">KHR!S João,</a> <a href="https://www.instagram.com/igorcentrism" target="_blank">El Igor</a></h4>
-        <p>Produced, and Written by gen.wav</p>
+        <p>Produced and Written by gen.wav</p>
         <p>Mixed and Mastered by <a href="https://www.instagram.com/cundibeatz/?hl=en" target="_blank">CundiBeatz</a></p>
         <br></br>
         <h4>Corazón Frío</h4>
-        <p>Produced, and Written by gen.wav</p>
+        <p>Produced and Written by gen.wav</p>
         <p>Mixed and Mastered by <a href="https://www.instagram.com/adrian.ajv/?hl=en" target="_blank">ADRIAN</a></p>
         <br></br>
         <h4>La Peli</h4>
-        <p>Produced, and Written by gen.wav</p>
+        <p>Produced and Written by gen.wav</p>
         <p>Mixed and Mastered by <a href="https://www.instagram.com/adrian.ajv/?hl=en" target="_blank">ADRIAN</a></p>
         <br></br>
         <h4>No Me Llames Más Feat. <a href="https://www.instagram.com/igorcentrism" target="_blank">El Igor</a></h4>
-        <p>Produced, and Written by gen.wav</p>
-        <p>Mixed and Mastered by gen.wav</p>
+        <p>Written by gen.wav and El Giro</p>
+        <p>Produced, Mixed, and Mastered by gen.wav</p>
         <br></br>
         <h4>El Cambio</h4>
-        <p>Produced, and Written by gen.wav</p>
+        <p>Produced and Written by gen.wav</p>
         <p>Mixed and Mastered by gen.wav</p>
         <br></br>
         <h4>Gucci</h4>
         <p>Produced by <a href="https://www.instagram.com/b0neb0yyy/" target="_blank">SAM0</a></p>
-        <p>Written, Mixed and Mastered by gen.wav</p>
+        <p>Written, Mixed, and Mastered by gen.wav</p>
         <br></br>
         <h4>I Remember Feat. <a href="https://www.instagram.com/claudiasings/" target="_blank">Claudia</a></h4>
-        <p>Produced, and Written by gen.wav</p>
-        <p>Mixed and Mastered by gen.wav</p>
+        <p>Written by gen.wav and Claudia</p>
+        <p>Produced, Mixed, and Mastered by gen.wav</p>
         <br></br>
         <h4>It's Me Not You Feat. <a href="https://www.instagram.com/grlkrash/" target="_blank">GRLKRASH</a></h4>
-        <p>Produced, and Written by gen.wav</p>
-        <p>Mixed and Mastered by gen.wav</p>
+        <p>Written by gen.wav and GRLKRASH</p>
+        <p>Produced, Mixed, and Mastered by gen.wav</p>
         <br></br>
         <h4>Tsunami (Olvídalo) Feat. <a href="https://www.instagram.com/khrissosick/" target="_blank">KHR!S João</a></h4>
-        <p>Produced, and Written by gen.wav</p>
-        <p>Mixed and Mastered by gen.wav</p>
+        <p>Written by gen.wav and KHR!S João</p>
+        <p>Produced, Mixed, and Mastered by gen.wav</p>
         <br></br>
 
       </div>
