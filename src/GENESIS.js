@@ -225,7 +225,7 @@ const EPK = (props) => {
         <br></br>
         <h4>Milán Feat. <a href="https://www.instagram.com/khrissosick/" target="_blank">KHR!S João,</a> <a href="https://www.instagram.com/igorcentrism" target="_blank">El Igor</a></h4>
         <p>Produced and Written by gen.wav</p>
-        <p>Mixed and Mastered by <a href="https://www.instagram.com/cundibeatz/?hl=en" target="_blank">CundiBeatz</a></p>
+        <p>Co-Produced, Mixed, and Mastered by <a href="https://www.instagram.com/cundibeatz/?hl=en" target="_blank">CundiBeatz</a></p>
         <br></br>
         <h4>Corazón Frío</h4>
         <p>Produced and Written by gen.wav</p>
