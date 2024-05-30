@@ -293,6 +293,10 @@ button.legend{
     max-width:60%!important;
   }
 
+  .linksContainer p{
+    font-size: 0.8em;
+  }
+
   h1{
     font-size: 25px;
   }
