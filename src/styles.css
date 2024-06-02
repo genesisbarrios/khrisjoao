@@ -289,8 +289,8 @@ button.legend{
   }
   
   .linksContainer{
-    width:70%!important;
-    max-width:70%!important;
+    width:65%!important;
+    max-width:65%!important;
     margin: 0 auto;
     padding: 0;
   }
@@ -354,4 +354,24 @@ button.legend{
   .hero-second-subheading{
     font-size: 18px;
   }
+}
+
+@media (max-width: 968px){
+
+  #comingSoon{
+    font-size:0.95em;
+  }
+
+  #GenesisImageDiv img{
+    width:60%!important;
+    max-width:60%!important;
+  }
+  
+  .linksContainer{
+    width:70%!important;
+    max-width:70%!important;
+    margin: 0 auto;
+    padding: 0;
+  }
+
 }
