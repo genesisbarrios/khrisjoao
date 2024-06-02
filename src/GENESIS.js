@@ -117,7 +117,7 @@ const EPK = (props) => {
           alt="GENESIS Album" type="gif"
           style={{ height: "auto", width: "auto", maxWidth: "50%", objectFit: "cover", margin: "2% 0", borderRadius:"15px" }}></img>
       </div>
-      <Grid className="linksContainer" container spacing={2} style={{maxWidth: "50%", margin:"0 auto"}}>
+      <Grid className="linksContainer" container spacing={2} style={{width: "50%", margin:"0 auto", paddingLeft:"5%"}}>
         <Grid item xs={12} sm={12}>
           <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>

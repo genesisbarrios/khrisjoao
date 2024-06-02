@@ -291,6 +291,8 @@ button.legend{
   .linksContainer{
     width:65%!important;
     max-width:65%!important;
+    margin: 0 auto;
+    padding: 0;
   }
 
   .linksContainer p{
