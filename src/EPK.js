@@ -159,7 +159,7 @@ const EPK = (props) => {
 
           <h1 style={{marginTop:"5%"}}>MUSIC</h1>
           <iframe src="https://open.spotify.com/embed/artist/3YihJDU9YETUNDWO6pDuQG?utm_source=generator" width="100%" height="180" frameBorder="0" allow="clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
-          <iframe width="100%" height="315" style={{borderRadius:"12px"}} src="https://www.youtube.com/embed/nJSuynNjiiU?si=1ZtVJAwwn-IJhLvd" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+          <iframe width="100%" height="315" style={{borderRadius:"12px"}} src="https://www.youtube.com/embed/YMPVuPspRw0?si=xwCetLERDex7Q605" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
           <iframe
             title="SoundCloud Player"
             width="100%"
