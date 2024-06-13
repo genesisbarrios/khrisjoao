@@ -216,7 +216,10 @@ const EPK = (props) => {
         <Grid item sm={12} md={3} lg={3}> 
         <div style={{height:"100%", width: "100%", paddingTop:"0", marginTop:"0", textAlign:"center"}}>
           <div style={{width:"100%", margin:"0 auto"}}>
-          <img src="https://dl.dropboxusercontent.com/s/ngjq803w3rws905ka1pm4/IMG_7398.JPG?rlkey=j5vbxlrk63trn873ntpgnk639&st=hbrdngri&dl=0"style={{width:"80%", height:"auto", marginTop:'20px', marginBottom:"20px"}}></img>
+            <h1 style={{marginBottom:"3%"}}>PRESS</h1>
+             <h5 style={{marginBottom:"2%"}}><a href="https://voyagemia.com/interview/rising-stars-meet-genesis-barrios-of-little-havana" target="_blank" style={{color:"white", textDecoration:"none"}}>Voyage MIA Rising Stars Article</a></h5>
+             
+             <h5><a href="https://colorsxstudios.com/music" target="_blank" style={{color:"white", textDecoration:"none"}}>Colors Studios Feature</a></h5>
             <img src="https://dl.dropboxusercontent.com/s/cq6fa0uol5j3dn9l4qgnu/08FC3DBC-7BA3-438C-B168-6E0907F878A1.JPG?rlkey=4gacge9tz394c0jqw67luovfd&dl=0"style={{width:"80%", height:"auto", marginTop:'20px', marginBottom:"20px"}}></img>
             <img src="https://dl.dropboxusercontent.com/s/https://dl.dropboxusercontent.com/s/6aroj9lrd83ka8082t8ik/4.png?rlkey=xd4waq4ideo8z8cwbzxi75o0j&dl=0" style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
             <img src="https://dl.dropboxusercontent.com/s/xmwxcg78osj2g5dt9nh1y/IMG_5553.JPG?rlkey=cu8pt6p0ragl0jhfymyrqyzjz&dl=0" style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
