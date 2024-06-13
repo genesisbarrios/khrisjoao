@@ -200,45 +200,9 @@ const GenWavOS = (props) => {
                     <Paper> Hi, my name is gen.wav. I'm a Cuban-American Artist, Producer, and Software Engineer. 👨‍💻 I've been a musician for 18 years, with a background in classical training, where I received years of training in Music Theory, Ear Training, and Composition, and learned many instruments, including Piano, Cello, Violin, and Voice. I'm a self taught guitarist, bassist, and producer, with over 10 years of experience writing, recording, producing and performing music. Take a look around, you can stream my music, watch my music videos, buy beats, or Music NFTS, or just vibe. </Paper>
                   </CardContent>
               </Card>
-              <Card className="card" style={{width:'90%', minHeight: '200px', marginBottom:"5%"}}>
-                <div className="cardHeader"><img className="image" src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/progman_30.ico" width="20px" ></img> The Wav Pack V.1 - Free Sample Pack</div>
-                  <a className="slide" target="_blank" href="https://www.beatstars.com/genwav/sound-kits/192047">
-                    <img src="/WavPack.jpg" style={{width:"100%", cursor:"pointer"}} />
-                  </a>
-              </Card>
+          
 
-              <Card className="card" style={{width:'90%', minHeight: '200px', marginTop:"5%"}}>
-              <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/wangimg_130.ico" width="20px"></img> Gallery</div>
-                    <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
-                     
-                    <div className="slide">
-                          <img src="https://dl.dropboxusercontent.com/s/cnowbumt3ecj9e2pa29yu/elcambiopic.png?rlkey=7vo4hcix675fk5wytkqu9hfgu&dl=0" />
-                          <button className="legend"><a href="https://www.instagram.com/p/C5b22lTvChH/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
-                      </div>
-                      <div className="slide">
-                          <img src="https://dl.dropboxusercontent.com/s/dn8xm1k6kef804auw0pg7/D4A0CCB5-6F0C-4CB0-B93A-622E1697C908.JPG?rlkey=6cnvstghktqqrvxbqv2lg8o8y&dl=0" />
-                          <button className="legend"><a href="https://www.instagram.com/p/C380AoJMQBH/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
-                      </div>
-                      <div className="slide">
-                          <img src="https://dl.dropboxusercontent.com/s/5hhls38wigt1wwgrt3p0m/1.png?rlkey=tjj5wradaf2lrw0pu7id6jatt&dl=0" />
-                          <button className="legend"><a href="https://www.instagram.com/p/CyOdrU4xPSa/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
-                      </div>
-                      <div className="slide">
-                          <img src="https://dl.dropboxusercontent.com/s/6aroj9lrd83ka8082t8ik/4.png?rlkey=xd4waq4ideo8z8cwbzxi75o0j&dl=0" />
-                          <button className="legend"><a href="https://www.instagram.com/p/C1m7-cQvV_J/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
-                      </div>
-                      <div  className="slide">
-                          <img src="https://dl.dropboxusercontent.com/s/aa6wibav18t36t47r2j6j/6.png?rlkey=ufxq4j0n8d5ua3fy00ljn7c57&dl=0" />
-                          <button className="legend"><a href="https://www.instagram.com/p/CzJuQlgOB_6/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
-                      </div>
-                      <div  className="slide">
-                          <img src="https://dl.dropboxusercontent.com/s/g45lofzneu2yk3m3ecvos/7.png?rlkey=qx5wzzp37ba3jbplefm9721js&dl=0" />
-                          <button className="legend"><a href="https://instagram.com/p/Cz4CNH3teEa/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
-                      </div>
-                  </Carousel>
-              </Card>
-
-              <div className="card" style={{width:'90%', minHeight: '200px', marginTop:"5%"}}>
+              <div className="card" style={{width:'90%', minHeight: '200px', margin:"5% 0"}}>
                 <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mailnews_8.ico" width="20px"></img> Sign up to receive beats, loops and samples.</div>
                   <div style={{marginTop:"5%", textAlign:"center"}}>
                     <form>
@@ -307,6 +271,46 @@ const GenWavOS = (props) => {
                     </form>
                   </div>
               </div>
+
+              <Card className="card" style={{width:'90%', minHeight: '200px', marginBottom:"5%"}}>
+                <div className="cardHeader"><img className="image" src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/progman_30.ico" width="20px" ></img> The Wav Pack V.1 - Free Sample Pack</div>
+                  <a className="slide" target="_blank" href="https://www.beatstars.com/genwav/sound-kits/192047">
+                    <img src="/WavPack.jpg" style={{width:"100%", cursor:"pointer"}} />
+                  </a>
+              </Card>
+              
+              <Card className="card" style={{width:'90%', minHeight: '200px', marginTop:"5%"}}>
+              <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/wangimg_130.ico" width="20px"></img> Gallery</div>
+                    <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
+                     
+                    <div className="slide">
+                          <img src="https://dl.dropboxusercontent.com/s/cnowbumt3ecj9e2pa29yu/elcambiopic.png?rlkey=7vo4hcix675fk5wytkqu9hfgu&dl=0" />
+                          <button className="legend"><a href="https://www.instagram.com/p/C5b22lTvChH/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                      </div>
+                      <div className="slide">
+                          <img src="https://dl.dropboxusercontent.com/s/dn8xm1k6kef804auw0pg7/D4A0CCB5-6F0C-4CB0-B93A-622E1697C908.JPG?rlkey=6cnvstghktqqrvxbqv2lg8o8y&dl=0" />
+                          <button className="legend"><a href="https://www.instagram.com/p/C380AoJMQBH/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                      </div>
+                      <div className="slide">
+                          <img src="https://dl.dropboxusercontent.com/s/5hhls38wigt1wwgrt3p0m/1.png?rlkey=tjj5wradaf2lrw0pu7id6jatt&dl=0" />
+                          <button className="legend"><a href="https://www.instagram.com/p/CyOdrU4xPSa/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                      </div>
+                      <div className="slide">
+                          <img src="https://dl.dropboxusercontent.com/s/6aroj9lrd83ka8082t8ik/4.png?rlkey=xd4waq4ideo8z8cwbzxi75o0j&dl=0" />
+                          <button className="legend"><a href="https://www.instagram.com/p/C1m7-cQvV_J/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                      </div>
+                      <div  className="slide">
+                          <img src="https://dl.dropboxusercontent.com/s/aa6wibav18t36t47r2j6j/6.png?rlkey=ufxq4j0n8d5ua3fy00ljn7c57&dl=0" />
+                          <button className="legend"><a href="https://www.instagram.com/p/CzJuQlgOB_6/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                      </div>
+                      <div  className="slide">
+                          <img src="https://dl.dropboxusercontent.com/s/g45lofzneu2yk3m3ecvos/7.png?rlkey=qx5wzzp37ba3jbplefm9721js&dl=0" />
+                          <button className="legend"><a href="https://instagram.com/p/Cz4CNH3teEa/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                      </div>
+                  </Carousel>
+              </Card>
+
+             
           </Grid>   
          
           <Grid item sm={12} md={4} order={{ xs: 2, md: 3 }} style={{marginTop:"6%"}}>
@@ -316,7 +320,7 @@ const GenWavOS = (props) => {
                 {/* <iframe width="100%" height="166" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https://soundcloud.com/genesisbarrios/sets/my-music?si=62d1c9cdb8d54729a394f3c43d5d8d1b"></iframe>
                 */}
                   <iframe src="https://open.spotify.com/embed/artist/3YihJDU9YETUNDWO6pDuQG?utm_source=generator" width="100%" height="180" frameBorder="0" allow="clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
-                  <iframe width="100%" height="315" style={{borderRadius:"12px"}} src="https://www.youtube.com/embed/Dek1SdvAv2k?si=tNf8jxQ3qEEl4KO4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                  <iframe width="100%" height="315" style={{borderRadius:"12px"}} src="https://www.youtube.com/embed/YMPVuPspRw0?si=wrn8Mh6_8_NWk4Sc" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
                   <iframe 
                     title="SoundCloud Player"
                     width="100%"
