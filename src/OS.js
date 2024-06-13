@@ -35,21 +35,12 @@ const GenWavOS = (props) => {
     const welcomeBox = document.getElementById("welcomeBox");
     welcomeBox.style.display = "none";
     }
+
   }, []);
 
   useEffect(() => {
-    
-    //hide elements
-    if(email){
-    console.log(email);
-    }
-    if(producer){
-      console.log(producer)
-    }
-    if(artist){
-      console.log(artist)
-    }
-  }, );
+   
+  }, []);
 
   function handleOpenDialog(){
     //<a href="https://www.beatstars.com/genwav/sound-kits/192047" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}></a>
@@ -67,30 +58,40 @@ const GenWavOS = (props) => {
   }
 
   function handleSubmit() {
-    const dataToSend = {
-      email: email,
-      producer: producer,
-      artist: artist
-    };
     console.log('handle submit request to subscribe')
+  
+    // Check if data is valid
+    if (!email) {
+      console.log('No e-mail address provided');
+      setAlert('Please set an e-mail address~');
+      return;
+    }
+
+    const dataToSend = {
+      email,
+      producer,
+      artist,
+      fan
+    };
+  
     // Make a POST request using Axios
-    axios.post('localhost:3000/addUser', dataToSend)
-      .then((response) => {
-        // Handle the response if needed
-        console.log('Request successful', response.data);
-        setMessage('Your e-mail has been saved!')
-        //window.location.href = "https://www.beatstars.com/genwav/sound-kits/192047";
+    axios.post('http://localhost:3000/addUser', dataToSend, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(() => {
+        console.log('Request successful');
+        setMessage("Your e-mail has been saved!")
+        setAlert(''); // Resetting alert if necessary
       })
       .catch((error) => {
-        // Handle errors
+        setAlert("There was an error.");
         console.error('Error: ', error);
-        setAlert('Error: ', error)
+        setMessage(''); // Resetting message if necessary
       });
-
-    setAlert('There was an error.');
-
   }
- 
+
   return(
     
     <div id="OS" style={{paddingBottom:"5%"}}>
@@ -293,9 +294,15 @@ const GenWavOS = (props) => {
                       />
                       <p style={{display:'inline', margin:"0 10px"}}>fan</p>
                         <br></br>
-                        <button onClick={handleSubmit} style={{marginTop:"20px", padding:"2px 5px"}} type="submit">Submit</button>
-                        {message && <Alert style={{marginBottom:"5%"}} severity="success">{message}</Alert>}
-                        {alert && <Alert style={{marginBottom:"5%"}} severity="error">{alert}</Alert>}
+                        <button onClick={(e) => {
+                          e.preventDefault();
+                          setAlert(e);
+                          handleSubmit();
+                        }} style={{marginTop:"20px", padding:"2px 5px"}} type="submit">
+                          Submit
+                        </button>
+                        {message && <Alert style={{marginTop:"5%", marginBottom:"5%"}} severity="success">{message.toString()}</Alert>}
+                        {alert && <Alert style={{marginTop:"5%", marginBottom:"5%"}} severity="error">{alert.toString()}</Alert>}
                       </div>
                     </form>
                   </div>
