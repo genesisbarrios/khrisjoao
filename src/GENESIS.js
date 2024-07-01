@@ -203,6 +203,9 @@ const EPK = (props) => {
           <Grid item xs={12} lg={4}>
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/z3UoOWL7Ltg?si=XnLFau6CQ68yIza9" title="Gucci Music Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </Grid>
+           <Grid item xs={12} lg={4}>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/MZSFGwk9UaY?si=2qbljpEJC7dZljBQ" title="Tsunami Music Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </Grid>
       </Grid>
       
       <div className="aboutAlbum">
