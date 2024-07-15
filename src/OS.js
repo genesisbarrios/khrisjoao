@@ -272,13 +272,26 @@ const GenWavOS = (props) => {
                     <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
                      
                     <div className="slide">
+                          <img src="https://dl.dropboxusercontent.com/s/i2ffv7r45i797hyv0bv13/alwayslunes.JPG?rlkey=vp0qa7hnjtsj0o1xc57dbvs2k&st=ca862hzt&dl=0" />
+                          <button className="legend"><a href="https://www.instagram.com/p/C9QG3JtvK5R/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                      </div>
+                    <div className="slide">
+                          <img src="https://dl.dropboxusercontent.com/s/0tfeel2ahyvr6zjv29kq4/mars.JPG?rlkey=pnt9z6vfyadkcdyke6jnkii50&st=bg2a7ped&dl=0" />
+                          <button className="legend"><a href="https://www.instagram.com/p/C9LBF3pvRGp/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                      </div>
+                    <div className="slide">
+                          <img src="https://dl.dropboxusercontent.com/s/8x4vh1zvabntlz08kbp1l/tsunami.JPG?rlkey=s3b1g7fnfx1at7v16l7sumr9c&st=j3vsh08a&dl=0" />
+                          <button className="legend"><a href="https://www.instagram.com/p/C85Lfzeveok/" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                      </div>
+                    <div className="slide">
+                          <img src="https://dl.dropboxusercontent.com/s/v87mnch6gimnh8o6l4u0r/marsReleaseParty.jpg?rlkey=b1nb3ykx40iqlpbe2392718ss&st=uu92c41f&dl=0" />
+                          <button className="legend"><a href="https://www.instagram.com/p/C7wstS3MS8p/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
+                      </div>
+                    <div className="slide">
                           <img src="https://dl.dropboxusercontent.com/s/cnowbumt3ecj9e2pa29yu/elcambiopic.png?rlkey=7vo4hcix675fk5wytkqu9hfgu&dl=0" />
                           <button className="legend"><a href="https://www.instagram.com/p/C5b22lTvChH/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
                       </div>
-                      <div className="slide">
-                          <img src="https://dl.dropboxusercontent.com/s/dn8xm1k6kef804auw0pg7/D4A0CCB5-6F0C-4CB0-B93A-622E1697C908.JPG?rlkey=6cnvstghktqqrvxbqv2lg8o8y&dl=0" />
-                          <button className="legend"><a href="https://www.instagram.com/p/C380AoJMQBH/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
-                      </div>
+                     
                       <div className="slide">
                           <img src="https://dl.dropboxusercontent.com/s/5hhls38wigt1wwgrt3p0m/1.png?rlkey=tjj5wradaf2lrw0pu7id6jatt&dl=0" />
                           <button className="legend"><a href="https://www.instagram.com/p/CyOdrU4xPSa/?img_index=1" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><InstagramLogo width={25} className="igLogo"></InstagramLogo></a></button>
