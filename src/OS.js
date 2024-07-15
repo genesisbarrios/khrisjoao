@@ -118,30 +118,18 @@ const GenWavOS = (props) => {
           
               <Card className="card" style={{width:'90%', minHeight: '200px'}}>
                   <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_120.ico" width="25" height="25" className="image" /> Services</div>
-                  <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
-                    <div className="slide">
-                          <img src="https://dl.dropboxusercontent.com/s/iav8s3cngc9dosooprmsx/fullmix.png?rlkey=rkg0k4lmq7wnw4thovkhza1g1&dl=0" />
-                          <button className="legend"><a href="https://genwav.beatstars.com/services/119321" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
+                  <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} showIndicators={false} infiniteLoop showThumbs={false} className="custom-carousel">
+                      <div className="slide" style={{cursor:"pointer"}}>
+                        <a href="https://genwav.beatstars.com/services" target="_blank">
+                          <img src="https://dl.dropboxusercontent.com/s/q0re59rr1p9srdjsqvbne/audioengineering.png?rlkey=jm3gfyv5ipbl4fewzskm0ojzo&st=qzy7kvr2&dl=0" />
+                          <button className="legend" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></button>
+                        </a>
                       </div>
-                      <div className="slide">
-                          <img src="https://dl.dropboxusercontent.com/s/tfb6fip9rwypf0wb5m36j/mixing.png?rlkey=779ag1yk18i39dv0jnwfyvn41&dl=0" />
-                          <button className="legend"><a href="https://genwav.beatstars.com/services" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
-                      </div>
-                      <div className="slide">
-                          <img src="https://dl.dropboxusercontent.com/s/echpavedhvl9o0icm9gcg/mix-master.png?rlkey=b1bv8ydwqaxwpornxurrfb2cp&dl=0" />
-                          <button className="legend"><a href="https://genwav.beatstars.com/services/119323" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
-                      </div>
-                      <div className="slide">
-                          <img src="https://dl.dropboxusercontent.com/s/jqofzn3862jtixkiienc9/custombeat.png?rlkey=vh1woj30uv823iqvltf2qq3os&dl=0" />
-                          <button className="legend"><a href="https://genwav.beatstars.com/services/119324" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
-                      </div>
-                      <div  className="slide">
-                          <img src="https://dl.dropboxusercontent.com/s/kly82aimdiz7ul88qo75y/prod-lesson.png?rlkey=627j03ybxm5er8lqa35hqytxr&dl=0" />
-                          <button className="legend"><a href="https://genwav.beatstars.com/services/119322" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
-                      </div>
-                      <div className="slide">
-                          <img src="https://dl.dropboxusercontent.com/s/b1dbjimasknijpxwgz993/recording-session.png?rlkey=fex8apjdiiiwfovwuw4y7q4bk&dl=0" />
-                          <button className="legend"><a href="https://genwav.beatstars.com/services/125886" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
+                      <div className="slide" style={{cursor:"pointer"}}>
+                          <a href="https://enigma-labs.com" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}>
+                            <img src="https://dl.dropboxusercontent.com/s/ekvec97o9wgep3ms1s9v6/enigma.png?rlkey=fik21bg0c74ne0fjpdfmhplqe&st=mbevmc54&dl=0" />
+                            <button className="legend" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></button>
+                          </a>
                       </div>
                   </Carousel>
               </Card>
