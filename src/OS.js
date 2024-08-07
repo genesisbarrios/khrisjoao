@@ -244,7 +244,7 @@ const GenWavOS = (props) => {
                           }
                         }}
                       />
-                      <p style={{display:'inline', margin:"0 10px"}}>fan</p>
+                      <p style={{display:'inline', margin:"0 10px"}}>supporter</p>
                         <br></br>
                         <button onClick={(e) => {
                           e.preventDefault();
