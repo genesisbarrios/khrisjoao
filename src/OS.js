@@ -191,7 +191,7 @@ const GenWavOS = (props) => {
           
 
               <div className="card" style={{width:'90%', minHeight: '200px', margin:"5% 0"}}>
-                <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mailnews_8.ico" width="20px"></img> Sign up to receive beats, loops and samples.</div>
+                <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mailnews_8.ico" width="20px"></img> Sign up to receive beats, loops, samples and news!</div>
                   <div style={{marginTop:"5%", textAlign:"center"}}>
                     <form>
                       <p>Enter Your E-mail Address</p>  
