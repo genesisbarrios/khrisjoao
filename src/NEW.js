@@ -35,7 +35,17 @@ import { Mail, Mail2, CdMusic, cdMusicData, MediaVideo, mediaVideoData, Mic } fr
 import { GlobeSimple, InstagramLogo, TwitterLogo, TiktokLogo, SoundcloudLogo, DiscordLogo, SpotifyLogo, AppleLogo, YoutubeLogo, GithubLogo, AmazonLogo, TidalLogo  } from "@phosphor-icons/react";
 import axios from "axios"; 
 
-const EPK = (props) => {
+export const metadata = {
+  title: 'DALE MAMI',
+  description: 'DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor',
+  openGraph: {
+    title: 'DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor',
+    description: 'DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor',
+    images: ['DALE-MAMI-COVER-ARTWORK.jpg'], // Path to your image
+  },
+};
+
+const NEW = (props) => {
   const [message, setMessage] = useState("");
   const [alert, setAlert] = useState("");
 
@@ -221,4 +231,4 @@ const EPK = (props) => {
         
 };
 
-export default EPK;
+export default NEW;
