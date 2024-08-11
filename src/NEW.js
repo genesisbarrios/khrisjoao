@@ -87,27 +87,27 @@ const EPK = (props) => {
               <SpotifyLogo className="logoSize" style={{ color: '#1DD15E', marginRight: "5px" }} size={50} /><p style={{ color: '#1DD15E', marginRight: "5px", fontWeight:"600"}}>Spotify</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-             <a target="_blank" href="https://accounts.spotify.com/authorize?response_type=code&client_id=5a14783d79444ee9babd9176b256979e&scope=user-follow-modify+user-library-modify+playlist-modify-public+playlist-modify-private+user-read-email+user-read-private&redirect_uri=https%3A%2F%2Flnk.to%2F%7E%2Fprerelease%2Fspotify&state=bFVybD1WZW5pY2UubG5rLnRvJTJGZGFsZS1tYW1pJnNJZD1mMGViOTY1NS1iMWRlLTQ5YTYtYjg4ZC03ZmU0YWUxMWFhNTUmdElkPWRiN2QwYjgwLWUyMzctNGFjOC1hMzM4LWY1YzUwN2IzMTRhNCZ1PWh0dHBzJTNBJTJGJTJGdmVuaWNlLmxuay50byUyRmRhbGUtbWFtaSZ2dD01ZjMzYjhhMjYyYjE5NzE3MzIwZGM3YmE5MGIzZTNmNyZ2dT02NjlmMWEzZjk1MjcxNC43NDM0NDQwNg%3D%3D&utm_source=Original_Original&utm_medium=Original&utm_content=91dd2386-496b-4e6f-8470-f49144e6dd3a_none_KHR%2521S%2BJo%25C3%25A3o_none_none_none_20240728_direct_q-and-a-api_none_Venice.lnk.to%2Fdale-mami"><button className="pre-save-button">Stream</button></a>
+             <a target="_blank" href="https://accounts.spotify.com/authorize?response_type=code&client_id=5a14783d79444ee9babd9176b256979e&scope=user-follow-modify+user-library-modify+playlist-modify-public+playlist-modify-private+user-read-email+user-read-private&redirect_uri=https%3A%2F%2Flnk.to%2F%7E%2Fprerelease%2Fspotify&state=bFVybD1WZW5pY2UubG5rLnRvJTJGZGFsZS1tYW1pJnNJZD1mMGViOTY1NS1iMWRlLTQ5YTYtYjg4ZC03ZmU0YWUxMWFhNTUmdElkPWRiN2QwYjgwLWUyMzctNGFjOC1hMzM4LWY1YzUwN2IzMTRhNCZ1PWh0dHBzJTNBJTJGJTJGdmVuaWNlLmxuay50byUyRmRhbGUtbWFtaSZ2dD01ZjMzYjhhMjYyYjE5NzE3MzIwZGM3YmE5MGIzZTNmNyZ2dT02NjlmMWEzZjk1MjcxNC43NDM0NDQwNg%3D%3D&utm_source=Original_Original&utm_medium=Original&utm_content=91dd2386-496b-4e6f-8470-f49144e6dd3a_none_KHR%2521S%2BJo%25C3%25A3o_none_none_none_20240728_direct_q-and-a-api_none_Venice.lnk.to%2Fdale-mami"><button className="pre-save-button">Pre-Save</button></a>
             </Grid>
           </Grid>
-          {/* <Grid container spacing={2} className="logo-button-container">
+         {/* <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
               <AppleLogo className="logoSize" style={{ color: '#FA4C64', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Apple Music</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-              <a target="_blank" href="https://music.apple.com/us/album/1747470473?app=music&at=1l3vpUI&ct=LFV_7d58c687eeff1763f79f5c3638b3da52&itscg=30440&itsct=catchall_p3&lId=210713504&cId=none&sr=3&src=Linkfire&ls=1"><button className="pre-save-button">Stream</button></a>
+              <a target="_blank" href=""><button className="pre-save-button">Pre-Save</button></a>
             </Grid>
-          </Grid> */}
-          
-          {/* <Grid container spacing={2} className="logo-button-container">
+          </Grid> 
+           */}
+          <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
               <YoutubeLogo className="logoSize" style={{ color: 'red', marginRight: "5px" }} size={50} /><p style={{ marginRight: "5px", fontWeight:"600"}}>YouTube</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://www.youtube.com/watch?v=YMPVuPspRw0&list=PLcGBMxEyx5p8sfg853csGDXChKZo2ZNNi"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://accounts.google.com/o/oauth2/v2/auth?response_type=code&client_id=772283799845-9ni04mapb0pafg0mhtro97t6f2rk5jhu.apps.googleusercontent.com&scope=openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fyoutube+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fmusic&redirect_uri=https%3A%2F%2Flnk.to%2F%7E%2Fprerelease%2Fyoutube&access_type=offline&prompt=consent&state=bFVybD1WZW5pY2UubG5rLnRvJTJGZGFsZS1tYW1pJnNJZD01ZTRjNDIzNC1jYzcyLTQ0NTQtYTYwYi0yODVjMzVkZjRiODAmdElkPWI0ODE3ZDg0LTMxNmEtNGM5MS1hOTcxLTIzMTczMzg4ODBkNiZ1PWh0dHBzJTNBJTJGJTJGdmVuaWNlLmxuay50byUyRmRhbGUtbWFtaSZ2dD1iMWViMTk0MDE4NzkxOGM1MDQ1NmZmYTliZTIyZTJjYyZ2dT02NjlmMWEzZjk1MjcxNC43NDM0NDQwNg%3D%3D"><button className="pre-save-button">Pre-Save</button></a>
             </Grid>
           </Grid>
-            <Grid container spacing={2} className="logo-button-container">
+            {/* <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
               <SoundcloudLogo className="logoSize" style={{ color: '#FF7000', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Soundcloud</p>
             </Grid>
@@ -120,7 +120,16 @@ const EPK = (props) => {
               <TidalLogo className="logoSize" style={{ color: 'white', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Tidal</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://login.tidal.com/authorize?client_id=sgHF2jeIMrbuvJ9l&response_type=code&redirect_uri=https%3A%2F%2Flnk.to%2F%7E%2Fprerelease%2Ftidal&lang=en&restrictSignup=true&geo=US&campaignId=default&scope=r_usr&state=bFVybD1WZW5pY2UubG5rLnRvJTJGZGFsZS1tYW1pJnNJZD1jYzhlYmExNi1jMzMwLTQ4ZWMtYmVhMi0yZjdhOThjYmQxYzEmdElkPWRiN2QwYjgwLWUyMzctNGFjOC1hMzM4LWY1YzUwN2IzMTRhNCZ1PWh0dHBzJTNBJTJGJTJGdmVuaWNlLmxuay50byUyRmRhbGUtbWFtaSZ2dD01ZjMzYjhhMjYyYjE5NzE3MzIwZGM3YmE5MGIzZTNmNyZ2dT02NjlmMWEzZjk1MjcxNC43NDM0NDQwNg%3D%3D"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://login.tidal.com/authorize?client_id=sgHF2jeIMrbuvJ9l&response_type=code&redirect_uri=https%3A%2F%2Flnk.to%2F%7E%2Fprerelease%2Ftidal&lang=en&restrictSignup=true&geo=US&campaignId=default&scope=r_usr&state=bFVybD1WZW5pY2UubG5rLnRvJTJGZGFsZS1tYW1pJnNJZD1jYzhlYmExNi1jMzMwLTQ4ZWMtYmVhMi0yZjdhOThjYmQxYzEmdElkPWRiN2QwYjgwLWUyMzctNGFjOC1hMzM4LWY1YzUwN2IzMTRhNCZ1PWh0dHBzJTNBJTJGJTJGdmVuaWNlLmxuay50byUyRmRhbGUtbWFtaSZ2dD01ZjMzYjhhMjYyYjE5NzE3MzIwZGM3YmE5MGIzZTNmNyZ2dT02NjlmMWEzZjk1MjcxNC43NDM0NDQwNg%3D%3D"><button className="pre-save-button">Pre-Save</button></a>
+            </Grid>
+          </Grid>
+         
+          <Grid container spacing={2} className="logo-button-container">
+            <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
+            <img className="logoSize" style={{marginRight: "5px", display:"inline-block" }} src="deezer.png" width={50}></img> <p style={{marginRight: "5px", fontWeight:"600"}}>Deezer</p>
+            </Grid>
+            <Grid item xs={6} sm={6}>
+            <a target="_blank" href=" https://connect.deezer.com/login.php?app_id=384124&redirect_type=refresh&redirect_link=https%3A%2F%2Fconnect.deezer.com%2Foauth%2Fauth.php%3Fstate%3DbFVybD1WZW5pY2UubG5rLnRvJTJGZGFsZS1tYW1pJnNJZD1mYWU5NzZjMC1lYjQ2LTRiM2UtYjhhZC0wYmU5MWVhYzFkNzAmdElkPWI0ODE3ZDg0LTMxNmEtNGM5MS1hOTcxLTIzMTczMzg4ODBkNiZ1PWh0dHBzJTNBJTJGJTJGdmVuaWNlLmxuay50byUyRmRhbGUtbWFtaSZ2dD1iMWViMTk0MDE4NzkxOGM1MDQ1NmZmYTliZTIyZTJjYyZ2dT02NjlmMWEzZjk1MjcxNC43NDM0NDQwNg%253D%253D%26perms%3Dbasic_access%252Cemail%252Coffline_access%252Cmanage_library%252Cmanage_community%26format%3Dwindow%26app_id%3D384124%26redirect_uri%3Dhttps%253A%252F%252Flnk.to%252F%257E%252Fprerelease%252Fdeezer%26from_third_party_oauth%3Dtrue&nosignup=0&oauth_type=login&recaptcha-disabled=0"><button className="pre-save-button">Pre-Save</button></a>
             </Grid>
           </Grid>
            {/* <Grid container spacing={2} className="logo-button-container">
@@ -144,7 +153,7 @@ const EPK = (props) => {
               <AmazonLogo className="logoSize" style={{ color: '#FF7000', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Amazon</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://www.amazon.com/ap/oa?response_type=code&client_id=amzn1.application-oa2-client.b1b26a26335a46e79c2ff62d19ed6ace&scope=profile&redirect_uri=https%3A%2F%2Flnk.to%2F%7E%2Fprerelease%2Famazon&state=bFVybD1WZW5pY2UubG5rLnRvJTJGZGFsZS1tYW1pJnNJZD01MzE3NDdjMS1kMjc1LTRjNzctOGEzMi1iYzkyNmFhNzE1MjQmdElkPWRiN2QwYjgwLWUyMzctNGFjOC1hMzM4LWY1YzUwN2IzMTRhNCZ1PWh0dHBzJTNBJTJGJTJGdmVuaWNlLmxuay50byUyRmRhbGUtbWFtaSZ2dD01ZjMzYjhhMjYyYjE5NzE3MzIwZGM3YmE5MGIzZTNmNyZ2dT02NjlmMWEzZjk1MjcxNC43NDM0NDQwNg%3D%3D&tag=linkfiregen&ie=UTF8&linkCode=as2&ascsubtag=5f33b8a262b19717320dc7ba90b3e3f7&ref=dmm_acq_soc_us_u_lfire_lp_x_5f33b8a262b19717320dc7ba90b3e3f7"><button className="pre-save-button">Stream / Buy</button></a>
+            <a target="_blank" href="https://www.amazon.com/ap/oa?response_type=code&client_id=amzn1.application-oa2-client.b1b26a26335a46e79c2ff62d19ed6ace&scope=profile&redirect_uri=https%3A%2F%2Flnk.to%2F%7E%2Fprerelease%2Famazon&state=bFVybD1WZW5pY2UubG5rLnRvJTJGZGFsZS1tYW1pJnNJZD01MzE3NDdjMS1kMjc1LTRjNzctOGEzMi1iYzkyNmFhNzE1MjQmdElkPWRiN2QwYjgwLWUyMzctNGFjOC1hMzM4LWY1YzUwN2IzMTRhNCZ1PWh0dHBzJTNBJTJGJTJGdmVuaWNlLmxuay50byUyRmRhbGUtbWFtaSZ2dD01ZjMzYjhhMjYyYjE5NzE3MzIwZGM3YmE5MGIzZTNmNyZ2dT02NjlmMWEzZjk1MjcxNC43NDM0NDQwNg%3D%3D&tag=linkfiregen&ie=UTF8&linkCode=as2&ascsubtag=5f33b8a262b19717320dc7ba90b3e3f7&ref=dmm_acq_soc_us_u_lfire_lp_x_5f33b8a262b19717320dc7ba90b3e3f7"><button className="pre-save-button">Pre-Save</button></a>
             </Grid>
           </Grid>
         </Grid>
