@@ -128,14 +128,14 @@ const EPK = (props) => {
           <p style={{marginBottom:"2%"}}>Miami based Independent Artist, and Producer - Latin, Hip Hop, R&B, Alternative</p>
           
           <h1>ABOUT</h1>
-          <p style={{marginBottom:"2%"}}>gen.wav is a Cuban-American Singer, Multi-Instrumentalist, and Producer based in Miami, Florida. Experimenting with many Latin, Urban and electronic genres, while sticking true to his Latin roots in Miami, and writing in both Spanish and English. He’s heavily influenced by R&B, Hip Hop, Jazz, and House. gen is traditionally a classical musician receiving 10 years of classical training piano, cello, violin, voice, and music theory. He is also a self-taught guitarist, and bassist and has now been producing and writing original music for over a decade.</p>
+          <p style={{marginBottom:"2%"}}>gen.wav is a Cuban-American Singer, Multi-Instrumentalist, and Producer based in Miami, Florida. Experimenting with many Latin, Urban and electronic genres, while sticking true to his Latin roots in Miami, and writing in both Spanish and English. He’s heavily influenced by R&B, Hip Hop, Reggaeton, Jazz, and House. gen is traditionally a classical musician receiving 10 years of classical training piano, cello, violin, voice, and music theory. Also a self-taught guitarist and bass player, with over ten years of experience in music production who has now been producing, engineering, and writing original music seriously for 4 years.</p>
           <p style={{marginBottom:"2%"}}>gen.wav es un cantante, multi-instrumentista y productor cubano-estadounidense que vive en Miami, Florida. Experimenta con muchos géneros latinos, urbanos y electrónicos, manteniéndose fiel a sus raíces latinas en Miami y escribiendo tanto en español como en inglés. Está fuertemente influenciado por el R&B, el Hip Hop, Salsa, Bachata, Reggaeton, Jazz y House. gen es tradicionalmente un músico clásico con más de 10 años de formación clásica en piano, violonchelo y voz, y lleva más de una década produciendo y escribiendo música original.</p>
           
           <h1>ACCOMPLISHMENTS</h1>
           <p style={{marginBottom:"2%"}}>Featured on Spotify's Editorial Playlist New Music Friday Latin</p>
           <p style={{marginBottom:"2%"}}>Featured on Spotify's Editorial Playlist Spotify Novedades Viernes Latinoamerica</p>
           <p style={{marginBottom:"2%"}}>1 Million Streams on Soundcloud</p>
-          <p style={{marginBottom:"2%"}}>Debut Album Drops on May 30th</p>
+          <p style={{marginBottom:"2%"}}>Debut Album Released on May 30th 2024, featured in Colors Studios Website and reached 10,000 streams in August 2024.</p>
 
           <h1>BOOKINGS & PRESS INQUIRIES</h1>
           <p style={{marginBottom:"5%"}}><a style={{color:"white", textDecoration:"none"}} href="beatsbygenwav@gmail.com">beatsbygenwav@gmail.com</a></p>
@@ -159,7 +159,8 @@ const EPK = (props) => {
 
           <h1 style={{marginTop:"5%"}}>MUSIC</h1>
           <iframe src="https://open.spotify.com/embed/artist/3YihJDU9YETUNDWO6pDuQG?utm_source=generator" width="100%" height="180" frameBorder="0" allow="clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/YMPVuPspRw0?si=NQKAEC2FagrBXcxW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       
+          <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLcGBMxEyx5p8fc_zHMGJAUxLs94iw_puY&si=r8E1lj8nOVJFXF7t&controls=1" title="YouTube video player" showControls frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           <iframe
             title="SoundCloud Player"
             width="100%"
