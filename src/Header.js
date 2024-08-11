@@ -20,7 +20,7 @@ const Header = () => {
           <li style={{ marginRight: '10px'}}><Link style={{color:"white", textDecoration:"none" }} to="/NEW">NEW</Link></li>
           <li style={{ marginRight: '10px'}}><Link style={{color:"white", textDecoration:"none" }} to="/OS">OS</Link></li>
           <li style={{ marginRight: '10px'}}><Link style={{color:"white", textDecoration:"none" }}  to="/GENESIS">GENESIS</Link></li>
-          <li><Link style={{color:"white", textDecoration:"none" }} to="/EPK">EPK</Link></li>
+          <li style={{ marginRight: '10px'}}><Link style={{color:"white", textDecoration:"none" }} to="/EPK">EPK</Link></li>
           <li style={{ marginRight: '10px'}}><Link style={{color:"white", textDecoration:"none" }}  to="/SHOP">SHOP</Link></li>
            
           </ul>

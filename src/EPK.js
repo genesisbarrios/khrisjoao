@@ -106,7 +106,7 @@ const EPK = (props) => {
 
   }
  
-  const pdfUrl = 'https://www.dropbox.com/scl/fi/fqwizf2o29pknnfhkxwgz/ELECTRONIC-PRESS-KIT-2.pdf?rlkey=ytaf41lgcv6fte2cgxypn78u6&dl=0';
+  const pdfUrl = 'https://www.dropbox.com/scl/fi/85bvpfrqsdt7nj3qfiuix/ELECTRONIC-PRESS-KIT-AUG-2024.pdf?rlkey=ymr0uzseggwig90x5ntdudziv&st=jr0ow8c4&dl=0';
   
   return(
     
@@ -221,14 +221,15 @@ const EPK = (props) => {
              <h5 style={{marginBottom:"2%"}}><a href="https://voyagemia.com/interview/rising-stars-meet-genesis-barrios-of-little-havana" target="_blank" style={{color:"white", textDecoration:"none"}}>Voyage MIA Rising Stars Article</a></h5>
              
              <h5><a href="https://colorsxstudios.com/music" target="_blank" style={{color:"white", textDecoration:"none"}}>Colors Studios Feature</a></h5>
-            <img src="https://dl.dropboxusercontent.com/s/cq6fa0uol5j3dn9l4qgnu/08FC3DBC-7BA3-438C-B168-6E0907F878A1.JPG?rlkey=4gacge9tz394c0jqw67luovfd&dl=0"style={{width:"80%", height:"auto", marginTop:'20px', marginBottom:"20px"}}></img>
+            <img src="https://dl.dropboxusercontent.com/s/u5g2vwbvy5j0b8gal2dxb/IMG_9359.jpg?rlkey=54gjtg8j48p3ez4dd4jg6lyac&st=797634vq&dl=0" style={{width:"80%", height:"auto", marginTop:'20px', marginBottom:"20px"}}></img>
+            <img src="https://dl.dropboxusercontent.com/s/a6orrf4lpc5y63bpi6rkb/IMG_8524.jpg?rlkey=j9lpdb2jctrm8lqvk513u4vz8&st=n7wwoqem&dl=0" style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
+            <img src="https://dl.dropboxusercontent.com/s/cq6fa0uol5j3dn9l4qgnu/08FC3DBC-7BA3-438C-B168-6E0907F878A1.JPG?rlkey=4gacge9tz394c0jqw67luovfd&dl=0"style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
             <img src="https://dl.dropboxusercontent.com/s/https://dl.dropboxusercontent.com/s/6aroj9lrd83ka8082t8ik/4.png?rlkey=xd4waq4ideo8z8cwbzxi75o0j&dl=0" style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
-            <img src="https://dl.dropboxusercontent.com/s/xmwxcg78osj2g5dt9nh1y/IMG_5553.JPG?rlkey=cu8pt6p0ragl0jhfymyrqyzjz&dl=0" style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
-            <img src="https://dl.dropboxusercontent.com/s/mzqs9rf3ckebhm0b526pu/IMG_1760.png?rlkey=tj5dtxs77rttf1mrg7xd4slhe&dl=0" style={{width:"80%", height:"auto"}}></img>
+            <img src="https://dl.dropboxusercontent.com/s/xmwxcg78osj2g5dt9nh1y/IMG_5553.JPG?rlkey=cu8pt6p0ragl0jhfymyrqyzjz&dl=0" style={{width:"80%", height:"auto"}}></img>
+            
           </div>
           </div>
         </Grid>
-          
          
       </Grid>
    </div>
