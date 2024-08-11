@@ -5,6 +5,7 @@ import ExperienceWrapper from "./ExperienceWrapper";
 import GenWavOS from "./OS";
 import EPK from "./EPK";
 import GENESIS from "./GENESIS";
+import NEW from "./NEW";
 import Header from "./Header"; // Import Header component
 
 import Footer from "./Footer"; // Import Header component
@@ -28,6 +29,12 @@ const App = () => {
     );
   };
 
+  const NEWComponent = () => {
+    return (
+      <NEW />
+    );
+  };
+
   const ShopRedirect = () => { // Define component for /SHOP route
     window.location.href = "https://genwav.bandcamp.com/merch"; // Redirect to external URL
     return null; // Since we're redirecting, return null
@@ -40,10 +47,11 @@ const App = () => {
         {/* Include Header + Footer component */}
         <Routes>
           <Route path="/" element={<><Header /><ExperienceWrapper /></>} />
-          <Route path="/GENESIS" element={<><Header /><GENESISComponent /><Footer /></>} />
-          <Route path="/SHOP" element={<ShopRedirect />} />
           <Route path="/OS" element={<><Header /><GenWavOSComponent /><Footer /></>} />
+          <Route path="/NEW" element={<><Header /><NEWComponent /><Footer /></>} />
+          <Route path="/GENESIS" element={<><Header /><GENESISComponent /><Footer /></>} />
           <Route path="/EPK" element={<><Header /><EPKComponent /><Footer /></>} />
+          <Route path="/SHOP" element={<ShopRedirect />} />
         </Routes>
         
       </div>

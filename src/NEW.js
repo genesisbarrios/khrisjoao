@@ -36,10 +36,6 @@ import { GlobeSimple, InstagramLogo, TwitterLogo, TiktokLogo, SoundcloudLogo, Di
 import axios from "axios"; 
 
 const EPK = (props) => {
-  const [email, setEmail] = useState("");
-  const [fan, setFan] = useState(false);
-  const [producer, setProducer] = useState(false);
-  const [artist, setArtist] = useState(false);
   const [message, setMessage] = useState("");
   const [alert, setAlert] = useState("");
 
@@ -53,16 +49,7 @@ const EPK = (props) => {
   }, []);
 
   useEffect(() => {
-    //hide elements
-    if(email){
-    console.log(email);
-    }
-    if(producer){
-      console.log(producer)
-    }
-    if(artist){
-      console.log(artist)
-    }
+    
   }, );
 
   function handleOpenDialog(){
@@ -80,63 +67,39 @@ const EPK = (props) => {
     }
   }
 
-  function handleSubmit() {
-    const dataToSend = {
-      email: email,
-      subject: producer,
-      body: artist
-    };
-  
-    // Make a POST request using Axios
-    axios.post('https://localhost:3001/sendEmail', dataToSend)
-      .then((response) => {
-        // Handle the response if needed
-        console.log('Request successful', response.data);
-        setMessage('Your e-mail has been saved!')
-        window.open("https://www.beatstars.com/genwav/sound-kits/179946", "_blank")
-      })
-      .catch((error) => {
-        // Handle errors
-        console.error('Error: ', error);
-        window.alert(error);
-        setAlert('Error: ', error)
-      });
-
-    setAlert('There was an error.');
-
-  }
  
   const pdfUrl = 'https://www.dropbox.com/scl/fi/fqwizf2o29pknnfhkxwgz/ELECTRONIC-PRESS-KIT-2.pdf?rlkey=ytaf41lgcv6fte2cgxypn78u6&dl=0';
   
   return(
-    <div id="GENESIS">
+    <div id="NEW">
     <div style={{ textAlign: "center" }}>
-      <div id="GenesisImageDiv">
+      <div id="NEWImageDiv">
         <img 
-          src="https://dl.dropboxusercontent.com/s/h6t8dvgtzzj8f069s0ma4/GENESIS_ANI.gif?rlkey=i1x2657yni0v3dyhhe8fjixvs&st=8dpg1ttt&dl=0"
-          alt="GENESIS Album" type="gif"
-          style={{ height: "auto", width: "auto", maxWidth: "25%", objectFit: "cover", margin: "2% 0", borderRadius:"15px" }}></img>
+          src="https://dl.dropboxusercontent.com/s/5f62vzertqlizupyest37/DALE-MAMI-COVER-ARTWORK.jpg?rlkey=45wrmjerbuz3rhnkrjycvu7yj&st=nc8nj56b&dl=0"
+          alt="DALE MAMI" type="gif"
+          style={{ height: "auto", width: "auto", maxWidth: "15%", objectFit: "cover", margin: "2% 0", borderRadius:"15px" }}></img>
       </div>
-      <Grid className="linksContainer" container spacing={2} style={{width: "35%", margin:"0 auto", paddingLeft:"5%"}}>
+      <iframe id="NEWVideo" width="50%" height="315" src="https://www.youtube.com/embed/PWxMpte_2cA?si=bGEQXi1rJ_S7PNKP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <Grid className="linksContainer" container spacing={2} style={{width: "25%", margin:"0 auto", paddingLeft:"5%"}}>
         <Grid item xs={12} sm={12}>
           <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
               <SpotifyLogo className="logoSize" style={{ color: '#1DD15E', marginRight: "5px" }} size={50} /><p style={{ color: '#1DD15E', marginRight: "5px", fontWeight:"600"}}>Spotify</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-             <a target="_blank" href="https://open.spotify.com/album/4IffPzjr10k3LgFTtSRuBm?go=1"><button className="pre-save-button">Stream</button></a>
+             <a target="_blank" href="https://accounts.spotify.com/authorize?response_type=code&client_id=5a14783d79444ee9babd9176b256979e&scope=user-follow-modify+user-library-modify+playlist-modify-public+playlist-modify-private+user-read-email+user-read-private&redirect_uri=https%3A%2F%2Flnk.to%2F%7E%2Fprerelease%2Fspotify&state=bFVybD1WZW5pY2UubG5rLnRvJTJGZGFsZS1tYW1pJnNJZD1mMGViOTY1NS1iMWRlLTQ5YTYtYjg4ZC03ZmU0YWUxMWFhNTUmdElkPWRiN2QwYjgwLWUyMzctNGFjOC1hMzM4LWY1YzUwN2IzMTRhNCZ1PWh0dHBzJTNBJTJGJTJGdmVuaWNlLmxuay50byUyRmRhbGUtbWFtaSZ2dD01ZjMzYjhhMjYyYjE5NzE3MzIwZGM3YmE5MGIzZTNmNyZ2dT02NjlmMWEzZjk1MjcxNC43NDM0NDQwNg%3D%3D&utm_source=Original_Original&utm_medium=Original&utm_content=91dd2386-496b-4e6f-8470-f49144e6dd3a_none_KHR%2521S%2BJo%25C3%25A3o_none_none_none_20240728_direct_q-and-a-api_none_Venice.lnk.to%2Fdale-mami"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
-          <Grid container spacing={2} className="logo-button-container">
+          {/* <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
               <AppleLogo className="logoSize" style={{ color: '#FA4C64', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Apple Music</p>
             </Grid>
             <Grid item xs={6} sm={6}>
               <a target="_blank" href="https://music.apple.com/us/album/1747470473?app=music&at=1l3vpUI&ct=LFV_7d58c687eeff1763f79f5c3638b3da52&itscg=30440&itsct=catchall_p3&lId=210713504&cId=none&sr=3&src=Linkfire&ls=1"><button className="pre-save-button">Stream</button></a>
             </Grid>
-          </Grid>
+          </Grid> */}
           
-          <Grid container spacing={2} className="logo-button-container">
+          {/* <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
               <YoutubeLogo className="logoSize" style={{ color: 'red', marginRight: "5px" }} size={50} /><p style={{ marginRight: "5px", fontWeight:"600"}}>YouTube</p>
             </Grid>
@@ -151,127 +114,50 @@ const EPK = (props) => {
             <Grid item xs={6} sm={6}>
             <a target="_blank" href="https://soundcloud.com/genwav/sets/genesis-414993647"><button className="pre-save-button">Stream</button></a>
             </Grid>
-          </Grid>
+          </Grid> */}
           <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
               <TidalLogo className="logoSize" style={{ color: 'white', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Tidal</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://tidal.com/browse/album/364508052"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://login.tidal.com/authorize?client_id=sgHF2jeIMrbuvJ9l&response_type=code&redirect_uri=https%3A%2F%2Flnk.to%2F%7E%2Fprerelease%2Ftidal&lang=en&restrictSignup=true&geo=US&campaignId=default&scope=r_usr&state=bFVybD1WZW5pY2UubG5rLnRvJTJGZGFsZS1tYW1pJnNJZD1jYzhlYmExNi1jMzMwLTQ4ZWMtYmVhMi0yZjdhOThjYmQxYzEmdElkPWRiN2QwYjgwLWUyMzctNGFjOC1hMzM4LWY1YzUwN2IzMTRhNCZ1PWh0dHBzJTNBJTJGJTJGdmVuaWNlLmxuay50byUyRmRhbGUtbWFtaSZ2dD01ZjMzYjhhMjYyYjE5NzE3MzIwZGM3YmE5MGIzZTNmNyZ2dT02NjlmMWEzZjk1MjcxNC43NDM0NDQwNg%3D%3D"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
-           <Grid container spacing={2} className="logo-button-container">
+           {/* <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center", marginBottom:"20px"}}>
              <img className="logoSize" style={{marginRight: "5px" }} src="pandora.png" width={50}></img><p style={{marginRight: "5px", fontWeight:"600"}}>Pandora</p>
             </Grid>
             <Grid item xs={6} sm={6}>
             <a target="_blank" href="https://www.pandora.com/artist/genwav/genesis/ALVK52vZZ46mn7q?%24ios_deeplink_path=pandorav4%3A%2F%2Fbackstage%2Falbum%3Ftoken%3DAL%3A34977410&%24android_deeplink_path=pandorav4%3A%2F%2Fbackstage%2Falbum%3Ftoken%3DAL%3A34977410&~channel=Partner%20Catalog%20Search%20API%20-%20Linkfire&part=lf&corr=7d58c687eeff1763f79f5c3638b3da52&partnerName=Linkfire&~campaign=Partner%20Customer%20ID%20-%201e32aa2b-5540-4eef-8a89-c5baf73558a2&sharedId=7d58c687eeff1763f79f5c3638b3da52&_branch_match_id=1309723444836776967&utm_source=Partner%20Catalog%20Search%20API%20-%20Linkfire&utm_campaign=Partner%20Customer%20ID%20-%201e32aa2b-5540-4eef-8a89-c5baf73558a2&_branch_referrer=H4sIAAAAAAAAA62Py2rDMBBFv8beGOdhWZZTMMU0DYSGEih0kU0YS%2BMHtiVVUuLfr9xHusymMIvLcOccqXVO24flUoMUysACtF4MneyXj0GSCrS9U%2Fp8MUPRzsWAlEGy8zNN0%2BL3hKvRb8C4zjofGpQTXL8D2s76VB7eX2hyPZ3SbJTsI%2FToTtmzQNSz66zBtcUP7preJBXw3jpocMYP1WUMyM6pHmVAtuXB10i6YSxdr2agvzaqE%2F8JZc%2B8BSlxKI7%2BdxJN9AQOBtVEbwiGt1F53EdxdPC2ujMYat8qhjrkypiCCZrzLGeIdb1mGanZpqacZCSviACafLU98xVGLG6I2Qmjhq6Rf9KLdWr0Yb%2F1tjWSBCCpYkrTVZx6fJxDvok5raBmhNIcktC2YFDsxd1XfAJVa1qo%2FwEAAA%3D%3D"><button className="pre-save-button">Stream</button></a>
             </Grid>
-          </Grid>
-          <Grid container spacing={2} className="logo-button-container">
+          </Grid> */}
+          {/* <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
               <img className="logoSize" style={{marginRight: "5px" }} src="Bandcamp.png" width={50}></img><p style={{marginRight: "5px", fontWeight:"600"}}>Bandcamp</p>
             </Grid>
             <Grid item xs={6} sm={6}>
               <a target="_blank" href="https://genwav.bandcamp.com/album/genesis"><button className="pre-save-button">Buy</button></a>
             </Grid>
-          </Grid>
+          </Grid> */}
            <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
               <AmazonLogo className="logoSize" style={{ color: '#FF7000', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Amazon</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://www.amazon.com/music/player/albums/B0D4QJWST2"><button className="pre-save-button">Stream / Buy</button></a>
+            <a target="_blank" href="https://www.amazon.com/ap/oa?response_type=code&client_id=amzn1.application-oa2-client.b1b26a26335a46e79c2ff62d19ed6ace&scope=profile&redirect_uri=https%3A%2F%2Flnk.to%2F%7E%2Fprerelease%2Famazon&state=bFVybD1WZW5pY2UubG5rLnRvJTJGZGFsZS1tYW1pJnNJZD01MzE3NDdjMS1kMjc1LTRjNzctOGEzMi1iYzkyNmFhNzE1MjQmdElkPWRiN2QwYjgwLWUyMzctNGFjOC1hMzM4LWY1YzUwN2IzMTRhNCZ1PWh0dHBzJTNBJTJGJTJGdmVuaWNlLmxuay50byUyRmRhbGUtbWFtaSZ2dD01ZjMzYjhhMjYyYjE5NzE3MzIwZGM3YmE5MGIzZTNmNyZ2dT02NjlmMWEzZjk1MjcxNC43NDM0NDQwNg%3D%3D&tag=linkfiregen&ie=UTF8&linkCode=as2&ascsubtag=5f33b8a262b19717320dc7ba90b3e3f7&ref=dmm_acq_soc_us_u_lfire_lp_x_5f33b8a262b19717320dc7ba90b3e3f7"><button className="pre-save-button">Stream / Buy</button></a>
             </Grid>
           </Grid>
         </Grid>
       </Grid>
-      <h2 style={{paddingTop:"5%"}}>Music Videos</h2>
-      <Grid container spacing={3} style={{width:"80%", margin:"0 auto"}}>
-          <Grid item xs={12} lg={4}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/kTtfDnEF7W4?si=81ziews9ko5yMXXl" title="El Cambio Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/3v6ZX_XowU8?si=ACM_I7z7FcTxn20u" title="Cachumbambe Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/bPX7_MUQr-0?si=zJLxLxCxsVCqgNr7" title="El Ingeniero Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/3wBxgLcn4-M?si=VxC900P3cLHoeUIt" title="Corazon Frio Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-          </Grid>
-          <Grid item xs={12} lg={4}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/z3UoOWL7Ltg?si=NDtSnK4IlkpZgotw" title="Gucci Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-          </Grid>
-           <Grid item xs={12} lg={4}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/MZSFGwk9UaY?si=2qbljpEJC7dZljBQ" title="Tsunami Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-          </Grid>
-      </Grid>
       
-      <div className="aboutAlbum">
-        <h2>About the Album</h2>
-        <p>I had no idea what I was getting myself into when I started this project, but it was so worth the blood, sweat, and tears. What started as an EP with a couple features on it ended up being my debut album and it wouldn’t have been possible without all my friends and colleagues. I'm not an artist that's bound to one genre, that's why this project is packed with different genres, and fusions. Although I stick true to my Cuban roots, I'm sure there's a song for everyone in it. It was created over the past year, while still releasing singles monthly and I would appreciate from the bottom of my heart if you took a listen 🙏🏽🫶🏽🌊</p>
-        <br></br>
-        <p>GENESIS is about self reflection through relationship, self awareness, transformation, and coming back to yourself and your purpose. ⭐</p>    
-        <br></br>
+      <div className="aboutNEW">
         <h2>Credits</h2>
-        <h4>El Ingeniero</h4>
-        <p>Produced and Written by <a href="https://www.instagram.com/gen.wav/" target="_blank">gen.wav</a></p>
+        <h4>DALE MAMI</h4>
+        <a href="https://www.instagram.com/khrissosick/" target="_blank">KHR!S Joao</a>, <a href="https://www.instagram.com/genwav/" target="_blank">gen.wav</a>, <a href="https://www.instagram.com/nickgarcia305/" target="_blank">Nick Garcia</a>, <a href="https://www.instagram.com/igorcentrism/" target="_blank">El Igor</a>
+        <p>Produced by <a href="https://www.instagram.com/camebeats/" target="_blank">Came Beats</a></p>
         <p>Mixed and Mastered by <a href="https://www.instagram.com/mixedbyedwn/?hl=en" target="_blank">Edwin Estacio</a></p>
         <br></br>
-        <h4>Ibiza</h4>
-        <p>Produced and Written by gen.wav</p>
-        <p>Background Vocalist: <a href="https://www.instagram.com/s33kr0/" target="_blank">°S33KR0°</a></p>
-        <p>Co-Produced, Mixed, and Mastered by <a href="https://www.instagram.com/cundibeatz/?hl=en" target="_blank">CundiBeatz</a></p>
-        <br></br>
-        <h4>Bandolera Feat. <a href="https://www.instagram.com/riskrunnaricky" target="_blank">Riskrunnaricky</a></h4>
-        <p>Written by gen.wav and Riskrunnaricky</p>
-        <p>Produced, Mixed, and Mastered by gen.wav</p>
-        <br></br>
-        <h4>Cachumbambé Feat. <a href="https://www.instagram.com/igorcentrism" target="_blank">El Igor</a></h4>
-        <p>Produced and Written by gen.wav</p>
-        <p>Mixed and Mastered by <a href="https://www.instagram.com/nielklopen/?hl=en" target="_blank">Niel Klopen</a></p>
-        <br></br>
-        <h4>Milán Feat. <a href="https://www.instagram.com/khrissosick/" target="_blank">KHR!S João,</a> <a href="https://www.instagram.com/igorcentrism" target="_blank">El Igor</a></h4>
-        <p>Produced and Written by gen.wav</p>
-        <p>Co-Produced, Mixed, and Mastered by <a href="https://www.instagram.com/cundibeatz/?hl=en" target="_blank">CundiBeatz</a></p>
-        <br></br>
-        <h4>Corazón Frío</h4>
-        <p>Produced and Written by gen.wav</p>
-        <p>Mixed and Mastered by <a href="https://www.instagram.com/adrian.ajv/?hl=en" target="_blank">ADRIAN</a></p>
-        <br></br>
-        <h4>La Peli</h4>
-        <p>Produced and Written by gen.wav</p>
-        <p>Mixed and Mastered by <a href="https://www.instagram.com/adrian.ajv/?hl=en" target="_blank">ADRIAN</a></p>
-        <br></br>
-        <h4>No Me Llames Más Feat. <a href="https://www.instagram.com/igorcentrism" target="_blank">El Igor</a></h4>
-        <p>Written by gen.wav and El Igor</p>
-        <p>Produced, Mixed, and Mastered by gen.wav</p>
-        <br></br>
-        <h4>El Cambio</h4>
-        <p>Produced and Written by gen.wav</p>
-        <p>Mixed and Mastered by gen.wav</p>
-        <br></br>
-        <h4>Gucci</h4>
-        <p>Produced by <a href="https://www.instagram.com/b0neb0yyy/" target="_blank">SAM0</a></p>
-        <p>Written, Mixed, and Mastered by gen.wav</p>
-        <br></br>
-        <h4>I Remember Feat. <a href="https://www.instagram.com/claudiasings/" target="_blank">Claudia</a></h4>
-        <p>Written by gen.wav and Claudia</p>
-        <p>Produced, Mixed, and Mastered by gen.wav</p>
-        <br></br>
-        <h4>It's Me Not You Feat. <a href="https://www.instagram.com/grlkrash/" target="_blank">GRLKRASH</a></h4>
-        <p>Written by gen.wav and GRLKRASH</p>
-        <p>Produced, Mixed, and Mastered by gen.wav</p>
-        <br></br>
-        <h4>Tsunami (Olvídalo) Feat. <a href="https://www.instagram.com/khrissosick/" target="_blank">KHR!S João</a></h4>
-        <p>Written by gen.wav and KHR!S João</p>
-        <p>Produced, Mixed, and Mastered by gen.wav</p>
-        <br></br>
-        <p>Album Art and Animations by <a href="https://www.instagram.com/alectheaverage/" target="_blank">Alec Perez</a></p>
       </div>
-        
-          
       
     </div>
 
