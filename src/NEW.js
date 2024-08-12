@@ -28,22 +28,22 @@ import rainyDay from 'react95/dist/themes/rainyDay';
 import aiee from 'react95/dist/themes/aiee';
 import slate from 'react95/dist/themes/slate';
 import shelbiTeal from 'react95/dist/themes/shelbiTeal';
-
+import MetaTags from 'react-meta-tags';
 import { Avatar } from "react95";
 import React from "react";
 import { Mail, Mail2, CdMusic, cdMusicData, MediaVideo, mediaVideoData, Mic } from '@react95/icons';
 import { GlobeSimple, InstagramLogo, TwitterLogo, TiktokLogo, SoundcloudLogo, DiscordLogo, SpotifyLogo, AppleLogo, YoutubeLogo, GithubLogo, AmazonLogo, TidalLogo  } from "@phosphor-icons/react";
 import axios from "axios"; 
 
-export const metadata = {
-  title: 'DALE MAMI',
-  description: 'DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor',
-  openGraph: {
-    title: 'DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor',
-    description: 'DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor',
-    images: ['DALE-MAMI-COVER-ARTWORK.jpg'], // Path to your image
-  },
-};
+// export const metadata { 
+//   title: 'DALE MAMI',
+//   description: 'DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor',
+//   openGraph: {
+//     title: 'DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor',
+//     description: 'DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor',
+//     images: ['DALE-MAMI-COVER-ARTWORK.jpg'], // Path to your image
+//   },
+// };
 
 const NEW = (props) => {
   const [message, setMessage] = useState("");
@@ -82,6 +82,15 @@ const NEW = (props) => {
   
   return(
     <div id="NEW">
+      <div class="wrapper">
+          <MetaTags>
+            <title>DALE MAMI | KHR!S Joao, gen.wav, Nick Garcia, El Igor</title>
+            <meta id="meta-description" name="description" content="DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor" />
+            <meta id="og-title" property="og:title" content="DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor" />
+            <meta id="og-image" property="og:image" content="DALE-MAMI-COVER-ARTWORK.jpg" />
+          </MetaTags>
+          <div class="content">DALE MAMI</div>
+        </div>
     <div style={{ textAlign: "center" }}>
       <div id="NEWImageDiv">
         <img 
