@@ -87,7 +87,7 @@ const NEW = (props) => {
             <title>DALE MAMI | KHR!S Joao, gen.wav, Nick Garcia, El Igor</title>
             <meta id="meta-description" name="description" content="DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor" />
             <meta id="og-title" property="og:title" content="DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor" />
-            <meta id="og-image" property="og:image" content="DALE-MAMI-COVER-ARTWORK.jpg" />
+            <meta id="og-image" property="og:image" content="https://genwav.xyz/DALE-MAMI-COVER-ARTWORK.jpg" />
           </MetaTags>
           <div class="content">DALE MAMI</div>
         </div>
