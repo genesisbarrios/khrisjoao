@@ -113,7 +113,7 @@ const NEW = (props) => {
               <AppleLogo className="logoSize" style={{ color: '#FA4C64', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Apple Music</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-              <a target="_blank" href="https://music.apple.com/us/album/dale-mami/1758636150?i=1758636151"><button className="pre-save-button">Pre-Save</button></a>
+              <a target="_blank" href="https://music.apple.com/us/album/dale-mami/1758636150?i=1758636151"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid> 
           
