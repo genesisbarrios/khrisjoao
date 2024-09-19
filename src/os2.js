@@ -70,15 +70,11 @@ const GenWavOS = (props) => {
                       <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} infiniteLoop showThumbs={false} className="custom-carousel">
                         <div className="slide">
                             <img src="carouselImages/mixing.png" />
-                            <button className="legend"><a href="https://genwav.beatstars.com/services" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
+                            <button className="legend"><a href="https://www.beatstars.com/genwav/services" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
                         </div>
                         <div className="slide">
                             <img src="carouselImages/fullmix.png" />
                             <button className="legend"><a href="https://genwav.beatstars.com/services/119321" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
-                        </div>
-                        <div  className="slide">
-                            <img src="carouselImages/mastering.png" />
-                            <button className="legend"><a href="https://genwav.beatstars.com/services/119322" target="_blank" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></a></button>
                         </div>
                         <div className="slide">
                             <img src="carouselImages/mix+master.png" />

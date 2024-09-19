@@ -120,7 +120,7 @@ const GenWavOS = (props) => {
                   <div className="cardHeader"><img src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mmsys_120.ico" width="25" height="25" className="image" /> Services</div>
                   <Carousel centerMode={true} dynamicHeight={false} centerSlidePercentage={100} showIndicators={false} infiniteLoop showThumbs={false} className="custom-carousel">
                       <div className="slide" style={{cursor:"pointer"}}>
-                        <a href="https://genwav.beatstars.com/services" target="_blank">
+                        <a href="https://www.beatstars.com/genwav/services" target="_blank">
                           <img src="https://dl.dropboxusercontent.com/s/q0re59rr1p9srdjsqvbne/audioengineering.png?rlkey=jm3gfyv5ipbl4fewzskm0ojzo&st=qzy7kvr2&dl=0" />
                           <button className="legend" style={{textDecoration:"none", cursor:"pointer"}}><GlobeSimple width={25} className="igLogo"></GlobeSimple></button>
                         </a>
