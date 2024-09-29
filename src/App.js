@@ -36,11 +36,11 @@ const App = () => {
   };
 
   const ShopRedirect = () => { // Define component for /SHOP route
-    window.location.href = "https://genwav.bandcamp.com/merch"; // Redirect to external URL
+    window.location.href = "https://enigma-labs.printify.me/products"; // Redirect to external URL
     return null; // Since we're redirecting, return null
   };
-
-
+  
+  
   return (
     <BrowserRouter>
       <div>
