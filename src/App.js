@@ -57,7 +57,7 @@ const App = () => {
           <Route path="/OS" element={<><Header /><GenWavOSComponent /><Footer /></>} />
           <Route path="/NEW" element={<><Header /><NEWComponent /><Footer /></>} />
           <Route path="/GENESIS" element={<><Header /><GENESISComponent /><Footer /></>} />
-          <Route path="/DALEMAMI" element={<><Header /><DALEMAMIComponent /><Footer /></>} />
+          <Route path="/DALEMAMI" element={<><Header /><DALEMAMIComponent  /><Footer /></>} />
           <Route path="/EPK" element={<><Header /><EPKComponent /><Footer /></>} />
           <Route path="/SHOP" element={<ShopRedirect />} />
         </Routes>
