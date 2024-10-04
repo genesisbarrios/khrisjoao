@@ -36,11 +36,11 @@ import { GlobeSimple, InstagramLogo, TwitterLogo, TiktokLogo, SoundcloudLogo, Di
 import axios from "axios"; 
 
 // export const metadata { 
-//   title: 'DALE MAMI',
-//   description: 'DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor',
+//   title: 'Hiking Por Mi Mente',
+//   description: 'Hiking Por Mi Mente - KHR!S Joao, gen.wav, Nick Garcia, El Igor',
 //   openGraph: {
-//     title: 'DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor',
-//     description: 'DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor',
+//     title: 'Hiking Por Mi Mente - KHR!S Joao, gen.wav, Nick Garcia, El Igor',
+//     description: 'Hiking Por Mi Mente - KHR!S Joao, gen.wav, Nick Garcia, El Igor',
 //     images: ['DALE-MAMI-COVER-ARTWORK.jpg'], // Path to your image
 //   },
 // };
@@ -84,20 +84,20 @@ const NEW = (props) => {
     <div id="NEW">
       <div class="wrapper">
           <MetaTags>
-            <title>DALE MAMI | KHR!S Joao, gen.wav, Nick Garcia, El Igor</title>
-            <meta id="meta-description" name="description" content="DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor" />
-            <meta id="og-title" property="og:title" content="DALE MAMI - KHR!S Joao, gen.wav, Nick Garcia, El Igor" />
+            <title>Hiking Por Mi Mente | KHR!S Joao, gen.wav, Nick Garcia, El Igor</title>
+            <meta id="meta-description" name="description" content="Hiking Por Mi Mente - KHR!S Joao, gen.wav, Nick Garcia, El Igor" />
+            <meta id="og-title" property="og:title" content="Hiking Por Mi Mente - KHR!S Joao, gen.wav, Nick Garcia, El Igor" />
             <meta id="og-image" property="og:image" content="https://genwav.xyz/DALE-MAMI-COVER-ARTWORK.jpg" />
           </MetaTags>
         </div>
     <div style={{ textAlign: "center" }}>
       <div id="NEWImageDiv">
         <img 
-          src="https://dl.dropboxusercontent.com/s/5f62vzertqlizupyest37/DALE-MAMI-COVER-ARTWORK.jpg?rlkey=45wrmjerbuz3rhnkrjycvu7yj&st=nc8nj56b&dl=0"
-          alt="DALE MAMI" type="gif"
+          src="https://dl.dropboxusercontent.com/s/5mk5qbo4su7b69y3m3wyg/HIKING.png?rlkey=60ohqe8ivpuvzro66xrlfyc6u&st=yhv64yog&dl=0"
+          alt="Hiking Por Mi Mente" type="gif"
           style={{ height: "auto", width: "auto", maxWidth: "15%", objectFit: "cover", margin: "2% 0", borderRadius:"15px" }}></img>
       </div>
-      <iframe id="NEWVideo" width="50%" height="315" src="https://www.youtube.com/embed/PWxMpte_2cA?si=bGEQXi1rJ_S7PNKP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe id="NEWVideo" width="50%" height="315" src="https://www.youtube.com/embed/WVJh-oby5P0?si=HZB26Hu7I6o2IAEZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <Grid className="linksContainer" container spacing={2} style={{width: "25%", margin:"0 auto", paddingLeft:"5%"}}>
         <Grid item xs={12} sm={12}>
           <Grid container spacing={2} className="logo-button-container">
@@ -105,7 +105,7 @@ const NEW = (props) => {
               <SpotifyLogo className="logoSize" style={{ color: '#1DD15E', marginRight: "5px" }} size={50} /><p style={{ color: '#1DD15E', marginRight: "5px", fontWeight:"600"}}>Spotify</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-             <a target="_blank" href="https://open.spotify.com/album/0QhyOSP1p4CaWVpnKmdyse?go=1"><button className="pre-save-button">Stream</button></a>
+             <a target="_blank" href="https://open.spotify.com/track/3E1F5TefEhhJ2OlGDxh0A8?si=484bfd6de2704e6c"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
          <Grid container spacing={2} className="logo-button-container">
@@ -113,7 +113,7 @@ const NEW = (props) => {
               <AppleLogo className="logoSize" style={{ color: '#FA4C64', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Apple Music</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-              <a target="_blank" href="https://music.apple.com/us/album/dale-mami/1758636150?i=1758636151"><button className="pre-save-button">Stream</button></a>
+              <a target="_blank" href="https://music.apple.com/do/album/hiking-por-mi-mente-feat-gen-wav/1769614834?i=1769614835"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid> 
           
@@ -138,7 +138,7 @@ const NEW = (props) => {
               <TidalLogo className="logoSize" style={{ color: 'white', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Tidal</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://tidal.com/browse/album/376586855"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://tidal.com/browse/track/388570348"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
          
@@ -151,27 +151,19 @@ const NEW = (props) => {
             </Grid>
           </Grid>
            <Grid container spacing={2} className="logo-button-container">
-            <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center", marginBottom:"20px"}}>
+            <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center", marginBottom:"20px", marginTop:"10px"}}>
              <img className="logoSize" style={{marginRight: "5px" }} src="pandora.png" width={50}></img><p style={{marginRight: "5px", fontWeight:"600"}}>Pandora</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://www.pandora.com/artist/khr-s-joao-genwav-and-el-igor/dale-mami/ALKrwg49td5fhcZ"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://pandora.app.link/HrnsghmxpNb"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
-          {/* <Grid container spacing={2} className="logo-button-container">
-            <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
-              <img className="logoSize" style={{marginRight: "5px" }} src="Bandcamp.png" width={50}></img><p style={{marginRight: "5px", fontWeight:"600"}}>Bandcamp</p>
-            </Grid>
-            <Grid item xs={6} sm={6}>
-              <a target="_blank" href="https://genwav.bandcamp.com/album/genesis"><button className="pre-save-button">Buy</button></a>
-            </Grid>
-          </Grid> */}
            <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
               <AmazonLogo className="logoSize" style={{ color: '#FF7000', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Amazon</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://www.amazon.com/music/player/albums/B0D9TYKP7C"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://amazon.com/music/player/albums/B0DHLC85V2?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_qyMedrIgwoiTnXjAcIVQx1cwb"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
         </Grid>
@@ -179,10 +171,10 @@ const NEW = (props) => {
       
       <div className="aboutNEW">
         <h2>Credits</h2>
-        <h4>DALE MAMI</h4>
-        <a href="https://www.instagram.com/khrissosick/" target="_blank">KHR!S Joao</a>, <a href="https://www.instagram.com/genwav/" target="_blank">gen.wav</a>, <a href="https://www.instagram.com/nickgarcia305/" target="_blank">Nick Garcia</a>, <a href="https://www.instagram.com/igorcentrism/" target="_blank">El Igor</a>
-        <p>Produced by <a href="https://www.instagram.com/dluxe_the_producer" target="_blank">dluxe_the_producer</a></p>
-        <p>Mixed and Mastered by <a href="https://www.instagram.com/mixedbyedwn/?hl=en" target="_blank">Edwin Estacio</a></p>
+        <h4>Hiking Por Mi Mente</h4>
+        <a href="https://www.instagram.com/kiento.o/" target="_blank">Kiento. O</a> x <a href="https://www.instagram.com/genwav/" target="_blank">gen.wav</a>
+        <p>Produced by <a href="https://www.instagram.com/prod.kissin" target="_blank">kissin</a></p>
+        <p>Mixed and Mastered by <a href="https://www.instagram.com/genwav" target="_blank">gen.wav</a></p>
         <br></br>
       </div>
       

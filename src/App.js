@@ -6,7 +6,7 @@ import GenWavOS from "./OS";
 import EPK from "./EPK";
 import GENESIS from "./GENESIS";
 import DALEMAMI from "./DALEMAMI";
-import NEW from "./NEW";
+import HIKING from "./HIKING";
 import Header from "./Header"; // Import Header component
 
 import Footer from "./Footer"; // Import Header component
@@ -36,9 +36,9 @@ const App = () => {
     );
   };
 
-  const NEWComponent = () => {
+  const HIKINGComponent = () => {
     return (
-      <NEW />
+      <HIKING />
     );
   };
 
@@ -55,7 +55,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<><Header /><ExperienceWrapper /></>} />
           <Route path="/OS" element={<><Header /><GenWavOSComponent /><Footer /></>} />
-          <Route path="/NEW" element={<><Header /><NEWComponent /><Footer /></>} />
+          <Route path="/HIKING" element={<><Header /><HIKINGComponent /><Footer /></>} />
           <Route path="/GENESIS" element={<><Header /><GENESISComponent /><Footer /></>} />
           <Route path="/DALEMAMI" element={<><Header /><DALEMAMIComponent  /><Footer /></>} />
           <Route path="/EPK" element={<><Header /><EPKComponent /><Footer /></>} />
