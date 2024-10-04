@@ -75,7 +75,7 @@ const GenWavOS = (props) => {
     };
   
     // Make a POST request using Axios
-    axios.post('https://enigma-backend-server.netlify.app/addUser', dataToSend, {
+    axios.post('https://genwav-node-server-genesisbarrios-genesisbarrios-projects.vercel.app/addUser', dataToSend, {
       headers: {
         'Content-Type': 'application/json'
       }
