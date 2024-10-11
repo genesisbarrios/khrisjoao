@@ -185,7 +185,7 @@ const GenWavOS = (props) => {
                     <div style={{textAlign:"center"}}> 
                       <Avatar size={125} src='https://dl.dropboxusercontent.com/s/aw5uvuev357azdlo72og2/Screenshot-2024-04-18-at-2.18.45-AM.png?rlkey=waj1wtalo8qvyjddhyf768jw0&dl=0' />
                     </div>
-                    <Paper> Hi, my name is gen.wav. I'm a Cuban-American Artist, Producer, and Software Engineer. 👨‍💻 I've been a musician for 18 years, with a background in classical training, where I received years of training in Music Theory, Ear Training, and Composition, and learned many instruments, including Piano, Cello, Violin, and Voice. I'm a self taught guitarist, bassist, and producer, with over 10 years of experience writing, recording, producing and performing music. Take a look around, you can stream my music, watch my music videos, buy beats, or Music NFTS, or just vibe. </Paper>
+                    <Paper> Hi, my name is gen.wav. I'm a Cuban-American Artist, Producer, Multi-Instrumentalist, Audio and Software Engineer. 👨‍💻 I'm a life-long musician, with a background in classical training, where I received years of training in Music Theory, Ear Training, and Composition, and learned many instruments, including Piano, Cello, Violin, and Voice. I'm a self taught guitarist, bassist, and producer, with over 10 years of experience writing, recording, producing and performing music. Take a look around, you can stream my music, watch my music videos, buy beats, or Music NFTS, or just vibe. </Paper>
                   </CardContent>
               </Card>
           
