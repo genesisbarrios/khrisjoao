@@ -59,7 +59,8 @@ const App = () => {
       <div>
         {/* Include Header + Footer component */}
         <Routes>
-          <Route path="/" element={<><Header /><ExperienceWrapper /></>} />
+          {/* <Route path="/" element={<><Header /><ExperienceWrapper /></>} /> */}
+          <Route path="/" element={<><Header /><GenWavOSComponent /><Footer /></>} />
           <Route path="/OS" element={<><Header /><GenWavOSComponent /><Footer /></>} />
           <Route path="/LOSIGNORO" element={<><Header /><LOSIGNOROComponent  /><Footer /></>} />
           <Route path="/HIKING" element={<><Header /><HIKINGComponent /><Footer /></>} />
