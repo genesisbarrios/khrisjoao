@@ -94,7 +94,7 @@ const NEW = (props) => {
       <div id="NEWImageDiv">
         <img 
           src="https://dl.dropboxusercontent.com/s/5mk5qbo4su7b69y3m3wyg/HIKING.png?rlkey=60ohqe8ivpuvzro66xrlfyc6u&st=yhv64yog&dl=0"
-          alt="Hiking Por Mi Mente" type="gif"
+          alt="Hiking Por Mi Mente" type="image"
           style={{ height: "auto", width: "auto", maxWidth: "15%", objectFit: "cover", margin: "2% 0", borderRadius:"15px" }}></img>
       </div>
       <iframe id="NEWVideo" width="50%" height="315" src="https://www.youtube.com/embed/WVJh-oby5P0?si=HZB26Hu7I6o2IAEZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
