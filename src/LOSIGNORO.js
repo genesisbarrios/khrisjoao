@@ -85,8 +85,8 @@ const NEW = (props) => {
       <div class="wrapper">
           <MetaTags>
             <title>Los Ignoro | KHR!S Joao x gen.wav</title>
-            <meta id="meta-description" name="description" content="Hiking Por Mi Mente - KHR!S Joao, gen.wav, Nick Garcia, El Igor" />
-            <meta id="og-title" property="og:title" content="Hiking Por Mi Mente - KHR!S Joao, gen.wav, Nick Garcia, El Igor" />
+            <meta id="meta-description" name="description" content="Los Ignoro - KHR!S Joao x gen.wav" />
+            <meta id="og-title" property="og:title" content="Los Ignoro - KHR!S Joao x gen.wav" />
             <meta id="og-image" property="og:image" content="https://genwav.xyz/LOSIGNOROCOVER.jpg" />
           </MetaTags>
         </div>
