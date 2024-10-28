@@ -219,6 +219,7 @@ const EPK = (props) => {
           <div style={{width:"100%", margin:"0 auto"}}>
             <h1 style={{marginBottom:"3%"}}>PRESS</h1>
              <h5 style={{marginBottom:"2%"}}><a href="https://voyagemia.com/interview/rising-stars-meet-genesis-barrios-of-little-havana" target="_blank" style={{color:"white", textDecoration:"none"}}>Voyage MIA Rising Stars Article</a></h5>
+             <h5 style={{marginBottom:"2%"}}><a href="https://canvasrebel.com/meet-gen-wav/" target="_blank" style={{color:"white", textDecoration:"none"}}>Canvas Rebel Article</a></h5>
              
              <h5><a href="https://colorsxstudios.com/music" target="_blank" style={{color:"white", textDecoration:"none"}}>Colors Studios Feature</a></h5>
             <img src="https://dl.dropboxusercontent.com/s/u5g2vwbvy5j0b8gal2dxb/IMG_9359.jpg?rlkey=54gjtg8j48p3ez4dd4jg6lyac&st=797634vq&dl=0" style={{width:"80%", height:"auto", marginTop:'20px', marginBottom:"20px"}}></img>
