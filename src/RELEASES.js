@@ -235,14 +235,31 @@ const RELEASES = (props) => {
               <CardActionArea href="https://ffm.to/sindestino" target="_blank">
                 <CardMedia
                   component="img"
-                  alt="SIN DESTINO ALBUM ART"
+                  alt="Sin Destino ALBUM ART"
                   height="250"
                   image="https://genwav.xyz/sindestinoart.png"
-                  title="SIN DESTINO"
+                  title="Sin Destino"
                 />
                 <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
                   <Typography variant="h6" component="h6">
                     Sin Destino - KHR!S João x gen.wav
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+
+            <Card style={{marginBottom:"2%"}}>
+              <CardActionArea href="https://Venice.lnk.to/todavia" target="_blank">
+                <CardMedia
+                  component="img"
+                  alt="TODAVIA ALBUM ART"
+                  height="250"
+                  image="https://genwav.xyz/TODAVIAART.jpg"
+                  title="TODAVIA"
+                />
+                <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                  <Typography variant="h6" component="h6">
+                    TODAVIA - gen.wav x Kiento. O
                   </Typography>
                 </CardContent>
               </CardActionArea>
