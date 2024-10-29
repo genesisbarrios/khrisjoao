@@ -231,6 +231,23 @@ const RELEASES = (props) => {
               </CardActionArea>
             </Card>
 
+            <Card style={{marginBottom:"2%"}}>
+              <CardActionArea href="https://ffm.to/sindestino" target="_blank">
+                <CardMedia
+                  component="img"
+                  alt="SIN DESTINO ALBUM ART"
+                  height="250"
+                  image="https://genwav.xyz/sindestinoart.png"
+                  title="SIN DESTINO"
+                />
+                <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                  <Typography variant="h6" component="h6">
+                    Sin Destino - KHR!S João x gen.wav
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+
           </div>
         </Grid>
       </Grid>
