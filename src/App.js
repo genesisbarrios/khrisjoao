@@ -9,6 +9,7 @@ import DALEMAMI from "./DALEMAMI";
 import HIKING from "./HIKING";
 import Header from "./Header"; // Import Header component
 import LOSIGNORO from "./LOSIGNORO";
+import RELEASES from './RELEASES';
 import Footer from "./Footer"; // Import Header component
 
 const App = () => {
@@ -48,6 +49,12 @@ const App = () => {
     );
   };
 
+  const RELEASESComponent = () => {
+    return (
+      <RELEASES />
+    );
+  };
+
   const ShopRedirect = () => { // Define component for /SHOP route
     window.location.href = "https://enigma-labs.printify.me/products"; // Redirect to external URL
     return null; // Since we're redirecting, return null
@@ -62,6 +69,7 @@ const App = () => {
           {/* <Route path="/" element={<><Header /><ExperienceWrapper /></>} /> */}
           <Route path="/" element={<><Header /><GenWavOSComponent /><Footer /></>} />
           <Route path="/OS" element={<><Header /><GenWavOSComponent /><Footer /></>} />
+          <Route path="/RELEASES" element={<><Header /><RELEASESComponent/><Footer /></>} />
           <Route path="/LOSIGNORO" element={<><Header /><LOSIGNOROComponent  /><Footer /></>} />
           <Route path="/HIKING" element={<><Header /><HIKINGComponent /><Footer /></>} />
           <Route path="/GENESIS" element={<><Header /><GENESISComponent /><Footer /></>} />

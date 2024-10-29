@@ -45,7 +45,7 @@ import axios from "axios";
 //   },
 // };
 
-const NEW = (props) => {
+const HIKING = (props) => {
   const [message, setMessage] = useState("");
   const [alert, setAlert] = useState("");
 
@@ -87,7 +87,7 @@ const NEW = (props) => {
             <title>Hiking Por Mi Mente | Kiento. O, gen.wav</title>
             <meta id="meta-description" name="description" content="Hiking Por Mi Mente - Kiento. O, gen.wav" />
             <meta id="og-title" property="og:title" content="Hiking Por Mi Mente - Kiento. O, gen.wav" />
-            <meta id="og-image" property="og:image" content="https://genwav.xyz/DALE-MAMI-COVER-ARTWORK.jpg" />
+            <meta id="og-image" property="og:image" content="https://dl.dropboxusercontent.com/s/5mk5qbo4su7b69y3m3wyg/HIKING.png?rlkey=60ohqe8ivpuvzro66xrlfyc6u&st=yhv64yog&dl=0" />
           </MetaTags>
         </div>
     <div style={{ textAlign: "center" }}>
@@ -231,4 +231,4 @@ const NEW = (props) => {
         
 };
 
-export default NEW;
+export default HIKING;

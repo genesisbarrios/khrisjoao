@@ -93,7 +93,7 @@ const NEW = (props) => {
     <div style={{ textAlign: "center" }}>
       <div id="NEWImageDiv">
         <img 
-          src="https://dl.dropboxusercontent.com/s/apye86jqjajwpyzkaz57t/LOS-IGNORO-COVER_075913.jpg?rlkey=zb6qc0enfvegpds4fwi0uzt87&st=yong88cv&dl=0"
+          src="https://genwav.xyz/LOSIGNOROCOVER.jpg"
           alt="Los Ignoro Artwork" type="image"
           style={{ height: "auto", width: "auto", maxWidth: "15%", objectFit: "cover", margin: "2% 0", borderRadius:"15px" }}></img>
       </div>

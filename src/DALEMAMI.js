@@ -45,7 +45,7 @@ import axios from "axios";
 //   },
 // };
 
-const NEW = (props) => {
+const DALEMAMI = (props) => {
   const [message, setMessage] = useState("");
   const [alert, setAlert] = useState("");
 
@@ -239,4 +239,4 @@ const NEW = (props) => {
         
 };
 
-export default NEW;
+export default DALEMAMI;
