@@ -248,7 +248,6 @@ const GenWavOS = (props) => {
                         <br></br>
                         <button onClick={(e) => {
                           e.preventDefault();
-                          setAlert(e);
                           handleSubmit();
                         }} style={{marginTop:"20px", padding:"2px 5px"}} type="submit">
                           Submit
