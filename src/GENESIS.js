@@ -189,25 +189,28 @@ const EPK = (props) => {
       <h2 style={{paddingTop:"5%"}}>Music Videos</h2>
       <Grid container spacing={3} style={{width:"80%", margin:"0 auto"}}>
           <Grid item xs={12} lg={4}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/kTtfDnEF7W4?si=81ziews9ko5yMXXl" title="El Cambio Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/kTtfDnEF7W4?si=81ziews9ko5yMXXl" title="El Cambio - gen.wav Official Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </Grid>
           <Grid item xs={12} lg={4}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/3v6ZX_XowU8?si=ACM_I7z7FcTxn20u" title="Cachumbambe Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/3v6ZX_XowU8?si=ACM_I7z7FcTxn20u" title="Cachumbambe - gen.wav, El Igor Official Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </Grid>
           <Grid item xs={12} lg={4}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/bPX7_MUQr-0?si=zJLxLxCxsVCqgNr7" title="El Ingeniero Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/bPX7_MUQr-0?si=zJLxLxCxsVCqgNr7" title="El Ingeniero - gen.wav Official Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </Grid>
           <Grid item xs={12} lg={4}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/3wBxgLcn4-M?si=VxC900P3cLHoeUIt" title="Corazon Frio Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/3wBxgLcn4-M?si=VxC900P3cLHoeUIt" title="Corazon Frio - gen.wav Official Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </Grid>
           <Grid item xs={12} lg={4}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/z3UoOWL7Ltg?si=NDtSnK4IlkpZgotw" title="Gucci Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/z3UoOWL7Ltg?si=NDtSnK4IlkpZgotw" title="Gucci - gen.wav Official Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </Grid>
            <Grid item xs={12} lg={4}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/MZSFGwk9UaY?si=2qbljpEJC7dZljBQ" title="Tsunami Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/MZSFGwk9UaY?si=2qbljpEJC7dZljBQ" title="Tsunami - gen.wav Official Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </Grid>
           <Grid item xs={12} lg={4}>
-            <iframe width="100%" height="315" src="https://www.youtube.com/embed/7Qqv5UzPEEY?si=75FK9aFLH9m_3qeY" title="Tsunami Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/7Qqv5UzPEEY?si=75FK9aFLH9m_3qeY" title="Ibiza - gen.wav Official Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          </Grid>
+          <Grid item xs={12} lg={4}>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ie1KfxLpxeY?si=3Sh00_3EkaWr2zNB" title="I Remember - gen.wav, Claudia Official Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </Grid>
       </Grid>
       
