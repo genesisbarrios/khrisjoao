@@ -212,6 +212,9 @@ const EPK = (props) => {
           <Grid item xs={12} lg={4}>
             <iframe width="100%" height="315" src="https://www.youtube.com/embed/Ie1KfxLpxeY?si=3Sh00_3EkaWr2zNB" title="I Remember - gen.wav, Claudia Official Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
           </Grid>
+           <Grid item xs={12} lg={4}>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/FQyi0U0Hkrg?si=QvFKGQPolR5Bm20C" title="I Remember - gen.wav, Claudia Official Music Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; full-screen; web-share" referrerpolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+          </Grid>
       </Grid>
       
       <div className="aboutAlbum">
