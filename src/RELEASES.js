@@ -145,7 +145,25 @@ const RELEASES = (props) => {
       <Grid className="linksContainer" container spacing={3} style={{maxWidth: "35%", margin:"0 auto", paddingTop:"2%", paddingBottom:"5%"}}>
         <Grid item xs={12} sm={12}>
           <div style={{ display: "inline" }}>
-            {/* Add your image card here */}
+            {/* Add your next card here */}
+
+            <Card style={{marginBottom:"2%"}}>
+              <CardActionArea href="https://genwav.xyz/3am" target="_blank">
+                <CardMedia
+                  component="img"
+                  alt="TEXTIN ME ALBUM ART"
+                  height="250"
+                  image="https://genwav.xyz/TEXTINMECOVER.jpg"
+                  title="TEXTIN ME"
+                />
+                <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                  <Typography variant="h6" component="h6">
+                    Textin' Me - gen.wav x KHR!S João
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+
             <Card style={{marginBottom:"2%"}}>
               <CardActionArea href="https://genwav.xyz/LOSIGNORO" target="_blank">
                 <CardMedia
@@ -157,7 +175,7 @@ const RELEASES = (props) => {
                 />
                 <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
                   <Typography variant="h6" component="h6">
-                    LOS IGNORO - gen.wav x KHR!S João
+                    Los Ignoro - gen.wav x KHR!S João
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -174,7 +192,7 @@ const RELEASES = (props) => {
                 />
                 <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
                   <Typography variant="h6" component="h6">
-                    HIKING - Kiento. O x gen.wav 
+                    Hiking Por Mi Mente - Kiento. O x gen.wav 
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -243,6 +261,23 @@ const RELEASES = (props) => {
                 <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
                   <Typography variant="h6" component="h6">
                     Sin Destino - KHR!S João x gen.wav
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+
+            <Card style={{marginBottom:"2%"}}>
+              <CardActionArea href="https://ffm.to/ynet" target="_blank">
+                <CardMedia
+                  component="img"
+                  alt="Ya no estoy triste :) ALBUM ART"
+                  height="250"
+                  image="https://genwav.xyz/YNETCOVER.png"
+                  title="Ya no estoy triste :)"
+                />
+                <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                  <Typography variant="h6" component="h6">
+                  Ya no estoy triste :) - Alex Paul x gen.wav
                   </Typography>
                 </CardContent>
               </CardActionArea>
