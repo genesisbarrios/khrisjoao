@@ -45,7 +45,7 @@ import axios from "axios";
 //   },
 // };
 
-const NEW = (props) => {
+const TEXTINME = (props) => {
   const [message, setMessage] = useState("");
   const [alert, setAlert] = useState("");
 
@@ -231,4 +231,4 @@ const NEW = (props) => {
         
 };
 
-export default NEW;
+export default TEXTINME;
