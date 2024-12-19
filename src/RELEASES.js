@@ -148,7 +148,7 @@ const RELEASES = (props) => {
             {/* Add your next card here */}
 
             <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://genwav.xyz/3am" target="_blank">
+              <CardActionArea href="https://genwav.xyz/3am">
                 <CardMedia
                   component="img"
                   alt="TEXTIN ME ALBUM ART"
@@ -165,7 +165,7 @@ const RELEASES = (props) => {
             </Card>
 
             <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://genwav.xyz/LOSIGNORO" target="_blank">
+              <CardActionArea href="https://genwav.xyz/LOSIGNORO">
                 <CardMedia
                   component="img"
                   alt="LOS IGNORO ALBUM ART"
@@ -182,7 +182,7 @@ const RELEASES = (props) => {
             </Card>
 
             <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://genwav.xyz/HIKING" target="_blank">
+              <CardActionArea href="https://genwav.xyz/HIKING">
                 <CardMedia
                   component="img"
                   alt="HIKING ALBUM ART"
@@ -199,7 +199,7 @@ const RELEASES = (props) => {
             </Card>
 
             <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://genwav.xyz/DALEMAMI" target="_blank">
+              <CardActionArea href="https://genwav.xyz/DALEMAMI">
                 <CardMedia
                   component="img"
                   alt="DALE MAMI ALBUM ART"
@@ -216,7 +216,7 @@ const RELEASES = (props) => {
             </Card>
 
             <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://ffm.to/rko8r4l" target="_blank">
+              <CardActionArea href="https://ffm.to/rko8r4l">
                 <CardMedia
                   component="img"
                   alt="After All ALBUM ART"
@@ -233,7 +233,7 @@ const RELEASES = (props) => {
             </Card>
 
             <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://genwav.xyz/GENESIS" target="_blank">
+              <CardActionArea href="https://genwav.xyz/GENESIS">
                 <CardMedia
                   component="img"
                   alt="GENESIS ALBUM ART"
@@ -250,7 +250,7 @@ const RELEASES = (props) => {
             </Card>
 
             <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://ffm.to/sindestino" target="_blank">
+              <CardActionArea href="https://ffm.to/sindestino">
                 <CardMedia
                   component="img"
                   alt="Sin Destino ALBUM ART"
@@ -267,7 +267,7 @@ const RELEASES = (props) => {
             </Card>
 
             <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://ffm.to/ynet" target="_blank">
+              <CardActionArea href="https://ffm.to/ynet">
                 <CardMedia
                   component="img"
                   alt="Ya no estoy triste :) ALBUM ART"
@@ -284,7 +284,7 @@ const RELEASES = (props) => {
             </Card>
 
             <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://Venice.lnk.to/todavia" target="_blank">
+              <CardActionArea href="https://Venice.lnk.to/todavia">
                 <CardMedia
                   component="img"
                   alt="TODAVIA ALBUM ART"
