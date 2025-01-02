@@ -106,7 +106,7 @@ const EPK = (props) => {
 
   }
  
-  const pdfUrl = 'https://www.dropbox.com/scl/fi/85bvpfrqsdt7nj3qfiuix/ELECTRONIC-PRESS-KIT-AUG-2024.pdf?rlkey=ymr0uzseggwig90x5ntdudziv&st=jr0ow8c4&dl=0';
+  const pdfUrl = 'https://www.dropbox.com/scl/fi/z61ib2py9zr4hgdo7cw9r/Chris-Fernandez-EPK.pdf?rlkey=jgfbfqxdb3er3zhyg9w41pasy&st=ugewx9kz&dl=0';
   
   return(
     
@@ -116,7 +116,7 @@ const EPK = (props) => {
         <Grid item sm={12} md={4} lg={3}> 
           <div style={{height: "100vh", position: "sticky", top: 0}}>
           <img 
-            src="https://dl.dropboxusercontent.com/s/lgduzrail9tglaoo4orpg/IMG_5547.jpg?rlkey=mk5oacojh1yr23ij8s7vcyflt&dl=0"
+            src="https://dl.dropboxusercontent.com/s/nrv3bd216zj1wrh7h2i9j/DSC03120.JPG?rlkey=b8tf49n11rae6a06oq5rr4itx&st=fcw0fo8d&dl=0"
             alt="image"
             style={{height: "100%", width: "100%", objectFit: "cover"}}
           />  
@@ -124,21 +124,17 @@ const EPK = (props) => {
         </Grid>
         <Grid item sm={12} md={6} lg={6}> 
          <div style={{height:"100%", width: "100%"}}>
-          <h1>gen.wav</h1>
+          <h1>KHR!S João</h1>
           <p style={{marginBottom:"2%"}}>Miami based Independent Artist, and Producer - Latin, Hip Hop, R&B, Alternative</p>
           
           <h1>ABOUT</h1>
-          <p style={{marginBottom:"2%"}}>gen.wav is a Cuban-American Singer, Multi-Instrumentalist, and Producer based in Miami, Florida. Experimenting with many Latin, Urban and electronic genres, while sticking true to his Latin roots in Miami, and writing in both Spanish and English. He’s heavily influenced by R&B, Hip Hop, Reggaeton, Jazz, and House. gen is traditionally a classical musician receiving 10 years of classical training piano, cello, violin, voice, and music theory. Also a self-taught guitarist and bass player, with over ten years of experience in music production who has now been producing, engineering, and writing original music seriously for 4 years.</p>
-          <p style={{marginBottom:"2%"}}>gen.wav es un cantante, multi-instrumentista y productor cubano-estadounidense que vive en Miami, Florida. Experimenta con muchos géneros latinos, urbanos y electrónicos, manteniéndose fiel a sus raíces latinas en Miami y escribiendo tanto en español como en inglés. Está fuertemente influenciado por el R&B, el Hip Hop, Salsa, Bachata, Reggaeton, Jazz y House. gen es tradicionalmente un músico clásico con más de 10 años de formación clásica en piano, violonchelo y voz, y lleva más de una década produciendo y escribiendo música original.</p>
+          <p style={{marginBottom:"2%"}}>KHR!S João is a Miami based artist. Born July 10th 1998 in Queens, NY. A few years after his birth, his parents decided to move down to Miami. From a young age he took interest in music, and learned to write songs, and produce that of his own. He is influenced by all types of music, but mostly Latin, Hip-Hop & Alternative music.</p>
           
           <h1>ACCOMPLISHMENTS</h1>
-          <p style={{marginBottom:"2%"}}>Featured on Spotify's Editorial Playlist New Music Friday Latin</p>
-          <p style={{marginBottom:"2%"}}>Featured on Spotify's Editorial Playlist Spotify Novedades Viernes Latinoamerica</p>
-          <p style={{marginBottom:"2%"}}>1 Million Streams on Soundcloud</p>
-          <p style={{marginBottom:"2%"}}>Debut Album Released on May 30th 2024, featured in Colors Studios and reached 10,000 streams in August 2024.</p>
+          <p style={{marginBottom:"2%"}}>Featured in Colors Studios - Milan by gen.wav, KHR!S João, El Igor</p>
 
           <h1>BOOKINGS & PRESS INQUIRIES</h1>
-          <p style={{marginBottom:"5%"}}><a style={{color:"white", textDecoration:"none"}} href="beatsbygenwav@gmail.com">beatsbygenwav@gmail.com</a></p>
+          <p style={{marginBottom:"5%"}}><a style={{color:"white", textDecoration:"none"}} href="khrissosick@gmail.com">khrissosick@gmail.com</a></p>
 
           <a
               href={pdfUrl}
@@ -158,59 +154,42 @@ const EPK = (props) => {
             </a>
 
           <h1 style={{marginTop:"5%"}}>MUSIC</h1>
-          <iframe src="https://open.spotify.com/embed/artist/3YihJDU9YETUNDWO6pDuQG?utm_source=generator" width="100%" height="180" frameBorder="0" allow="clipboard-write; encrypted-media; picture-in-picture" loading="lazy"></iframe>
+          <iframe style={{borderRadius:"12px"}} src="https://open.spotify.com/embed/artist/1dFp4yMaluDGWww446u1Kq?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
        
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLcGBMxEyx5p8fc_zHMGJAUxLs94iw_puY&si=r8E1lj8nOVJFXF7t&controls=1" title="YouTube video player" showControls frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-          <iframe
-            title="SoundCloud Player"
-            width="100%"
-            height="300"
-            allow="autoplay"
-            style={{marginTop:"5%", borderRadius:"10px"}}
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1657973560&color=%235ab7ce&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-          ></iframe>
+          <iframe style={{borderRadius:"12px", margin:"5% 0"}} width="100%" height="315" src="https://www.youtube.com/embed/siWRlUtHFUQ?si=bkdRR7EOZIu1sTaw" title="YouTube video player" showControls allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
             <h1 style={{marginTop:"5%"}}>LINKS</h1>
            <div id="socials" style={{paddingTop:"10px", display:"flex", justifyContent:"space-between"}}>
-                <div style={{display:"inline"}}>
-                  <a target="_blank" href="http://instagram.com/gen.wav" style={{textDecoration:"none"}}>
-                    <InstagramLogo style={{color: 'purple'}} size={25}></InstagramLogo>
-                  </a>
-                </div>
-                <div style={{display:"inline"}}>
-                  <a target="_blank" href="http://twitter.com/gendotwav" style={{textDecoration:"none"}}>
-                    <TwitterLogo style={{color: '#A6CAF0'}} size={25}></TwitterLogo>
-                  </a>
-                </div>
-                <div style={{display:"inline"}}>
-                  <a target="_blank" href="http://tiktok.com/gen.wav" style={{textDecoration:"none"}}>
-                    <TiktokLogo style={{color: 'pink'}} size={25}></TiktokLogo>
-                  </a>
-                </div>
-                <div style={{display:"inline"}}>
-                  <a target="_blank" href="https://soundcloud.com/genwav" style={{textDecoration:"none"}}>
-                    <SoundcloudLogo style={{color: 'orange'}} size={25}></SoundcloudLogo>
-                  </a>
-                </div>
-                <div style={{display:"inline"}}>
-                  <a target="_blank" href="https://www.youtube.com/@genwav" style={{textDecoration:"none"}}>
-                    <YoutubeLogo style={{color: 'red'}} size={25}></YoutubeLogo>
-                  </a>
-                </div>
-                <div style={{display:"inline"}}>
-                  <a target="_blank" href="https://open.spotify.com/artist/3YihJDU9YETUNDWO6pDuQG?si=VmY6439rRLS5mw8uC0nHYg" style={{textDecoration:"none"}}>
-                    <SpotifyLogo style={{color: 'green'}} size={25}></SpotifyLogo>
-                  </a>
-                </div>
-                <div style={{display:"inline"}}>
-                  <a target="_blank" href="https://music.apple.com/us/artist/genesis-barrios/1194186719" style={{textDecoration:"none"}}>
-                    <AppleLogo style={{color: 'pink'}} size={25}></AppleLogo>
-                  </a>
-                </div>
-                <div style={{display:"inline"}}>
-                  <a target="_blank" href="https://discord.com/invite/2MdNjbHnBR" style={{textDecoration:"none"}}>
-                    <DiscordLogo style={{color: 'purple'}} size={25}></DiscordLogo>
-                  </a>
-                </div>
+              <div style={{display:"inline"}}>
+                <a target="_blank" href="http://instagram.com/khrissosick" style={{textDecoration:"none"}}>
+                  <InstagramLogo style={{color: 'orange'}} size={30}></InstagramLogo>
+                </a>
+              </div>
+              <div style={{display:"inline"}}>
+                <a target="_blank" href="http://tiktok.com/@khrissosick" style={{textDecoration:"none"}}>
+                  <TiktokLogo style={{color: 'pink'}} size={30}></TiktokLogo>
+                </a>
+              </div>
+              <div style={{display:"inline"}}>
+                <a target="_blank" href="https://www.youtube.com/@khrissosick" style={{textDecoration:"none"}}>
+                  <YoutubeLogo style={{color: 'red'}} size={30}></YoutubeLogo>
+                </a>
+              </div>
+              <div style={{display:"inline"}}>
+                <a target="_blank" href="https://open.spotify.com/artist/1dFp4yMaluDGWww446u1Kq?si=q7lk08CDT9uzHK4opwnYgw" style={{textDecoration:"none"}}>
+                  <SpotifyLogo style={{color: 'green'}} size={30}></SpotifyLogo>
+                </a>
+              </div>
+              <div style={{display:"inline"}}>
+                <a target="_blank" href="https://music.apple.com/us/artist/khr-s-jo%C3%A3o/1685478437" style={{textDecoration:"none"}}>
+                  <AppleLogo style={{color: 'pink'}} size={30}></AppleLogo>
+                </a>
+              </div>
+              <div style={{display:"inline"}}>
+                <a target="_blank" href="https://discord.com/invite/2MdNjbHnBR" style={{textDecoration:"none"}}>
+                  <DiscordLogo style={{color: 'purple'}} size={30}></DiscordLogo>
+                </a>
+              </div>
               </div>
          </div>
         </Grid>
@@ -218,20 +197,14 @@ const EPK = (props) => {
         <div style={{height:"100%", width: "100%", paddingTop:"0", marginTop:"0", textAlign:"center"}}>
           <div style={{width:"100%", margin:"0 auto"}}>
             <h1 style={{marginBottom:"3%"}}>PRESS</h1>
-             <h5 style={{marginBottom:"2%"}}><a href="https://voyagemia.com/interview/rising-stars-meet-genesis-barrios-of-little-havana" target="_blank" style={{color:"white", textDecoration:"none"}}>Voyage MIA Rising Stars Article</a></h5>
-             <h5 style={{marginBottom:"2%"}}><a href="https://canvasrebel.com/meet-gen-wav/" target="_blank" style={{color:"white", textDecoration:"none"}}>Canvas Rebel Article</a></h5>
-             
-             <h5><a href="https://colorsxstudios.com/music" target="_blank" style={{color:"white", textDecoration:"none"}}>Colors Studios Feature</a></h5>
-            <img src="https://dl.dropboxusercontent.com/s/u5g2vwbvy5j0b8gal2dxb/IMG_9359.jpg?rlkey=54gjtg8j48p3ez4dd4jg6lyac&st=797634vq&dl=0" style={{width:"80%", height:"auto", marginTop:'20px', marginBottom:"20px"}}></img>
-            <img src="https://dl.dropboxusercontent.com/s/a6orrf4lpc5y63bpi6rkb/IMG_8524.jpg?rlkey=j9lpdb2jctrm8lqvk513u4vz8&st=n7wwoqem&dl=0" style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
-            <img src="https://dl.dropboxusercontent.com/s/cq6fa0uol5j3dn9l4qgnu/08FC3DBC-7BA3-438C-B168-6E0907F878A1.JPG?rlkey=4gacge9tz394c0jqw67luovfd&dl=0"style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
-            <img src="https://dl.dropboxusercontent.com/s/https://dl.dropboxusercontent.com/s/6aroj9lrd83ka8082t8ik/4.png?rlkey=xd4waq4ideo8z8cwbzxi75o0j&dl=0" style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
-            <img src="https://dl.dropboxusercontent.com/s/xmwxcg78osj2g5dt9nh1y/IMG_5553.JPG?rlkey=cu8pt6p0ragl0jhfymyrqyzjz&dl=0" style={{width:"80%", height:"auto"}}></img>
+            <h5><a href="https://colorsxstudios.com/music" target="_blank" style={{color:"white", textDecoration:"none"}}>Colors Studios Feature</a></h5>
+            <img src="https://dl.dropboxusercontent.com/s/b0j9ghmmkj5axms1iasqm/DSC03827.jpg?rlkey=w53tcltbkhvc8zbuq5c1m2nhy&st=a3kfgm76&dl=0" style={{width:"80%", height:"auto", marginTop:'20px', marginBottom:"20px"}}></img>
+            <img src="https://dl.dropboxusercontent.com/s/kphkwzr3dqa47t5jr1g2q/tsunami.png?rlkey=nna28tushrohvgjz3tdkn8v6r&st=w8bd4ly8&dl=0" style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
+            <img src="https://dl.dropboxusercontent.com/s/sxwfnz9gtw9ky413j3ls2/DSC03106.JPG?rlkey=qxevjl8lc04myps4j8frgy3gw&st=b69gukdf&dl=0"style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
             
           </div>
           </div>
         </Grid>
-         
       </Grid>
    </div>
     );

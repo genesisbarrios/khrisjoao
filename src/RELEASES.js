@@ -182,23 +182,6 @@ const RELEASES = (props) => {
             </Card>
 
             <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://genwav.xyz/HIKING">
-                <CardMedia
-                  component="img"
-                  alt="HIKING ALBUM ART"
-                  height="250"
-                  image="https://dl.dropboxusercontent.com/s/5mk5qbo4su7b69y3m3wyg/HIKING.png?rlkey=60ohqe8ivpuvzro66xrlfyc6u&st=yhv64yog&dl=0"
-                  title="HIKING"
-                />
-                <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-                  <Typography variant="h6" component="h6">
-                    Hiking Por Mi Mente - Kiento. O x gen.wav 
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-
-            <Card style={{marginBottom:"2%"}}>
               <CardActionArea href="https://genwav.xyz/DALEMAMI">
                 <CardMedia
                   component="img"
@@ -210,23 +193,6 @@ const RELEASES = (props) => {
                 <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
                   <Typography variant="h6" component="h6">
                     DALE MAMI - KHR!S João, gen.wav, Nick Garcia, El Igor
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-
-            <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://ffm.to/rko8r4l">
-                <CardMedia
-                  component="img"
-                  alt="After All ALBUM ART"
-                  height="250"
-                  image="https://genwav.xyz/AFTERALLART.png"
-                  title="After All"
-                />
-                <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-                  <Typography variant="h6" component="h6">
-                    After All - GrimeGrrrl, gen.wav
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -261,40 +227,6 @@ const RELEASES = (props) => {
                 <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
                   <Typography variant="h6" component="h6">
                     Sin Destino - KHR!S João x gen.wav
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-
-            <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://ffm.to/ynet">
-                <CardMedia
-                  component="img"
-                  alt="Ya no estoy triste :) ALBUM ART"
-                  height="250"
-                  image="https://genwav.xyz/YNETCOVER.png"
-                  title="Ya no estoy triste :)"
-                />
-                <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-                  <Typography variant="h6" component="h6">
-                  Ya no estoy triste :) - Alex Paul x gen.wav
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-
-            <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://Venice.lnk.to/todavia">
-                <CardMedia
-                  component="img"
-                  alt="TODAVIA ALBUM ART"
-                  height="250"
-                  image="https://genwav.xyz/TODAVIAART.jpg"
-                  title="TODAVIA"
-                />
-                <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
-                  <Typography variant="h6" component="h6">
-                    TODAVIA - gen.wav x Kiento. O
                   </Typography>
                 </CardContent>
               </CardActionArea>

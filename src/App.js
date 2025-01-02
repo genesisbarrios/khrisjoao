@@ -2,7 +2,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
 import ExperienceWrapper from "./ExperienceWrapper";
-import GenWavOS from "./OS";
+import Home from "./Home";
 import EPK from "./EPK";
 import GENESIS from "./GENESIS";
 import DALEMAMI from "./DALEMAMI";
@@ -14,9 +14,9 @@ import TEXTINME from './3am';
 import Footer from "./Footer"; // Import Header component
 
 const App = () => {
-  const GenWavOSComponent = () => {
+  const HomeComponent = () => {
     return (
-      <GenWavOS />
+      <Home />
     );
   };
 
@@ -74,8 +74,8 @@ const App = () => {
         {/* Include Header + Footer component */}
         <Routes>
           {/* <Route path="/" element={<><Header /><ExperienceWrapper /></>} /> */}
-          <Route path="/" element={<><Header /><GenWavOSComponent /><Footer /></>} />
-          <Route path="/OS" element={<><Header /><GenWavOSComponent /><Footer /></>} />
+          <Route path="/" element={<><Header /><HomeComponent /><Footer /></>} />
+          <Route path="/Home" element={<><Header /><HomeComponent /><Footer /></>} />
           <Route path="/RELEASES" element={<><Header /><RELEASESComponent/><Footer /></>} />
           <Route path="/LOSIGNORO" element={<><Header /><LOSIGNOROComponent  /><Footer /></>} />
           <Route path="/3am" element={<><Header /><TEXTINMEComponent  /><Footer /></>} />

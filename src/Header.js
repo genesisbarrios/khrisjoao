@@ -12,13 +12,12 @@ const Header = () => {
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           <Link to="/">
-            <img src="https://dl.dropboxusercontent.com/s/e0in5yu3gqiidw7se0bte/wave-animation.gif?rlkey=s7dv6t1fyvoh17nn05m33wy7x&dl=0" alt="Logo" style={{ width: '50px', height: 'auto' }} />
+            <img src="favicon.gif" alt="Logo" style={{ width: '75px', height: 'auto' }} />
           </Link>
         </Typography>
         <nav style={{fontSize:"0.9rem"}}>
           <ul style={{ display: 'flex', listStyleType: 'none', margin: 0, padding: 0 }}>
-           <li style={{ marginRight: '10px'}}><Link style={{color:"white", textDecoration:"none" }}  to="/OS">OS</Link></li>
-          <li style={{ marginRight: '10px'}}><Link style={{color:"white", textDecoration:"none" }}  to="/GENESIS">GENESIS</Link></li>
+           <li style={{ marginRight: '10px'}}><Link style={{color:"white", textDecoration:"none" }}  to="/Home">HOME</Link></li>
           <li style={{ marginRight: '10px'}}><Link style={{color:"white", textDecoration:"none" }} to="/RELEASES">RELEASES</Link></li>
           <li style={{ marginRight: '10px'}}><Link style={{color:"white", textDecoration:"none" }} to="/EPK">EPK</Link></li>
           <li style={{ marginRight: '10px'}}><Link style={{color:"white", textDecoration:"none" }}  to="/SHOP">SHOP</Link></li>

@@ -12,7 +12,7 @@ const Footer = () => {
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
           <Link to="/">
-            <img src="https://dl.dropboxusercontent.com/s/e0in5yu3gqiidw7se0bte/wave-animation.gif?rlkey=s7dv6t1fyvoh17nn05m33wy7x&dl=0" alt="Logo" style={{ width: '30px', height: 'auto' }} />
+            <img src="favicon.gif" alt="Logo" style={{ width: '50px', height: 'auto' }} />
           </Link>
         </Typography>
       </Toolbar>

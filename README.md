@@ -1,5 +1,5 @@
-genwav.xyz
-gen.wav's music website
+khrisjoao.com
+Discover all about KHR!S João 
 
 //to start locally
 yarn install
