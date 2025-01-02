@@ -27,7 +27,7 @@ import rainyDay from 'react95/dist/themes/rainyDay';
 import aiee from 'react95/dist/themes/aiee';
 import slate from 'react95/dist/themes/slate';
 import shelbiTeal from 'react95/dist/themes/shelbiTeal';
-
+import { MetaTags } from "react-meta-tags";
 import { Avatar } from "react95";
 import React from "react";
 import { Mail, Mail2, CdMusic, cdMusicData, MediaVideo, mediaVideoData, Mic } from '@react95/icons';

@@ -6,7 +6,6 @@ import Home from "./Home";
 import EPK from "./EPK";
 import GENESIS from "./GENESIS";
 import DALEMAMI from "./DALEMAMI";
-import HIKING from "./HIKING";
 import Header from "./Header"; // Import Header component
 import LOSIGNORO from "./LOSIGNORO";
 import RELEASES from './RELEASES';
@@ -35,12 +34,6 @@ const App = () => {
   const DALEMAMIComponent = () => {
     return (
       <DALEMAMI />
-    );
-  };
-
-  const HIKINGComponent = () => {
-    return (
-      <HIKING />
     );
   };
 
@@ -79,7 +72,6 @@ const App = () => {
           <Route path="/RELEASES" element={<><Header /><RELEASESComponent/><Footer /></>} />
           <Route path="/LOSIGNORO" element={<><Header /><LOSIGNOROComponent  /><Footer /></>} />
           <Route path="/3am" element={<><Header /><TEXTINMEComponent  /><Footer /></>} />
-          <Route path="/HIKING" element={<><Header /><HIKINGComponent /><Footer /></>} />
           <Route path="/GENESIS" element={<><Header /><GENESISComponent /><Footer /></>} />
           <Route path="/DALEMAMI" element={<><Header /><DALEMAMIComponent  /><Footer /></>} />
           <Route path="/EPK" element={<><Header /><EPKComponent /><Footer /></>} />
