@@ -111,7 +111,14 @@ const EPK = (props) => {
   return(
     
     <div id="EPK" style={{paddingBottom:"5%"}}>
-          
+        <div class="wrapper">
+        <MetaTags>
+          <title>KHR!S João Electronic Press Release</title>
+          <meta id="meta-description" name="description" content="KHR!S João Electronic Press Release" />
+          <meta id="og-title" property="og:title" content="Music by KHR!S João" />
+          <meta id="og-image" property="og:image" content="https://khrisjoao.com/logo.png" />
+        </MetaTags>
+      </div>
       <Grid container spacing={3} style={{padding: "0px"}}> 
         <Grid item sm={12} md={4} lg={3}> 
           <div style={{height: "100vh", position: "sticky", top: 0}}>

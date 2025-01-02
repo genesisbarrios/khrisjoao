@@ -84,10 +84,10 @@ const RELEASES = (props) => {
     <div id="NEW">
       <div class="wrapper">
           <MetaTags>
-            <title>Music by gen.wav</title>
-            <meta id="meta-description" name="description" content="Music by gen.wav" />
-            <meta id="og-title" property="og:title" content="Music by gen.wav" />
-            <meta id="og-image" property="og:image" content="https://genwav.xyz/logo.png" />
+            <title>Music by KHR!S João</title>
+            <meta id="meta-description" name="description" content="Music by KHR!S João" />
+            <meta id="og-title" property="og:title" content="Music by KHR!S João" />
+            <meta id="og-image" property="og:image" content="https://khrisjoao.com/logo.png" />
           </MetaTags>
         </div>
     <div style={{ textAlign: "center" }}>
