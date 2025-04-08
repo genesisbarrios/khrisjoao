@@ -85,8 +85,8 @@ const PROBLEMAS = (props) => {
       <div class="wrapper">
           <MetaTags>
             <title>Problemas | Jo Merino, KHR!S Joao, gen.wav, Dani Mako</title>
-            <meta id="meta-description" name="description" content="Problemas - Jo Merino, KHR!S Joao, gen.wav, Dani Mako" />
-            <meta id="og-title" property="og:title" content="Problemas - Jo Merino, KHR!S Joao, gen.wav, Dani Mako" />
+            <meta id="meta-description" name="description" content="Problemas by Jo Merino, KHR!S Joao, gen.wav, Dani Mako" />
+            <meta id="og-title" property="og:title" content="Problemas by Jo Merino, KHR!S Joao, gen.wav, Dani Mako" />
             <meta id="og-image" property="og:image" content="https://genwav.xyz/PROBLEMAS.png" />
           </MetaTags>
         </div>
