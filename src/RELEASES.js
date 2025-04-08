@@ -90,12 +90,12 @@ const RELEASES = (props) => {
             <meta id="og-image" property="og:image" content="https://khrisjoao.com/logo.png" />
           </MetaTags>
         </div>
-    <div style={{ textAlign: "center" }}>
+    <div style={{ textAlign: "center"}}>
       <div id="NEWImageDiv">
        <h3>RELEASES</h3>
       </div>
 
-      <Grid className="linksContainer" container spacing={3} style={{maxWidth: "35%", margin:"0 auto", paddingTop:"2%", paddingBottom:"1%"}}>
+      <Grid className="linksContainer" container spacing={3} style={{maxWidth: "35%", margin:"0 auto",paddingBottom:"5%"}}>
         <Grid item xs={12} sm={12}>
           <div id="socials" style={{paddingTop:"10px", display:"flex", justifyContent:"space-between"}}>
             <div style={{display:"inline"}}>
@@ -131,6 +131,8 @@ const RELEASES = (props) => {
           </div>
         </Grid>
       </Grid>
+
+      
     
       <Grid className="linksContainer" container spacing={3} style={{maxWidth: "35%", margin:"0 auto", paddingTop:"2%", paddingBottom:"5%"}}>
         <Grid item xs={12} sm={12}>
@@ -138,12 +140,63 @@ const RELEASES = (props) => {
             {/* Add your next card here */}
 
             <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://genwav.xyz/3am">
+              <CardActionArea href="https://khrisjoao.com/oneday">
+                <CardMedia
+                  component="img"
+                  alt="Pay Off One Day ALBUM ART"
+                  height="250"
+                  image="https://khrisjoao.com/ONEDAY.png"
+                  title="Pay Off One Day"
+                />
+                <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                  <Typography variant="h6" component="h6">
+                  Pay Off One Day - KHR!S Joao, gen.wav
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+
+            <Card style={{marginBottom:"2%"}}>
+              <CardActionArea href="https://khrisjoao.com/LLAMAGEMELA">
+                <CardMedia
+                  component="img"
+                  alt="LLAMA GEMELA ALBUM ART"
+                  height="250"
+                  image="https://khrisjoao.com/llamagemela.png"
+                  title="LLAMA GEMELA"
+                />
+                <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                  <Typography variant="h6" component="h6">
+                  Llama Gemela - KHR!S Joao, gen.wav
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+
+            <Card style={{marginBottom:"2%"}}>
+              <CardActionArea href="https://khrisjoao.com/PROBLEMAS">
+                <CardMedia
+                  component="img"
+                  alt="PROBLEMAS ALBUM ART"
+                  height="250"
+                  image="https://khrisjoao.com/PROBLEMAS.png"
+                  title="PROBLEMAS"
+                />
+                <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                  <Typography variant="h6" component="h6">
+                  Problemas - Jo Merino, KHR!S Joao, gen.wav, Dani Mako
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+
+            <Card style={{marginBottom:"2%"}}>
+              <CardActionArea href="https://khrisjoao.com/3am">
                 <CardMedia
                   component="img"
                   alt="TEXTIN ME ALBUM ART"
                   height="250"
-                  image="https://genwav.xyz/TEXTINMECOVER.jpg"
+                  image="https://khrisjoao.com/TEXTINMECOVER.jpg"
                   title="TEXTIN ME"
                 />
                 <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
@@ -155,12 +208,12 @@ const RELEASES = (props) => {
             </Card>
 
             <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://genwav.xyz/LOSIGNORO">
+              <CardActionArea href="https://khrisjoao.com/LOSIGNORO">
                 <CardMedia
                   component="img"
                   alt="LOS IGNORO ALBUM ART"
                   height="250"
-                  image="https://genwav.xyz/LOSIGNOROCOVER.jpg"
+                  image="https://khrisjoao.com/LOSIGNOROCOVER.jpg"
                   title="LOS IGNORO"
                 />
                 <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
@@ -172,12 +225,12 @@ const RELEASES = (props) => {
             </Card>
 
             <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://genwav.xyz/DALEMAMI">
+              <CardActionArea href="https://khrisjoao.com/DALEMAMI">
                 <CardMedia
                   component="img"
                   alt="DALE MAMI ALBUM ART"
                   height="250"
-                  image="https://genwav.xyz/DALE-MAMI-COVER-ARTWORK.jpg"
+                  image="https://khrisjoao.com/DALE-MAMI-COVER-ARTWORK.jpg"
                   title="DALE MAMI"
                 />
                 <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
@@ -189,12 +242,12 @@ const RELEASES = (props) => {
             </Card>
 
             <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://genwav.xyz/GENESIS">
+              <CardActionArea href="https:///GENESIS">
                 <CardMedia
                   component="img"
                   alt="GENESIS ALBUM ART"
                   height="250"
-                  image="https://genwav.xyz/GEN_COVER_2500.png"
+                  image="https://khrisjoao.com/GEN_COVER_2500.png"
                   title="GENESIS"
                 />
                 <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
@@ -211,7 +264,7 @@ const RELEASES = (props) => {
                   component="img"
                   alt="Sin Destino ALBUM ART"
                   height="250"
-                  image="https://genwav.xyz/sindestinoart.png"
+                  image="https://khrisjoao.com/sindestinoart.png"
                   title="Sin Destino"
                 />
                 <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
