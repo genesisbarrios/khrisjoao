@@ -118,7 +118,7 @@ const ONEDAY = (props) => {
           alt="Pay Off One Day" type="png"
           style={{ height: "auto", width: "auto", maxWidth: "15%", objectFit: "cover", margin: "2% 0", borderRadius:"15px", marginLeft:"5%" }}></img>
       </div>
-      <iframe id="NEWVideo" style={{margin:"0 auto"}} width="50%" height="315" src="https://www.youtube.com/embed/Kjq3nJJJjvE?si=dMRHsNsvwp4Rm2zP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe id="NEWVideo" style={{margin:"0 auto"}} width="50%" height="315" src="https://www.youtube.com/embed/8td_ueaxld0?si=zvdodxPa47Qy0zVi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
        <Grid className="linksContainer" container spacing={2} style={{width: "25%", margin:"0 auto", paddingLeft:"5%"}}>
        <Grid item xs={12} sm={12}>
           <Grid container spacing={2} className="logo-button-container">
@@ -126,15 +126,15 @@ const ONEDAY = (props) => {
               <SpotifyLogo className="logoSize" style={{ color: '#1DD15E', marginRight: "5px" }} size={50} /><p style={{ color: '#1DD15E', marginRight: "5px", fontWeight:"600"}}>Spotify</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-             <a target="_blank" href="https://open.spotify.com/track/1mF8IXTr7YLihY2MR2Y9MM?si=ug7giTqoSfGu5klG__R-4w&context=spotify%3Aalbum%3A3C6irYsZLnKycU1PK61igu"><button className="pre-save-button">Stream</button></a>
+             <a target="_blank" href="https://open.spotify.com/album/7vPLrkpjqEl4dfI5zEf0Jn?go=1&nd=1&dlsi=369da14867bc4f26"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
          <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
-              <AppleLogo className="logoSize" style={{ color: '#FA4C64', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600", fontSize:"0.8em"}}>Apple Music</p>
+              <AppleLogo className="logoSize" style={{ color: '#FA4C64', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600", fontSize:"0.8em"}}>Apple</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-              <a target="_blank" href="https://music.apple.com/us/album/llama-gemela-single/1795557308"><button className="pre-save-button">Stream</button></a>
+              <a target="_blank" href="https://music.apple.com/us/album/pay-off-one-day-single/1805030518"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid> 
          
@@ -144,7 +144,7 @@ const ONEDAY = (props) => {
               <YoutubeLogo className="logoSize" style={{ color: 'red', marginRight: "5px" }} size={50} /><p style={{ marginRight: "5px", fontWeight:"600"}}>YouTube</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://youtu.be/cYjOcN5XzjY"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://youtu.be/osRvdIys4mo"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
            
@@ -153,7 +153,7 @@ const ONEDAY = (props) => {
               <SoundcloudLogo className="logoSize" style={{ color: '#FF7000', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Soundcloud</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://soundcloud.com/genwav/llama-gemela?si=56502da010fb4f09b62a1895ebfca4b3&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://soundcloud.com/genwav/pay-off-one-day?si=95ef7752e9b04d9f9986ba8347d8bcda&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
           <Grid container spacing={2} className="logo-button-container">
@@ -161,7 +161,7 @@ const ONEDAY = (props) => {
               <TidalLogo className="logoSize" style={{ color: 'white', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Tidal</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://tidal.com/browse/album/426697319"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://tidal.com/browse/album/417146877"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
          
@@ -170,7 +170,7 @@ const ONEDAY = (props) => {
             <img className="logoSize" style={{marginRight: "5px", display:"inline-block" }} src="deezer.png" width={50}></img> <p style={{marginRight: "5px", fontWeight:"600"}}>Deezer</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://www.deezer.com/us/album/734127551"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://www.deezer.com/us/album/711047601"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
            <Grid container spacing={2} className="logo-button-container">
@@ -178,7 +178,7 @@ const ONEDAY = (props) => {
              <img className="logoSize" style={{marginRight: "5px" }} src="pandora.png" width={50}></img><p style={{marginRight: "5px", fontWeight:"600"}}>Pandora</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://www.pandora.com/artist/genwav-and-khr-s-joao/llama-gemela/llama-gemela/TRJZzb4c9Jt4Xq4"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://www.pandora.com/artist/genwav-and-khr-s-joao/pay-off-1-day/pay-off-1-day/TR64Pj26jzdt7j6"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
           <Grid container spacing={2} className="logo-button-container">
@@ -186,7 +186,7 @@ const ONEDAY = (props) => {
               <img className="logoSize" style={{marginRight: "5px" }} src="Bandcamp.png" width={50}></img><p style={{marginRight: "5px", fontWeight:"600"}}>Bandcamp</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-              <a target="_blank" href="https://genwav.bandcamp.com/album/llamagemela"><button className="pre-save-button">Buy</button></a>
+              <a target="_blank" href="https://genwav.bandcamp.com/track/pay-off-one-day"><button className="pre-save-button">Buy</button></a>
             </Grid>
           </Grid> 
            <Grid container spacing={2} className="logo-button-container">
@@ -194,12 +194,11 @@ const ONEDAY = (props) => {
               <AmazonLogo className="logoSize" style={{ color: '#FF7000', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Amazon</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://music.amazon.com/albums/B0DWQS8V2X?tag=linkfiregen&ie=UTF8&linkCode=as2&ascsubtag=429cae4327c9a39dc64163a7214b5416&ref=dmm_acq_soc_us_u_lfire_lp_x_429cae4327c9a39dc64163a7214b5416"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://amazon.com/music/player/albums/B0F2RDD65P?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_p78oxG1GqY0jJ0yKUHhWBG3zc&trackAsin=B0F2RJG6ZG"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
         </Grid>
       </Grid> 
-      
       
       <div className="aboutNEW">
         <h2>Credits</h2>
