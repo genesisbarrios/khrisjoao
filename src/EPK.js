@@ -192,11 +192,7 @@ const EPK = (props) => {
                   <AppleLogo style={{color: 'pink'}} size={30}></AppleLogo>
                 </a>
               </div>
-              <div style={{display:"inline"}}>
-                <a target="_blank" href="https://discord.com/invite/2MdNjbHnBR" style={{textDecoration:"none"}}>
-                  <DiscordLogo style={{color: 'purple'}} size={30}></DiscordLogo>
-                </a>
-              </div>
+            
               </div>
          </div>
         </Grid>

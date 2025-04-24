@@ -190,38 +190,33 @@ const DALEMAMI = (props) => {
 
       <Grid className="linksContainer" container spacing={3} style={{maxWidth: "35%", margin:"0 auto", paddingTop:"2%", paddingBottom:"5%"}}>
         <Grid item xs={12} sm={12}>
-          <div id="socials" style={{paddingTop:"10px", display:"flex", justifyContent:"space-between"}}>
-              <div style={{display:"inline"}}>
-                <a target="_blank" href="http://instagram.com/khrissosick" style={{textDecoration:"none"}}>
-                  <InstagramLogo style={{color: 'orange'}} size={30}></InstagramLogo>
-                </a>
-              </div>
-              <div style={{display:"inline"}}>
-                <a target="_blank" href="http://tiktok.com/@khrissosick" style={{textDecoration:"none"}}>
-                  <TiktokLogo style={{color: 'pink'}} size={30}></TiktokLogo>
-                </a>
-              </div>
-              <div style={{display:"inline"}}>
-                <a target="_blank" href="https://www.youtube.com/@khrissosick" style={{textDecoration:"none"}}>
-                  <YoutubeLogo style={{color: 'red'}} size={30}></YoutubeLogo>
-                </a>
-              </div>
-              <div style={{display:"inline"}}>
-                <a target="_blank" href="https://open.spotify.com/artist/1dFp4yMaluDGWww446u1Kq?si=q7lk08CDT9uzHK4opwnYgw" style={{textDecoration:"none"}}>
-                  <SpotifyLogo style={{color: 'green'}} size={30}></SpotifyLogo>
-                </a>
-              </div>
-              <div style={{display:"inline"}}>
-                <a target="_blank" href="https://music.apple.com/us/artist/khr-s-jo%C3%A3o/1685478437" style={{textDecoration:"none"}}>
-                  <AppleLogo style={{color: 'pink'}} size={30}></AppleLogo>
-                </a>
-              </div>
-              <div style={{display:"inline"}}>
-                <a target="_blank" href="https://discord.com/invite/2MdNjbHnBR" style={{textDecoration:"none"}}>
-                  <DiscordLogo style={{color: 'purple'}} size={30}></DiscordLogo>
-                </a>
-              </div>
-              </div>
+          <div id="socials" style={{padding:"10px 0", display:"flex", justifyContent:"space-between"}}>
+            <div style={{display:"inline"}}>
+              <a target="_blank" href="http://instagram.com/khrissosick" style={{textDecoration:"none"}}>
+                <InstagramLogo style={{color: 'orange'}} size={30}></InstagramLogo>
+              </a>
+            </div>
+            <div style={{display:"inline"}}>
+              <a target="_blank" href="http://tiktok.com/@khrissosick" style={{textDecoration:"none"}}>
+                <TiktokLogo style={{color: 'pink'}} size={30}></TiktokLogo>
+              </a>
+            </div>
+            <div style={{display:"inline"}}>
+              <a target="_blank" href="https://www.youtube.com/@khrissosick" style={{textDecoration:"none"}}>
+                <YoutubeLogo style={{color: 'red'}} size={30}></YoutubeLogo>
+              </a>
+            </div>
+            <div style={{display:"inline"}}>
+              <a target="_blank" href="https://open.spotify.com/artist/1dFp4yMaluDGWww446u1Kq?si=q7lk08CDT9uzHK4opwnYgw" style={{textDecoration:"none"}}>
+                <SpotifyLogo style={{color: 'green'}} size={30}></SpotifyLogo>
+              </a>
+            </div>
+            <div style={{display:"inline"}}>
+              <a target="_blank" href="https://music.apple.com/us/artist/khr-s-jo%C3%A3o/1685478437" style={{textDecoration:"none"}}>
+                <AppleLogo style={{color: 'pink'}} size={30}></AppleLogo>
+              </a>
+            </div>
+          </div>
             </Grid>
           </Grid>
       </div>
