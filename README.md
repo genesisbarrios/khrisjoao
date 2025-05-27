@@ -1,5 +1,4 @@
-khrisjoao.com
-Discover all about KHR!S João 
+cinemautographer.com
 
 //to start locally
 yarn install
