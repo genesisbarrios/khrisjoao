@@ -145,7 +145,7 @@ const RELEASES = (props) => {
                   component="img"
                   alt="CURIOSO ALBUM ART"
                   height="250"
-                  image="https://khrisjoao.com/CURIOSO.JPG"
+                  image="https://khrisjoao.com/CURIOSO.jpg"
                   title="CURIOSO"
                 />
                 <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
