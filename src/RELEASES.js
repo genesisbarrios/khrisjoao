@@ -140,7 +140,7 @@ const RELEASES = (props) => {
             {/* Add your next card here */}
 
               <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https://venice.lnk.to/curioso">
+              <CardActionArea href="https://khrisjoao.com/CURIOSO">
                 <CardMedia
                   component="img"
                   alt="CURIOSO ALBUM ART"
