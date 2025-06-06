@@ -108,13 +108,13 @@ const ONEDAY = (props) => {
             <title>Pay Off One Day | KHR!S Joao, gen.wav</title>
             <meta id="meta-description" name="description" content="Pay Off One Day - KHR!S Joao, gen.wav" />
             <meta id="og-title" property="og:title" content="Pay Off One Day - KHR!S Joao, gen.wav" />
-            <meta id="og-image" property="og:image" content="https://genwav.xyz/ONEDAY.png" />
+            <meta id="og-image" property="og:image" content="https://khrisjoao.com/ONEDAY.png" />
           </MetaTags>
         </div>
     <div style={{ textAlign: "center" }}>
       <div id="NEWImageDiv">
         <img 
-          src="https://genwav.xyz/ONEDAY.png"
+          src="https://khrisjoao.com/ONEDAY.png"
           alt="Pay Off One Day" type="png"
           style={{ height: "auto", width: "auto", maxWidth: "15%", objectFit: "cover", margin: "2% 0", borderRadius:"15px", marginLeft:"5%" }}></img>
       </div>
@@ -341,7 +341,7 @@ const ONEDAY = (props) => {
 
       <Grid className="linksContainer" container spacing={3} style={{maxWidth: "35%", margin:"0 auto", paddingTop:"2%", paddingBottom:"5%"}}>
         <Grid item xs={12} sm={12}>
-          < <div id="socials" style={{padding:"10px 0", display:"flex", justifyContent:"space-between"}}>
+         <div id="socials" style={{padding:"10px 0", display:"flex", justifyContent:"space-between"}}>
                         <div style={{display:"inline"}}>
                           <a target="_blank" href="http://instagram.com/khrissosick" style={{textDecoration:"none"}}>
                             <InstagramLogo style={{color: 'orange'}} size={30}></InstagramLogo>
