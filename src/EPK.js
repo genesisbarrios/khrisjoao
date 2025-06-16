@@ -200,7 +200,9 @@ const EPK = (props) => {
         <div style={{height:"100%", width: "100%", paddingTop:"0", marginTop:"0", textAlign:"center"}}>
           <div style={{width:"100%", margin:"0 auto"}}>
             <h1 style={{marginBottom:"3%"}}>PRESS</h1>
+            <h5 style={{marginBottom:"2%"}}><a href="https://somoslahoficial.com/blog/blog/7591475/los-artistas-de-miami-gen-wav-y-khr-s-joao-son-parte-de-una-nueva-ola-de-artistas-latinos-en-el-305" target="_blank" style={{color:"white", textDecoration:"none"}}>Somos La H Blog</a></h5>
             <h5><a href="https://colorsxstudios.com/music" target="_blank" style={{color:"white", textDecoration:"none"}}>Colors Studios Feature</a></h5>
+           
             <img src="https://dl.dropboxusercontent.com/s/b0j9ghmmkj5axms1iasqm/DSC03827.jpg?rlkey=w53tcltbkhvc8zbuq5c1m2nhy&st=a3kfgm76&dl=0" style={{width:"80%", height:"auto", marginTop:'20px', marginBottom:"20px"}}></img>
             <img src="https://dl.dropboxusercontent.com/s/kphkwzr3dqa47t5jr1g2q/tsunami.png?rlkey=nna28tushrohvgjz3tdkn8v6r&st=w8bd4ly8&dl=0" style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>
             <img src="https://dl.dropboxusercontent.com/s/sxwfnz9gtw9ky413j3ls2/DSC03106.JPG?rlkey=qxevjl8lc04myps4j8frgy3gw&st=b69gukdf&dl=0"style={{width:"80%", height:"auto", marginBottom:"20px"}}></img>

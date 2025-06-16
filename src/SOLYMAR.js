@@ -122,7 +122,7 @@ const SOLYMAR = (props) => {
           alt="SOLYMAR Album" type="gif"
           style={{ height: "auto", width: "auto", maxWidth: "25%", objectFit: "cover", margin: "2% 0", borderRadius:"15px" }}></img>
       </div>
-      <Grid className="linksContainer" container spacing={2} style={{width: "35%", margin:"0 auto"}}>
+      <Grid className="linksContainer" container spacing={2} style={{width: "35%", margin:"0 auto", paddingLeft:"3%"}}>
         <Grid item xs={12} sm={12}>
           <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
@@ -242,7 +242,7 @@ const SOLYMAR = (props) => {
             <p>Produced, Mixed and Mastered by <a href="https://www.instagram.com/gen.wav/" target="_blank">gen.wav</a></p>
             <br></br>
             <h4><a style={{textDecoration:"none"}} href="https://khrisjoao.com/DALEMAMI" target="_blank">DALE MAMI</a></h4>
-            <a href="https://www.instagram.com/khrissosick/" target="_blank">KHR!S Joao</a>, <a href="https://www.instagram.com/genwav/" target="_blank">gen.wav</a>, <a href="https://www.instagram.com/nickgarcia305/" target="_blank">Nick Garcia</a>, <a href="https://www.instagram.com/igorcentrism/" target="_blank">El Igor</a>
+            <p><a href="https://www.instagram.com/khrissosick/" target="_blank">KHR!S Joao</a>, <a href="https://www.instagram.com/genwav/" target="_blank">gen.wav</a>, <a href="https://www.instagram.com/nickgarcia305/" target="_blank">Nick Garcia</a>, <a href="https://www.instagram.com/igorcentrism/" target="_blank">El Igor</a></p>
             <p>Produced by <a href="https://www.instagram.com/dluxe_the_producer" target="_blank">dluxe_the_producer</a></p>
             <p>Mixed and Mastered by <a href="https://www.instagram.com/mixedbyedwn/?hl=en" target="_blank">Edwin Estacio</a></p>
             <br></br>
