@@ -201,6 +201,15 @@ const ONEDAY = (props) => {
       </Grid> 
       
       <div className="aboutNEW">
+         <a target="_blank" style={{color:"white", margin:"0 auto"}} href="https://enigma-labs.printify.me/">
+          <h3 style={{marginTop:"2%", marginBottom:"2%", textAlign:"center"}}>👕 GET YOURS NOW!! 👕</h3>
+           <img src="ONEDAYSHIRT.jpg" alt="CURIOSO Merch" style={{width:"30%", height:"auto", margin:"0 auto"}}></img>
+            <img src="ONEDAYCAP.jpg" alt="CURIOSO Merch" style={{width:"30%", height:"auto", margin:"0 auto"}}></img>
+           <img src="ONEDAYKEYRING.jpg" alt="CURIOSO Merch" style={{width:"30%", height:"auto", margin:"0 auto"}}></img>
+            <img src="ONEDAYBOTTLE.jpg" alt="CURIOSO Merch" style={{width:"30%", height:"auto", margin:"0 auto"}}></img>
+           <h3 style={{marginTop:"2%", textAlign:"center"}}>👕 BUY MERCH!! 👕</h3>
+         </a>
+
         <h2>Credits</h2>
         <h4>Pay Off One Day</h4>
         <a href="https://www.instagram.com/khrissosick/" target="_blank">KHR!S Joao</a>, <a href="https://www.instagram.com/genwav/" target="_blank">gen.wav</a>
@@ -342,33 +351,33 @@ const ONEDAY = (props) => {
       <Grid className="linksContainer" container spacing={3} style={{maxWidth: "35%", margin:"0 auto", paddingTop:"2%", paddingBottom:"5%"}}>
         <Grid item xs={12} sm={12}>
          <div id="socials" style={{padding:"10px 0", display:"flex", justifyContent:"space-between"}}>
-                        <div style={{display:"inline"}}>
-                          <a target="_blank" href="http://instagram.com/khrissosick" style={{textDecoration:"none"}}>
-                            <InstagramLogo style={{color: 'orange'}} size={30}></InstagramLogo>
-                          </a>
-                        </div>
-                        <div style={{display:"inline"}}>
-                          <a target="_blank" href="http://tiktok.com/@khrissosick" style={{textDecoration:"none"}}>
-                            <TiktokLogo style={{color: 'pink'}} size={30}></TiktokLogo>
-                          </a>
-                        </div>
-                        <div style={{display:"inline"}}>
-                          <a target="_blank" href="https://www.youtube.com/@khrissosick" style={{textDecoration:"none"}}>
-                            <YoutubeLogo style={{color: 'red'}} size={30}></YoutubeLogo>
-                          </a>
-                        </div>
-                        <div style={{display:"inline"}}>
-                          <a target="_blank" href="https://open.spotify.com/artist/1dFp4yMaluDGWww446u1Kq?si=q7lk08CDT9uzHK4opwnYgw" style={{textDecoration:"none"}}>
-                            <SpotifyLogo style={{color: 'green'}} size={30}></SpotifyLogo>
-                          </a>
-                        </div>
-                        <div style={{display:"inline"}}>
-                          <a target="_blank" href="https://music.apple.com/us/artist/khr-s-jo%C3%A3o/1685478437" style={{textDecoration:"none"}}>
-                            <AppleLogo style={{color: 'pink'}} size={30}></AppleLogo>
-                          </a>
-                        </div>
-                      
-                      </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="http://instagram.com/khrissosick" style={{textDecoration:"none"}}>
+                    <InstagramLogo style={{color: 'orange'}} size={30}></InstagramLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="http://tiktok.com/@khrissosick" style={{textDecoration:"none"}}>
+                    <TiktokLogo style={{color: 'pink'}} size={30}></TiktokLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="https://www.youtube.com/@khrissosick" style={{textDecoration:"none"}}>
+                    <YoutubeLogo style={{color: 'red'}} size={30}></YoutubeLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="https://open.spotify.com/artist/1dFp4yMaluDGWww446u1Kq?si=q7lk08CDT9uzHK4opwnYgw" style={{textDecoration:"none"}}>
+                    <SpotifyLogo style={{color: 'green'}} size={30}></SpotifyLogo>
+                  </a>
+                </div>
+                <div style={{display:"inline"}}>
+                  <a target="_blank" href="https://music.apple.com/us/artist/khr-s-jo%C3%A3o/1685478437" style={{textDecoration:"none"}}>
+                    <AppleLogo style={{color: 'pink'}} size={30}></AppleLogo>
+                  </a>
+                </div>
+              
+              </div>
             </Grid>
           </Grid>
       </div>
