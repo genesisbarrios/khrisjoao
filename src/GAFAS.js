@@ -201,10 +201,17 @@ const GAFAS = (props) => {
         </Grid>
       </Grid> 
 
-       <h3 style={{marginTop:"2%", textAlign:"center"}}><a target="_blank" style={{color:"white", margin:"0 auto"}} href="https://enigma-labs.printify.me/">👕 BUY MERCH!! 👕</a></h3>
-      
+     
       
       <div className="aboutNEW">
+
+       <a target="_blank" style={{color:"white", margin:"0 auto"}} href="https://enigma-labs.printify.me/">
+          <h3 style={{marginTop:"2%", marginBottom:"2%", textAlign:"center"}}>👕 GET YOURS NOW!! 👕</h3>
+           <img src="GAFASKEYRING.jpg" alt="CURIOSO Merch" style={{width:"80%", height:"auto", margin:"0 auto"}}></img>
+           <img src="GAFASSHIRT.jpg" alt="CURIOSO Merch" style={{width:"80%", height:"auto", margin:"0 auto"}}></img>
+           <h3 style={{marginTop:"2%", marginBottom:"10%", textAlign:"center"}}>👕 BUY MERCH!! 👕</h3>
+         </a>
+         
         <h2>Credits</h2>
         <h4>GAFAS</h4>
         <p>Produced by <a href="https://www.instagram.com/khrissosick/" target="_blank">KHR!S Joao</a>, <a href="https://www.instagram.com/genwav/" target="_blank">gen.wav</a></p>
