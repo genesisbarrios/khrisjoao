@@ -117,7 +117,7 @@ const App = () => {
           <Route path="/ONEDAY" element={<><Header /><ONEDAYComponent  /><Footer /></>} />
           <Route path="/GAFAS" element={<><Header /><GAFASComponent  /><Footer /></>} />
           <Route path="/CURIOSO" element={<><Header /><CURIOSOComponent  /><Footer /></>} />
-          <Route path="/SOLYMAR" element={<><Header /><SOLYMARComponent /><Footer /></>} />
+          {/* <Route path="/SOLYMAR" element={<><Header /><SOLYMARComponent /><Footer /></>} /> */}
           <Route path="/EPK" element={<><Header /><EPKComponent /><Footer /></>} />
           <Route path="/SHOP" element={<ShopRedirect />} />
         </Routes>
