@@ -139,6 +139,23 @@ const RELEASES = (props) => {
           <div style={{ display: "inline" }}>
             {/* Add your next card here */}
 
+            <Card style={{marginBottom:"2%"}}>
+              <CardActionArea href="https://khrisjoao.com/SOLYMAR">
+                <CardMedia
+                  component="img"
+                  alt="SOLYMAR ALBUM ART"
+                  height="250"
+                  image="https://khrisjoao.com/SOLYMAR.jpg"
+                  title="SOLYMAR"
+                />
+                <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                  <Typography variant="h6" component="h6">
+                  SolyMar - gen.wav, KHR!S Joao
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+
               <Card style={{marginBottom:"2%"}}>
               <CardActionArea href="https://khrisjoao.com/CURIOSO">
                 <CardMedia
