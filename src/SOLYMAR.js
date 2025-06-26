@@ -325,8 +325,8 @@ const SOLYMAR = (props) => {
           </Grid>
            <Grid item xs={12} lg={6}>
               <div style={{ textAlign: "center" }}>
-                <img src="GENSOLYMAR.jpg" width="72%" />
                 <img src="CHRISSOLYMAR.jpg" width="72%" />
+                <img src="GENSOLYMAR.jpg" width="72%" />
                 <img src="GENKHRIS2.jpg" width="72%" />
               </div>
            </Grid>
