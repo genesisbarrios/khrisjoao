@@ -122,14 +122,14 @@ const SOLYMAR = (props) => {
           alt="SOLYMAR Album" type="gif"
           style={{ height: "auto", width: "auto", maxWidth: "25%", objectFit: "cover", margin: "2% 0", borderRadius:"15px" }}></img>
       </div>
-      <Grid className="linksContainer" container spacing={2} style={{width: "35%", margin:"0 auto", paddingLeft:"3%"}}>
+       <Grid className="linksContainer" container spacing={2} style={{width: "35%", margin:"0 auto", paddingLeft:"3%"}}>
         <Grid item xs={12} sm={12}>
           <Grid container spacing={2} className="logo-button-container">
             <Grid item xs={6} sm={6} style={{display:"flex", alignItems: "center"}}>
               <SpotifyLogo className="logoSize" style={{ color: '#1DD15E', marginRight: "5px" }} size={50} /><p style={{ color: '#1DD15E', marginRight: "5px", fontWeight:"600"}}>Spotify</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-             <a target="_blank" href="https://Venice.lnk.to/solymar"><button className="pre-save-button">Stream</button></a>
+             <a target="_blank" href="https://open.spotify.com/track/6iCftNGKr00g8nsIhOwxe5?si=1e17831f96da4745"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
           <Grid container spacing={2} className="logo-button-container">
@@ -137,7 +137,7 @@ const SOLYMAR = (props) => {
               <AppleLogo className="logoSize" style={{ color: '#FA4C64', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Apple</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-              <a target="_blank" href="https://Venice.lnk.to/solymar"><button className="pre-save-button">Stream</button></a>
+              <a target="_blank" href="https://music.apple.com/us/album/solymar/1820587247"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
           
@@ -146,7 +146,7 @@ const SOLYMAR = (props) => {
               <YoutubeLogo className="logoSize" style={{ color: 'red', marginRight: "5px" }} size={50} /><p style={{ marginRight: "5px", fontWeight:"600"}}>YouTube</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://Venice.lnk.to/solymar"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://www.youtube.com/watch?v=933mrl_VLyE&list=PLcGBMxEyx5p9cfbXNscaNm6tjNaOoWGBP"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
             <Grid container spacing={2} className="logo-button-container">
@@ -154,7 +154,7 @@ const SOLYMAR = (props) => {
               <SoundcloudLogo className="logoSize" style={{ color: '#FF7000', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Soundcloud</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://Venice.lnk.to/solymar"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://soundcloud.com/genwav/sets/solymar-3?si=455c02308de54148a00be23130555718&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
           <Grid container spacing={2} className="logo-button-container">
@@ -162,7 +162,7 @@ const SOLYMAR = (props) => {
               <TidalLogo className="logoSize" style={{ color: 'white', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Tidal</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://Venice.lnk.to/solymar"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://tidal.com/browse/album/442067668"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
            <Grid container spacing={2} className="logo-button-container">
@@ -170,7 +170,7 @@ const SOLYMAR = (props) => {
              <img className="logoSize" style={{marginRight: "5px" }} src="pandora.png" width={50}></img><p style={{marginRight: "5px", fontWeight:"600"}}>Pandora</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://Venice.lnk.to/solymar"><button className="pre-save-button">Stream</button></a>
+            <a target="_blank" href="https://pandora.app.link/GMQOTsZnvUb"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
            <Grid container spacing={2} className="logo-button-container">
@@ -178,7 +178,7 @@ const SOLYMAR = (props) => {
               <AmazonLogo className="logoSize" style={{ color: '#FF7000', marginRight: "5px" }} size={50} /><p style={{marginRight: "5px", fontWeight:"600"}}>Amazon</p>
             </Grid>
             <Grid item xs={6} sm={6}>
-            <a target="_blank" href="https://Venice.lnk.to/solymar"><button className="pre-save-button">Stream / Buy</button></a>
+            <a target="_blank" href="https://www.amazon.com/music/player/albums/B0FD7FD95M"><button className="pre-save-button">Stream / Buy</button></a>
             </Grid>
           </Grid>
            <Grid container spacing={2} className="logo-button-container">
