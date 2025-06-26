@@ -293,7 +293,7 @@ const RELEASES = (props) => {
             </Card>
 
             <Card style={{marginBottom:"2%"}}>
-              <CardActionArea href="https:///GENESIS">
+              <CardActionArea href="https://khrisjoao.com/GENESIS">
                 <CardMedia
                   component="img"
                   alt="GENESIS ALBUM ART"
