@@ -345,6 +345,10 @@ const ONEDAY = (props) => {
           </form>
         </div>
       </div>
+
+      <div style={{margin:"0 auto", textAlign:"center", backgroundColor:"transparent"}}>
+        <iframe src="https://influanto.com/embed/newsletter/khrissosick" width="100%" height="440" style={{border:"none", maxWidth:"480px", backgroundColor:"transparent"}} title="Newsletter signup"></iframe>
+      </div>
       
     </div>
 

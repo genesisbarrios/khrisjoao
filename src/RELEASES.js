@@ -94,42 +94,6 @@ const RELEASES = (props) => {
       <div id="NEWImageDiv">
        <h3>RELEASES</h3>
       </div>
-
-      <Grid className="linksContainer" container spacing={3} style={{maxWidth: "35%", margin:"0 auto",paddingBottom:"5%"}}>
-        <Grid item xs={12} sm={12}>
-          <div className="social-dock-wrapper">
-                  <div className="social-dock">
-                    <a className="social-link" target="_blank" rel="noreferrer" href="http://instagram.com/khrissosick">
-                      <InstagramLogo className="social-icon" size={28} />
-                      <span>Instagram</span>
-                    </a>
-                    <a className="social-link" target="_blank" rel="noreferrer" href="http://tiktok.com/@khrissosick">
-                      <TiktokLogo className="social-icon" size={28} />
-                      <span>TikTok</span>
-                    </a>
-                    <a className="social-link" target="_blank" rel="noreferrer" href="https://www.youtube.com/@khrissosick">
-                      <YoutubeLogo className="social-icon" size={28} />
-                      <span>YouTube</span>
-                    </a>
-                    <a className="social-link" target="_blank" rel="noreferrer" href="https://open.spotify.com/artist/1dFp4yMaluDGWww446u1Kq?si=q7lk08CDT9uzHK4opwnYgw">
-                      <SpotifyLogo className="social-icon" size={28} />
-                      <span>Spotify</span>
-                    </a>
-                    <a className="social-link" target="_blank" rel="noreferrer" href="https://music.apple.com/us/artist/khr-s-jo%C3%A3o/1685478437">
-                      <AppleLogo className="social-icon" size={28} />
-                      <span>Apple</span>
-                    </a>
-                    <a className="social-link" target="_blank" rel="noreferrer" href="https://discord.com/invite/2MdNjbHnBR">
-                      <DiscordLogo className="social-icon" size={28} />
-                      <span>Discord</span>
-                    </a>
-                  </div>
-                </div>
-        </Grid>
-      </Grid>
-
-      
-    
       <Grid className="linksContainer" container spacing={3} style={{maxWidth: "35%", margin:"0 auto", paddingTop:"2%", paddingBottom:"5%"}}>
         <Grid item xs={12} sm={12}>
           <div style={{ display: "inline" }}>
@@ -344,7 +308,32 @@ const RELEASES = (props) => {
       </Grid>
     </div>
 
-      
+    <Grid className="linksContainer" container spacing={1} style={{maxWidth: "35%", margin:"0 auto",paddingBottom:"5%"}}>
+        <Grid item xs={12} sm={12}>
+          <div className="social-dock-wrapper">
+                  <div className="social-dock">
+                    <a className="social-link" target="_blank" rel="noreferrer" href="http://instagram.com/khrissosick">
+                      <InstagramLogo className="social-icon" size={28} color="orange" />
+                    </a>
+                    <a className="social-link" target="_blank" rel="noreferrer" href="http://tiktok.com/@khrissosick">
+                      <TiktokLogo className="social-icon" size={28} color="pink" />
+                    </a>
+                    <a className="social-link" target="_blank" rel="noreferrer" href="https://www.youtube.com/@khrissosick">
+                      <YoutubeLogo className="social-icon" size={28} color="red" />
+                    </a>
+                    <a className="social-link" target="_blank" rel="noreferrer" href="https://open.spotify.com/artist/1dFp4yMaluDGWww446u1Kq?si=q7lk08CDT9uzHK4opwnYgw">
+                      <SpotifyLogo className="social-icon" size={28} color="green" />
+                    </a>
+                    <a className="social-link" target="_blank" rel="noreferrer" href="https://music.apple.com/us/artist/khr-s-jo%C3%A3o/1685478437">
+                      <AppleLogo className="social-icon" size={28} color="red" />
+                    </a>
+                    <a className="social-link" target="_blank" rel="noreferrer" href="https://soundcloud.com/khrissosick">
+                      <SoundcloudLogo className="social-icon" size={28} color="orange" />
+                    </a>
+                  </div>
+                </div>
+        </Grid>
+      </Grid>
       </div>
     );
         

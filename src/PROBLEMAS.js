@@ -193,24 +193,22 @@ const PROBLEMAS = (props) => {
           <div className="social-dock-wrapper">
                   <div className="social-dock">
                     <a className="social-link" target="_blank" rel="noreferrer" href="http://instagram.com/khrissosick">
-                      <InstagramLogo className="social-icon" size={28} />
-                      <span>Instagram</span>
+                      <InstagramLogo className="social-icon" size={28} color="orange" />
                     </a>
                     <a className="social-link" target="_blank" rel="noreferrer" href="http://tiktok.com/@khrissosick">
-                      <TiktokLogo className="social-icon" size={28} />
-                      <span>TikTok</span>
+                      <TiktokLogo className="social-icon" size={28} color="pink" />
                     </a>
                     <a className="social-link" target="_blank" rel="noreferrer" href="https://www.youtube.com/@khrissosick">
-                      <YoutubeLogo className="social-icon" size={28} />
-                      <span>YouTube</span>
+                      <YoutubeLogo className="social-icon" size={28} color="red" />
                     </a>
                     <a className="social-link" target="_blank" rel="noreferrer" href="https://open.spotify.com/artist/1dFp4yMaluDGWww446u1Kq?si=q7lk08CDT9uzHK4opwnYgw">
-                      <SpotifyLogo className="social-icon" size={28} />
-                      <span>Spotify</span>
+                      <SpotifyLogo className="social-icon" size={28} color="green" />
                     </a>
                     <a className="social-link" target="_blank" rel="noreferrer" href="https://music.apple.com/us/artist/khr-s-jo%C3%A3o/1685478437">
-                      <AppleLogo className="social-icon" size={28} />
-                      <span>Apple</span>
+                      <AppleLogo className="social-icon" size={28} color="red" />
+                    </a>
+                    <a className="social-link" target="_blank" rel="noreferrer" href="https://soundcloud.com/khrissosick">
+                      <SoundcloudLogo className="social-icon" size={28} color="orange" />
                     </a>
                   </div>
                 </div>

@@ -3,7 +3,7 @@ import './styles.css';
 import Grid from '@material-ui/core/Grid';
 import { Alert } from "@material-ui/core";
 import MetaTags from 'react-meta-tags';
-import { InstagramLogo, TiktokLogo, YoutubeLogo, SpotifyLogo, AppleLogo, AmazonLogo, TidalLogo } from "@phosphor-icons/react";
+import { InstagramLogo, TiktokLogo, YoutubeLogo, SpotifyLogo, AppleLogo, SoundcloudLogo, AmazonLogo, TidalLogo } from "@phosphor-icons/react";
 import axios from "axios";
 import React from "react";
 
@@ -134,82 +134,8 @@ const Alkaline = () => {
           <br />
         </div>
 
-        <div
-          className="card"
-          style={{
-            width: '40%',
-            minHeight: '200px',
-            margin: '0 auto',
-            marginTop: '3%',
-          }}
-        >
-          <style>
-            {`@media (max-width: 768px) { .card { width: 80% !important; } }`}
-          </style>
-          <div className="cardHeader">
-            <img
-              src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mailnews_8.ico"
-              width="20px"
-              alt="Mail Icon"
-            />{' '}
-            Sign up to receive beats, loops, and news!
-          </div>
-          <div style={{ marginTop: '5%', textAlign: 'center' }}>
-            <form>
-              <p>Enter Your E-mail Address</p>
-              <input
-                type="text"
-                name="e-mail"
-                style={{ display: 'inline-block', marginBottom: '20px', width: '50%' }}
-                onChange={(e) => setEmail(e.target.value)}
-              />
-              <br />
-              <div style={{ display: 'inline' }}>
-                <input
-                  style={{ borderRadius: '10px', backgroundColor: '#CBD5E1', display: 'inline' }}
-                  type="checkbox"
-                  name="producer"
-                  onChange={(e) => setProducer(e.target.checked)}
-                />
-                <p style={{ display: 'inline', margin: '0 5px' }}>producer</p>
-                <input
-                  style={{ borderRadius: '10px', backgroundColor: '#CBD5E1', display: 'inline' }}
-                  type="checkbox"
-                  name="artist"
-                  onChange={(e) => setArtist(e.target.checked)}
-                />
-                <p style={{ display: 'inline', margin: '0 5px' }}>artist</p>
-                <input
-                  style={{ borderRadius: '10px', backgroundColor: '#CBD5E1', display: 'inline' }}
-                  type="checkbox"
-                  name="fan"
-                  onChange={(e) => setFan(e.target.checked)}
-                />
-                <p style={{ display: 'inline', margin: '0 10px' }}>supporter</p>
-                <br />
-                <button
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleSubmit();
-                  }}
-                  style={{ marginTop: '20px', padding: '2px 5px' }}
-                  type="submit"
-                >
-                  Submit
-                </button>
-                {message && (
-                  <Alert style={{ marginTop: '5%', marginBottom: '5%' }} severity="success">
-                    {message}
-                  </Alert>
-                )}
-                {alert && (
-                  <Alert style={{ marginTop: '5%', marginBottom: '5%' }} severity="error">
-                    {alert}
-                  </Alert>
-                )}
-              </div>
-            </form>
-          </div>
+        <div style={{margin:"0 auto", textAlign:"center", backgroundColor:"transparent"}}>
+          <iframe src="https://influanto.com/embed/newsletter/khrissosick" width="100%" height="440" style={{border:"none", maxWidth:"480px", backgroundColor:"transparent"}} title="Newsletter signup"></iframe>
         </div>
 
         <Grid className="linksContainer" container spacing={3} style={{ maxWidth: "35%", margin: "0 auto", paddingTop: "2%", paddingBottom: "5%" }}>
@@ -217,24 +143,22 @@ const Alkaline = () => {
             <div className="social-dock-wrapper">
                   <div className="social-dock">
                     <a className="social-link" target="_blank" rel="noreferrer" href="http://instagram.com/khrissosick">
-                      <InstagramLogo className="social-icon" size={28} />
-                      <span>Instagram</span>
+                      <InstagramLogo className="social-icon" size={28} color="orange" />
                     </a>
                     <a className="social-link" target="_blank" rel="noreferrer" href="http://tiktok.com/@khrissosick">
-                      <TiktokLogo className="social-icon" size={28} />
-                      <span>TikTok</span>
+                      <TiktokLogo className="social-icon" size={28} color="pink" />
                     </a>
                     <a className="social-link" target="_blank" rel="noreferrer" href="https://www.youtube.com/@khrissosick">
-                      <YoutubeLogo className="social-icon" size={28} />
-                      <span>YouTube</span>
+                      <YoutubeLogo className="social-icon" size={28} color="red" />
                     </a>
                     <a className="social-link" target="_blank" rel="noreferrer" href="https://open.spotify.com/artist/1dFp4yMaluDGWww446u1Kq?si=q7lk08CDT9uzHK4opwnYgw">
-                      <SpotifyLogo className="social-icon" size={28} />
-                      <span>Spotify</span>
+                      <SpotifyLogo className="social-icon" size={28} color="green" />
                     </a>
                     <a className="social-link" target="_blank" rel="noreferrer" href="https://music.apple.com/us/artist/khr-s-jo%C3%A3o/1685478437">
-                      <AppleLogo className="social-icon" size={28} />
-                      <span>Apple</span>
+                      <AppleLogo className="social-icon" size={28} color="red" />
+                    </a>
+                    <a className="social-link" target="_blank" rel="noreferrer" href="https://soundcloud.com/khrissosick">
+                      <SoundcloudLogo className="social-icon" size={28} color="orange" />
                     </a>
                   </div>
                 </div>

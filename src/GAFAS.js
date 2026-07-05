@@ -197,14 +197,10 @@ const GAFAS = (props) => {
             <a target="_blank" href="https://amazon.com/music/player/albums/B0F4J5HDX2?marketplaceId=ATVPDKIKX0DER&musicTerritory=US&ref=dm_sh_biEaxRWVYfQZzg2g8MtztkwqE&trackAsin=B0F4HTFBF6"><button className="pre-save-button">Stream</button></a>
             </Grid>
           </Grid>
-          
         </Grid>
       </Grid> 
 
-     
-      
       <div className="aboutNEW">
-
        <a target="_blank" style={{color:"white", margin:"0 auto"}} href="https://enigma-labs.printify.me/">
           <h3 style={{marginTop:"2%", marginBottom:"2%", textAlign:"center"}}>MERCH</h3>
            <img src="GAFASKEYRING.jpg" alt="CURIOSO Merch" style={{width:"80%", height:"auto", margin:"0 auto"}}></img>
@@ -220,132 +216,8 @@ const GAFAS = (props) => {
         <br></br>
       </div>
 
-      <div
-        className="card"
-        style={{
-          width: '40%',
-          minHeight: '200px',
-          margin: '0 auto',
-          marginTop: '3%',
-        }}
-      >
-        <style>
-          {`
-            @media (max-width: 768px) {
-              .card {
-                width: 80% !important;
-              }
-            }
-          `}
-        </style>
-        <div className="cardHeader">
-          <img
-            src="https://raw.githubusercontent.com/React95/React95/40e774b5e208822d206d9f6bc202ec1d7c3b0680/packages/icons/src/icons/mailnews_8.ico"
-            width="20px"
-          ></img>{' '}
-          Sign up to receive beats, loops, and news!
-        </div>
-        <div style={{ marginTop: '5%', textAlign: 'center' }}>
-          <form>
-            <p>Enter Your E-mail Address</p>
-            <input
-              type="text"
-              name="e-mail"
-              style={{
-                display: 'inline-block',
-                marginBottom: '20px',
-                width: '50%',
-              }}
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
-            ></input>
-            <br></br>
-            <div style={{ display: 'inline' }}>
-              <input
-                style={{
-                  borderRadius: '10px',
-                  backgroundColor: '#CBD5E1',
-                  display: 'inline',
-                }}
-                type="checkbox"
-                name="producer"
-                value="0"
-                onChange={(e) => {
-                  if (e.target.checked) {
-                    setProducer(true);
-                  } else {
-                    setProducer(false);
-                  }
-                }}
-              />
-              <p style={{ display: 'inline', margin: '0 5px' }}>producer</p>
-              <input
-                style={{
-                  borderRadius: '10px',
-                  backgroundColor: '#CBD5E1',
-                  display: 'inline',
-                }}
-                type="checkbox"
-                name="artist"
-                value="0"
-                onChange={(e) => {
-                  if (e.target.checked) {
-                    setArtist(true);
-                  } else {
-                    setArtist(false);
-                  }
-                }}
-              />
-              <p style={{ display: 'inline', margin: '0 5px' }}>artist</p>
-              <input
-                style={{
-                  borderRadius: '10px',
-                  backgroundColor: '#CBD5E1',
-                  display: 'inline',
-                }}
-                type="checkbox"
-                name="fan"
-                value="0"
-                onChange={(e) => {
-                  if (e.target.checked) {
-                    setFan(true);
-                  } else {
-                    setFan(false);
-                  }
-                }}
-              />
-              <p style={{ display: 'inline', margin: '0 10px' }}>supporter</p>
-              <br></br>
-              <button
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleSubmit();
-                }}
-                style={{ marginTop: '20px', padding: '2px 5px' }}
-                type="submit"
-              >
-                Submit
-              </button>
-              {message && (
-                <Alert
-                  style={{ marginTop: '5%', marginBottom: '5%' }}
-                  severity="success"
-                >
-                  {message.toString()}
-                </Alert>
-              )}
-              {alert && (
-                <Alert
-                  style={{ marginTop: '5%', marginBottom: '5%' }}
-                  severity="error"
-                >
-                  {alert.toString()}
-                </Alert>
-              )}
-            </div>
-          </form>
-        </div>
+      <div style={{margin:"0 auto", textAlign:"center", backgroundColor:"transparent"}}>
+        <iframe src="https://influanto.com/embed/newsletter/khrissosick" width="100%" height="440" style={{border:"none", maxWidth:"480px", backgroundColor:"transparent"}} title="Newsletter signup"></iframe>
       </div>
       
     </div>
