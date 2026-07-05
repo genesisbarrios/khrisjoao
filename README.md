@@ -1,4 +1,4 @@
-khrisjoao.com
+yarnkhrisjoao.com
 Discover all about KHR!S João 
 
 //to start locally
