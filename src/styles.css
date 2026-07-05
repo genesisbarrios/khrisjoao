@@ -393,3 +393,67 @@ button.legend{
   }
 
 }
+
+.social-dock-wrapper{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 32px;
+  width: 100%;
+}
+
+.social-dock{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  backdrop-filter: blur(14px);
+  padding: 14px 20px;
+  border-radius: 30px;
+  max-width: 860px;
+  width: 100%;
+}
+
+.social-link{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: white;
+  background: rgba(255, 255, 255, 0.04);
+  transition: transform 0.24s ease, box-shadow 0.24s ease, background 0.24s ease;
+  font-size: 0.95rem;
+  min-width: 120px;
+  justify-content: center;
+}
+
+.social-link:hover{
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.16);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.social-icon{
+  color: #fff;
+}
+
+.social-link span{
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 720px) {
+  .social-dock{
+    gap: 10px;
+    padding: 12px 16px;
+  }
+
+  .social-link{
+    min-width: auto;
+    padding: 10px 12px;
+    font-size: 0.85rem;
+  }
+}
