@@ -99,6 +99,23 @@ const RELEASES = (props) => {
           <div style={{ display: "inline" }}>
             {/* Add your next card here */}
 
+            <Card style={{marginBottom:"2%"}}>
+              <CardActionArea href="https://khrisjoao.com/WORLD">
+                <CardMedia
+                  component="img"
+                  alt="WORLD IS A STAGE ALBUM ART"
+                  height="250"
+                  image="https://i1.sndcdn.com/artworks-WvKlZTpMNlkT-0-t500x500.jpg"
+                  title="WORLD"
+                />
+                <CardContent style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center", color: "white", backgroundColor: "rgba(0, 0, 0, 0.5)" }}>
+                  <Typography variant="h6" component="h6">
+                  The World is a Stage - gen.wav, KHR!S João
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+
              <Card style={{marginBottom:"2%"}}>
               <CardActionArea href="https://khrisjoao.com/Alkaline">
                 <CardMedia

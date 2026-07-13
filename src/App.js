@@ -1,7 +1,6 @@
 // App.js
 import React from 'react';
 import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom';
-import ExperienceWrapper from "./ExperienceWrapper";
 import Home from "./Home";
 import EPK from "./EPK";
 import GENESIS from "./GENESIS";
@@ -17,6 +16,7 @@ import CURIOSO from './CURIOSO';
 import SOLYMAR from './SOLYMAR';
 import Alkaline from './Alkaline';
 import GAFAS from './GAFAS';
+import WORLD from './WORLD';
 import Footer from "./Footer"; // Import Header component
 
 const App = () => {
@@ -100,6 +100,12 @@ const App = () => {
     );
   }
 
+  const WORLDComponent = () => {
+    return (
+      <WORLD />
+    );
+  }
+
   const ShopRedirect = () => { // Define component for /SHOP route
     window.location.href = "https://enigma-labs.printify.me/products"; // Redirect to external URL
     return null; // Since we're redirecting, return null
@@ -126,6 +132,7 @@ const App = () => {
           <Route path="/CURIOSO" element={<><Header /><CURIOSOComponent  /><Footer /></>} />
           <Route path="/SOLYMAR" element={<><Header /><SOLYMARComponent /><Footer /></>} />
           <Route path="/Alkaline" element={<><Header /><AlkalineComponent /><Footer /></>} />
+          <Route path="/WORLD" element={<><Header /><WORLDComponent /><Footer /></>} />
           <Route path="/EPK" element={<><Header /><EPKComponent /><Footer /></>} />
           <Route path="/SHOP" element={<ShopRedirect />} />
         </Routes>
